@@ -28,3 +28,27 @@ html[data-text-size="large"] .answer{padding:16px 17px}
 
 /* Native dialogs must stay hidden until opened with showModal(). */
 .settings-dialog:not([open]){display:none}
+
+.mode-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.question-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.speak-button{flex:0 0 42px;width:42px;height:42px;border:1px solid var(--line);border-radius:13px;background:#eaf6f3;color:#087e76;display:grid;place-items:center;cursor:pointer}
+.speak-button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.toggle-label{display:flex!important;align-items:center;justify-content:space-between;gap:16px!important}
+.toggle-label input{width:22px;height:22px;accent-color:var(--teal-dark)}
+.exam-review{width:min(100%,760px);margin:22px auto;text-align:left}
+.exam-review h2{color:var(--navy);font-size:21px}
+.review-card{margin:10px 0;padding:15px 17px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.review-card h3{font-size:16px;color:var(--navy);margin:0 0 10px}
+.review-card p{margin:5px 0;color:var(--ink)}
+.result:has(.exam-review){width:min(100%,800px)}
+html[data-theme="dark"]{color-scheme:dark;--cream:#081725;--paper:#102437;--ink:#e5eef5;--muted:#a5b5c2;--line:#294257;--navy:#dbeaf5;--navy2:#153553;--teal:#2dd4bf;--teal-dark:#55d7c8;--green-bg:#143d32;--red-bg:#472b2b;--shadow:0 18px 55px #0006;background:#081725}
+html[data-theme="dark"] body{background:radial-gradient(ellipse at top right,#123c3a 0,transparent 36%),var(--cream);color:var(--ink)}
+html[data-theme="dark"] .brand,html[data-theme="dark"] h1,html[data-theme="dark"] .mode-card h2,html[data-theme="dark"] .question-title,html[data-theme="dark"] .progress-summary h2,html[data-theme="dark"] .settings-dialog h2,html[data-theme="dark"] .score-number,html[data-theme="dark"] .review-card h3{color:var(--navy)}
+html[data-theme="dark"] .hero-copy,html[data-theme="dark"] .mode-card p,html[data-theme="dark"] .quiz-count,html[data-theme="dark"] .result-text,html[data-theme="dark"] .settings-dialog label{color:#bdcbd6}
+html[data-theme="dark"] .mode-card,html[data-theme="dark"] .question-card,html[data-theme="dark"] .result,html[data-theme="dark"] .dialog,html[data-theme="dark"] .progress-summary,html[data-theme="dark"] .review-card{background:var(--paper);border-color:var(--line)}
+html[data-theme="dark"] .answer,html[data-theme="dark"] .favorite-button,html[data-theme="dark"] .home-controls select,html[data-theme="dark"] .settings-dialog select{background:#0b1c2b;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .answer-letter,html[data-theme="dark"] .secondary-button{background:#23394b;color:#d3e1eb}
+html[data-theme="dark"] .progress{background:#223749}
+html[data-theme="dark"] .topic-progress{background:#173b3d;color:#c8ece8}
+html[data-theme="dark"] .feedback.subtle{background:#20394a;color:#cbdce8}
+html[data-theme="dark"] .visual{background:#eaf4f4}
