@@ -19,4 +19,4 @@ Persönliche, installierbare Lernapp für nautische Fragen.
 - `icons/`: NautikTrainer-Icon.
 - `manifest.webmanifest` und `sw.js`: PWA-Installation und Offline-Cache.
 
-Die App ist über GitHub Pages erreichbar.
+Die App ist über GitHub Pages erreichbar. Der Startdialog der Einstellungen bleibt geschlossen, bis er geöffnet wird.
