@@ -6,11 +6,12 @@ const installDialog = document.querySelector("#installDialog");
 const confirmInstall = document.querySelector("#confirmInstall");
 const iosHint = document.querySelector("#iosHint");
 let bank = [];
+let translations = {};
 let game = null;
 let deferredInstallPrompt = null;
 const STORAGE = { settings: "nautiktrainer.settings.v1", stats: "nautiktrainer.stats.v1", mistakes: "nautiktrainer.mistakes.v1", favorites: "nautiktrainer.favorites.v1" };
 function readStored(key, fallback) { try { const value = localStorage.getItem(key); return value ? JSON.parse(value) : fallback; } catch { return fallback; } }
-let settings = Object.assign({ topic: "Alle Themen", examLength: 30, textSize: "normal" }, readStored(STORAGE.settings, {}));
+let settings = Object.assign({ topic: "Alle Themen", examLength: 30, textSize: "normal", language: "de", darkMode: false }, readStored(STORAGE.settings, {}));
 let stats = readStored(STORAGE.stats, {});
 let mistakes = new Set(readStored(STORAGE.mistakes, []));
 let favorites = new Set(readStored(STORAGE.favorites, []));
@@ -40,7 +41,16 @@ function recordAnswer(q, correct) {
   if (correct) { stats[topic].correct += 1; mistakes.delete(q.id); } else mistakes.add(q.id);
   saveStats(); saveMistakes();
 }
-function applyTextSize() { document.documentElement.dataset.textSize = settings.textSize; }
+function applyTextSize() { document.documentElement.dataset.textSize = settings.textSize; document.documentElement.dataset.theme = settings.darkMode ? "dark" : "light"; document.documentElement.lang = settings.language === "hr" ? "hr" : settings.language; }
+const LABELS={
+  en:{title:"Ready to set sail?",tagline:"Your personal nautical trainer",hero:"Practise at your pace or start an exam.",topic:"Topic",settings:"Settings",learn:"Learn",exam:"Exam",learningText:"Random order, instant feedback and explanations.",examText:"random questions. Results at the end.",examQuestions:"Questions per exam",fontSize:"Text size",language:"Language",darkMode:"Dark mode",save:"Save",continue:"Continue",question:"Question",back:"← Overview",results:"Show results",finish:"Finish practice",home:"Overview",read:"Read question aloud",correct:"Correct",incorrect:"Not quite. Correct answer:",explanation:"Explanation:",completed:"Exam completed",result:"Your result",false:"incorrect",wrongReview:"Review incorrect answers",yourAnswer:"Your answer",rightAnswer:"Correct answer",newExam:"New exam",newLearn:"New practice round",repeatWrong:"Repeat incorrect questions",imagePractice:"Practise image questions",favorites:"Practise saved questions",progress:"Your progress",all:"All topics",flags:"Flags",lights:"Lights",navigation:"Navigation",weather:"Weather",safety:"Safety",rules:"Rules",seamanship:"Seamanship",image:"Image questions"},
+  hr:{title:"Spremni za isplovljavanje?",tagline:"Vaš osobni nautički trener",hero:"Vježbajte svojim tempom ili započnite ispit.",topic:"Tema",settings:"Postavke",learn:"Učenje",exam:"Ispit",learningText:"Nasumičan redoslijed, trenutačna povratna informacija i objašnjenje.",examText:"nasumičnih pitanja. Rezultat na kraju.",examQuestions:"Broj pitanja na ispitu",fontSize:"Veličina teksta",language:"Jezik",darkMode:"Tamni način",save:"Spremi",continue:"Nastavi",question:"Pitanje",back:"← Pregled",results:"Prikaži rezultate",finish:"Završi vježbu",home:"Pregled",read:"Pročitaj pitanje",correct:"Točno",incorrect:"Nije točno. Točan odgovor:",explanation:"Objašnjenje:",completed:"Ispit je završen",result:"Vaš rezultat",false:"netočno",wrongReview:"Pregled netočnih odgovora",yourAnswer:"Vaš odgovor",rightAnswer:"Točan odgovor",newExam:"Novi ispit",newLearn:"Nova vježba",repeatWrong:"Ponovi netočna pitanja",imagePractice:"Vježbaj pitanja sa slikama",favorites:"Vježbaj spremljena pitanja",progress:"Vaš napredak",all:"Sve teme",flags:"Zastave",lights:"Svjetla",navigation:"Navigacija",weather:"Vrijeme",safety:"Sigurnost",rules:"Pravila",seamanship:"Pomorstvo",image:"Pitanja sa slikama"}
+};
+function tr(key, fallback){return settings.language==="de"?(fallback||key):((LABELS[settings.language]||{})[key]||fallback||key);}
+function localizedQuestion(q){return (translations[q.id]&&translations[q.id][settings.language])||q;}
+function topicTranslation(topic){const key={"Flaggen":"flags","Lichter":"lights","Navigation":"navigation","Wetter":"weather","Sicherheit":"safety","Regeln":"rules","Seemannschaft":"seamanship"}[topic];return settings.language==="de"?topic:(key?tr(key,topic):topic);}
+function speakPrompt(text){if(!("speechSynthesis" in window)){alert(settings.language==="hr"?"Čitanje naglas nije podržano.":settings.language==="en"?"Read aloud is not supported.":"Vorlesen wird nicht unterstützt.");return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang={de:"de-DE",en:"en-GB",hr:"hr-HR"}[settings.language]||"de-DE";speechSynthesis.speak(u);}
+
 
 
 const LETTERS = ["A", "B", "C", "D"];
@@ -99,6 +109,38 @@ function illustration(id) {
   };
   return art[id] ? svgFrame(art[id]) : "";
 }
+function localizeHome() {
+  if(settings.language==="de") return;
+  const $=s=>document.querySelector(s);
+  $(".eyebrow").textContent=tr("tagline");
+  $("h1").textContent=tr("title");
+  $(".hero-copy").textContent=tr("hero");
+  $(".home-controls label").textContent=tr("topic");
+  $("#settingsButton").textContent=tr("settings");
+  const modes=document.querySelectorAll(".mode-card");
+  modes[0].querySelector("h2").textContent=tr("learn");
+  modes[0].querySelector("p").textContent=tr("learningText");
+  modes[1].querySelector("h2").textContent=tr("exam");
+  modes[1].querySelector("p").textContent=settings.examLength+" "+tr("examText");
+  const quick=document.querySelectorAll(".quick-actions button");
+  quick[0].textContent=tr("repeatWrong")+" ("+mistakes.size+")";
+  quick[1].textContent=tr("favorites")+" ("+favorites.size+")";
+  quick[2].textContent=tr("imagePractice");
+  const progress=document.querySelector(".progress-summary h2"); if(progress)progress.textContent=tr("progress");
+  const empty=document.querySelector(".progress-empty"); if(empty)empty.textContent=settings.language==="en"?"Your progress will appear here after you answer questions.":"Vaš napredak prikazat će se nakon što odgovorite na pitanja.";
+  const opts=document.querySelectorAll("#topicFilter option");
+  const keys=["all","flags","lights","navigation","weather","safety","rules","seamanship","image"];
+  opts.forEach((o,i)=>o.textContent=tr(keys[i]));
+  const labels=document.querySelectorAll("#settingsDialog label");
+  labels[0].childNodes[0].textContent=tr("examQuestions")+" ";
+  labels[1].childNodes[0].textContent=tr("fontSize")+" ";
+  labels[2].childNodes[0].textContent=tr("language")+" ";
+  labels[3].querySelector("span").textContent=tr("darkMode");
+  $("#saveSettings").textContent=tr("save");
+  const footerText=document.querySelector(".footer span");if(footerText)footerText.textContent=settings.language==="en"?"Version 1.2 · created by MS":settings.language==="hr"?"Verzija 1.2 · izradio MS":"Version 1.2 · created by MS";
+  const install=document.querySelector("#installHelp");if(install)install.textContent=settings.language==="en"?"Add to Home Screen":settings.language==="hr"?"Dodaj na početni zaslon":"Zum Home-Bildschirm";
+  const sizes=document.querySelectorAll("#textSize option");sizes[0].textContent=settings.language==="en"?"Normal":settings.language==="hr"?"Uobičajena":"Normal";sizes[1].textContent=settings.language==="en"?"Large":"Velika";
+}
 function showHome() {
   game = null;
   var pool = filteredPool(uniqueQuestionPool(bank));
@@ -114,8 +156,8 @@ function showHome() {
     '<p class="hero-copy">Übe in deinem Tempo oder starte eine Prüfung.</p>'+
     '<div class="home-controls"><label for="topicFilter">Thema</label><select id="topicFilter">'+options+'</select><button id="settingsButton" class="secondary-button" type="button">Einstellungen</button></div>'+
     '<div class="mode-grid">'+
-    '<button class="mode-card" id="learnMode" type="button"><span class="mode-icon" aria-hidden="true">✦</span><h2>Lernen</h2><p>Zufällige Reihenfolge, sofortige Rückmeldung und Erklärung.</p></button>'+
-    '<button class="mode-card exam" id="examMode" type="button"><span class="mode-icon" aria-hidden="true">✓</span><h2>Prüfung</h2><p>'+settings.examLength+' zufällige Fragen. Ergebnis am Schluss.</p></button></div>'+
+    '<button class="mode-card" id="learnMode" type="button"><span class="mode-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 10.5A4.5 4.5 0 0 1 12.5 6H39v31H13a5 5 0 0 0-5 5zM8 10.5v31M15 13h17M15 20h17M15 27h11"/></svg></span><h2>Lernen</h2><p>Zufällige Reihenfolge, sofortige Rückmeldung und Erklärung.</p></button>'+
+    '<button class="mode-card exam" id="examMode" type="button"><span class="mode-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="9" y="8" width="30" height="35" rx="5"/><path d="M18 8V5h12v6H18zM16 21l3 3 6-7M28 22h5M16 33l3 3 6-7M28 34h5"/></svg></span><h2>Prüfung</h2><p>'+settings.examLength+' zufällige Fragen. Ergebnis am Schluss.</p></button></div>'+
     '<div class="quick-actions"><button id="reviewErrors" class="secondary-button" '+(mistakes.size?"":"disabled")+'>Falsche Fragen wiederholen ('+mistakes.size+')</button>'+
     '<button id="reviewFavorites" class="secondary-button" '+(favorites.size?"":"disabled")+'>Merkliste üben ('+favorites.size+')</button>'+
     '<button id="imagePractice" class="secondary-button">Bildfragen üben</button></div>'+
@@ -124,8 +166,9 @@ function showHome() {
     '</section><dialog id="settingsDialog" class="dialog settings-dialog"><form method="dialog"><button class="dialog-close" aria-label="Schließen">×</button></form>'+
     '<h2>Einstellungen</h2><label>Fragen pro Prüfung<select id="examLength"><option value="10">10 Fragen</option><option value="20">20 Fragen</option><option value="30">30 Fragen</option><option value="50">50 Fragen</option></select></label>'+
     '<label>Schriftgröße<select id="textSize"><option value="normal">Normal</option><option value="large">Groß</option></select></label>'+
-    '<button id="saveSettings" class="primary-button" type="button">Speichern</button></dialog>';
+    '<label>Sprache<select id="language"><option value="de">Deutsch</option><option value="en">English</option><option value="hr">Hrvatski</option></select></label><label class="toggle-label"><span>Dunkelmodus</span><input id="darkMode" type="checkbox"></label><button id="saveSettings" class="primary-button" type="button">Speichern</button></dialog>';
   applyTextSize();
+  localizeHome();
   document.querySelector("#topicFilter").addEventListener("change",function(e){settings.topic=e.target.value;saveSettings();showHome();});
   document.querySelector("#learnMode").addEventListener("click",function(){startGame("learn");});
   document.querySelector("#examMode").addEventListener("click",function(){startGame("exam");});
@@ -135,11 +178,11 @@ function showHome() {
   var dialog=document.querySelector("#settingsDialog");
   document.querySelector("#settingsButton").addEventListener("click",function(){
     document.querySelector("#examLength").value=String(settings.examLength);
-    document.querySelector("#textSize").value=settings.textSize;dialog.showModal();
+    document.querySelector("#textSize").value=settings.textSize;document.querySelector("#language").value=settings.language;document.querySelector("#darkMode").checked=!!settings.darkMode;dialog.showModal();
   });
   document.querySelector("#saveSettings").addEventListener("click",function(){
     settings.examLength=Number(document.querySelector("#examLength").value);
-    settings.textSize=document.querySelector("#textSize").value;saveSettings();dialog.close();showHome();
+    settings.textSize=document.querySelector("#textSize").value;settings.language=document.querySelector("#language").value;settings.darkMode=document.querySelector("#darkMode").checked;saveSettings();dialog.close();showHome();
   });
 }
 function startGame(mode, special) {
@@ -150,18 +193,20 @@ function startGame(mode, special) {
   else pool=filteredPool(pool);
   if(!pool.length){window.alert("Für diese Auswahl gibt es noch keine Fragen.");return;}
   var questions=mode==="exam"?shuffle(pool).slice(0,Math.min(settings.examLength,pool.length)):shuffle(pool);
-  game={mode:mode,special:special,questions:questions,index:0,score:0,currentOptions:null,answered:false,wrong:[]};
+  game={mode:mode,special:special,questions:questions,index:0,score:0,currentOptions:null,answered:false,wrong:[],review:[]};
   showQuestion();
 }
 function showQuestion() {
   if (!game || game.index >= game.questions.length) return game.mode === "exam" ? showExamResult() : showLearnResult();
   const q = game.questions[game.index];
-  game.currentOptions = makeOptions(q);
+  const localized = localizedQuestion(q);
+  game.currentOptions = makeOptions({options:localized.options});
   game.answered = false;
   const total = game.questions.length;
   const number = game.index + 1;
-  const modeName = game.mode === "learn" ? "Lernen" : "Prüfung";
-  const meta = topicOf(q) + (q.image ? " · Bildfrage" : "");
+  const modeName = game.mode === "learn" ? tr("learn","Lernen") : tr("exam","Prüfung");
+  const topicName = topicOf(q);
+  const meta = topicTranslation(topicName) + (q.image ? " · "+tr("image","Bildfrage") : "");
   const image = q.image ? `<figure class="visual">${illustration(q.image)}</figure>` : "";
   app.innerHTML = `<section class="question-wrap">
     <div class="quiz-head"><div><p class="quiz-mode">${modeName}</p><button class="exit-button" id="exitQuiz" type="button">← Übersicht</button></div><span class="quiz-count">Frage ${number} von ${total}</span><button id="favoriteQuestion" class="favorite-button" type="button" aria-label="${favorites.has(q.id)?"Aus Merkliste entfernen":"In Merkliste speichern"}">${favorites.has(q.id)?"★":"☆"}</button></div>
@@ -170,12 +215,23 @@ function showQuestion() {
       <p class="question-meta">${meta}</p>
       <h1 class="question-title" id="questionTitle"></h1>
       ${image}
-      <div class="answers" id="answers"></div>
+      <button id="speakQuestion" type="button" class="speak-button" aria-label="Frage vorlesen">🔊</button><div class="answers" id="answers"></div>
       <div id="feedback" aria-live="assertive"></div>
-      <div class="quiz-actions"><span></span><button id="nextButton" type="button" class="primary-button" disabled>${number === total ? (game.mode === "exam" ? "Auswertung anzeigen" : "Lernrunde beenden") : "Weiter"}</button></div>
+      <div class="quiz-actions"><span></span><button id="nextButton" type="button" class="primary-button" disabled>${number === total ? (game.mode === "exam" ? tr("results","Auswertung anzeigen") : tr("finish","Lernrunde beenden")) : tr("continue","Weiter")}</button></div>
     </article>
   </section>`;
-  document.querySelector("#questionTitle").textContent = q.prompt;
+  document.querySelector("#questionTitle").textContent = localized.prompt;
+  document.querySelector(".quiz-mode").textContent=modeName;
+  document.querySelector("#exitQuiz").textContent=tr("back","← Übersicht");
+  document.querySelector(".quiz-count").textContent=tr("question","Frage")+" "+number+" "+(settings.language==="en"?"of":settings.language==="hr"?"od":"von")+" "+total;
+  document.querySelector(".question-meta").textContent=meta;
+  document.querySelector("#speakQuestion").addEventListener("click", () => speakPrompt(localized.prompt));
+  const next=document.querySelector("#nextButton"); if(next)next.textContent=number===total?(game.mode==="exam"?tr("results","Auswertung anzeigen"):tr("finish","Lernrunde beenden")):tr("continue","Weiter");
+  document.querySelector("#speakQuestion").addEventListener("click", () => speakPrompt(localized.prompt));
+  document.querySelector(".quiz-mode").textContent=modeName;
+  document.querySelector("#exitQuiz").textContent=tr("back","← Übersicht");
+  document.querySelector(".quiz-count").textContent=tr("question","Frage")+" "+number+" "+(settings.language==="en"?"of":settings.language==="hr"?"od":"von")+" "+total;
+  document.querySelector("#speakQuestion").title=tr("read","Frage vorlesen");
   const answers = document.querySelector("#answers");
   game.currentOptions.forEach((option, i) => {
     const button = document.createElement("button");
@@ -186,6 +242,7 @@ function showQuestion() {
     button.addEventListener("click", () => chooseAnswer(i));
     answers.append(button);
   });
+  document.querySelector("#speakQuestion").addEventListener("click", () => speakPrompt(localized.prompt));
   document.querySelector("#exitQuiz").addEventListener("click", showHome);
   document.querySelector("#favoriteQuestion").addEventListener("click", function(e){
     if(favorites.has(q.id))favorites.delete(q.id);else favorites.add(q.id);saveFavorites();
@@ -208,12 +265,13 @@ function chooseAnswer(index) {
   });
   recordAnswer(game.questions[game.index],chosen.correct);
   if (chosen.correct) game.score += 1; else game.wrong.push(game.questions[game.index].id);
+  game.review.push({question:game.questions[game.index],selected:chosen.text,answer:game.currentOptions.find(x=>x.correct).text,correct:chosen.correct});
   const feedback = document.querySelector("#feedback");
   if (game.mode === "learn") {
     feedback.className = `feedback ${chosen.correct ? "good" : "bad"}`;
     const q = game.questions[game.index];
     const explanation = q.explanation || ({Flaggen:"Farben und Muster kennzeichnen eine festgelegte Meldung.",Lichter:"Bei Lichterbildern zählen Farbe, Position und Sichtbereich.",Navigation:"Vergleiche das Zeichen oder die Kartenangabe mit der beschriebenen Situation.",Wetter:"Beziehe Wind, Sicht und Wetterentwicklung gemeinsam in die Beurteilung ein.",Sicherheit:"Erkenne die Situation und wähle die passende Maßnahme."}[topicOf(q)] || "Achte auf die nautischen Fachbegriffe und präge dir die richtige Antwort ein.");
-    feedback.textContent = (chosen.correct ? "Richtig! " : `Noch nicht ganz. Richtig ist: ${game.currentOptions.find(x => x.correct).text}. `) + `Erklärung: ${explanation}`;
+    feedback.textContent = (chosen.correct ? tr("correct","Richtig!")+" " : tr("incorrect","Noch nicht ganz. Richtig ist:")+" "+game.currentOptions.find(x => x.correct).text+". ") + tr("explanation","Erklärung:")+" "+explanation;
   } else {
     feedback.className = "feedback subtle";
     feedback.textContent = "Antwort gespeichert. Weiter zur nächsten Frage.";
@@ -223,13 +281,20 @@ function chooseAnswer(index) {
 function showExamResult() {
   const total = game.questions.length;
   const percent = Math.round((game.score / total) * 100);
-  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">Prüfung abgeschlossen</p><h1>Dein Ergebnis</h1><div class="score-ring" style="--score:${percent * 3.6}deg"><span class="score-number">${percent}%</span></div><p class="result-text">${game.score} von ${total} Fragen richtig · ${game.wrong.length} falsch.</p><div class="result-actions"><button id="newExam" class="primary-button" type="button">Neue Prüfung</button><button id="wrongReview" class="secondary-button" type="button" ${game.wrong.length?"":"disabled"}>Falsche wiederholen</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
+  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">${tr("completed","Prüfung abgeschlossen")}</p><h1>${tr("result","Dein Ergebnis")}</h1><div class="score-ring" style="--score:${percent * 3.6}deg"><span class="score-number">${percent}%</span></div><p class="result-text">${game.score} / ${total} · ${game.wrong.length} ${tr("false","falsch")}.</p><div class="result-actions"><button id="newExam" class="primary-button" type="button">${tr("newExam","Neue Prüfung")}</button><button id="wrongReview" class="secondary-button" type="button" ${game.wrong.length?"":"disabled"}>${tr("repeatWrong","Falsche wiederholen")}</button><button id="resultHome" class="secondary-button" type="button">${tr("home","Zur Übersicht")}</button></div></section>`;
+  const reviewSection=document.createElement("section");
+  reviewSection.className="exam-review";
+  const reviewTitle=document.createElement("h2");reviewTitle.textContent=tr("wrongReview","Falsche Antworten ansehen");reviewSection.append(reviewTitle);
+  const wrongAnswers=game.review.filter(item=>!item.correct);
+  if(!wrongAnswers.length){const note=document.createElement("p");note.textContent=settings.language==="en"?"All answers correct — excellent!":settings.language==="hr"?"Svi odgovori su točni – izvrsno!":"Alle Antworten richtig – sehr gut!";reviewSection.append(note);}
+  wrongAnswers.forEach(item=>{const card=document.createElement("article");card.className="review-card";const title=document.createElement("h3");title.textContent=localizedQuestion(item.question).prompt;const selected=document.createElement("p");selected.textContent=tr("yourAnswer","Deine Antwort")+": "+item.selected;const answer=document.createElement("p");answer.textContent=tr("rightAnswer","Richtige Antwort")+": "+item.answer;card.append(title,selected,answer);reviewSection.append(card);});
+  document.querySelector(".result-actions").before(reviewSection);
   document.querySelector("#newExam").addEventListener("click", () => startGame("exam"));
   document.querySelector("#wrongReview").addEventListener("click", () => startGame("learn","mistakes"));
   document.querySelector("#resultHome").addEventListener("click", showHome);
 }
 function showLearnResult() {
-  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">Lernrunde abgeschlossen</p><h1>Gut geübt!</h1><p class="result-text">${game.score} von ${game.questions.length} Fragen richtig. ${game.wrong.length} falsche Antworten kannst du gleich wiederholen.</p><div class="result-actions"><button id="newLearn" class="primary-button" type="button">Neue Lernrunde</button><button id="wrongReview" class="secondary-button" type="button" ${game.wrong.length?"":"disabled"}>Falsche wiederholen</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
+  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">${tr("finishedLearn","Lernrunde abgeschlossen")}</p><h1>${settings.language==="en"?"Good practice!":settings.language==="hr"?"Dobro ste vježbali!":"Gut geübt!"}</h1><p class="result-text">${game.score} / ${game.questions.length} ${tr("correct","richtig")}. ${game.wrong.length} ${tr("false","falsch")}.</p><div class="result-actions"><button id="newLearn" class="primary-button" type="button">${tr("newLearn","Neue Lernrunde")}</button><button id="wrongReview" class="secondary-button" type="button" ${game.wrong.length?"":"disabled"}>Falsche wiederholen</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
   document.querySelector("#newLearn").addEventListener("click", () => startGame("learn"));
   document.querySelector("#wrongReview").addEventListener("click", () => startGame("learn","mistakes"));
   document.querySelector("#resultHome").addEventListener("click", showHome);
@@ -263,7 +328,7 @@ fetch("./data/questions.json").then(response => {
   return response.json();
 }).then(data => {
   bank = data;
-  showHome();
+  fetch("./data/question-translations.json").then(r=>r.ok?r.json():{}).then(localized=>{translations=localized;showHome();}).catch(()=>showHome());
 }).catch(() => {
   app.innerHTML = `<section class="result"><h1>Fragen nicht geladen</h1><p class="result-text">Bitte lade die App erneut, sobald eine Verbindung besteht.</p></section>`;
 });
