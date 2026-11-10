@@ -25,3 +25,6 @@ html[data-text-size="large"] .question-title{font-size:clamp(26px,4.5vw,36px)}
 html[data-text-size="large"] .hero-copy{font-size:20px}
 html[data-text-size="large"] .answer{padding:16px 17px}
 @media(max-width:640px){.home-controls{gap:7px}.home-controls select{max-width:145px}.quick-actions{gap:7px}.quick-actions .secondary-button{font-size:12px}.quiz-head{flex-wrap:wrap}}
+
+/* Native dialogs must stay hidden until opened with showModal(). */
+.settings-dialog:not([open]){display:none}
