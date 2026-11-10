@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071b37">
+  <meta name="description" content="Persönlicher NautikTrainer mit Lern- und Prüfungsmodus.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>NautikTrainer</title>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <button class="brand" id="brandHome" aria-label="Zur Startseite">
+        <img src="./icons/icon-192.png" alt="" class="brand-logo">
+        <span>Nautik<span class="brand-accent">Trainer</span></span>
+      </button>
+      <button class="icon-button install-button hidden" id="installButton" type="button">Installieren</button>
+    </header>
+    <main id="app" class="main" aria-live="polite"></main>
+    <footer class="footer"><span>Dein persönlicher Lernplatz auf Kurs.</span><button id="installHelp" class="text-button" type="button">Zum Home-Bildschirm</button></footer>
+  </div>
+  <dialog id="installDialog" class="dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="Schließen">×</button></form>
+    <img src="./icons/icon-192.png" class="dialog-logo" alt="NautikTrainer Kompasslogo">
+    <h2>Zum Home-Bildschirm</h2>
+    <p id="installInstructions">Installiere NautikTrainer als App, damit du deine Fragen auch offline üben kannst.</p>
+    <button id="confirmInstall" type="button" class="primary-button hidden">App installieren</button>
+    <p class="small-note" id="iosHint">Auf iPhone oder iPad: in Safari auf „Teilen“ tippen und „Zum Home-Bildschirm“ wählen.</p>
+  </dialog>
+  <script src="./app.js" defer></script>
+</body>
+</html>
