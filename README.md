@@ -1,22 +1,21 @@
 # NautikTrainer
+**Version 1.2 · created by MS**
 
-Persönliche, installierbare Lernapp für nautische Fragen.
+Eine persönliche, offlinefähige Lern- und Prüfungsapp für nautische Fragen. Läuft als installierbare PWA auf iPhone, iPad, Android und Desktop-Browsern.
 
-## Version 1.1
+## Funktionen
+- Lernmodus mit zufälliger Reihenfolge, sofortiger Rückmeldung und Erklärung
+- Prüfungsmodus mit einstellbarer Fragenzahl, zufälliger Zusammenstellung und Auswertung am Schluss
+- Ergebnisübersicht mit ausgewählten und richtigen Antworten bei Fehlern
+- 153 Fragen mit vier Antwortmöglichkeiten; deutsche Originalfragen bleiben unverändert
+- Deutsch, Englisch und Kroatisch für App-Oberfläche sowie Fragen und Antworten
+- Frage vorlesen mit der Sprachstimme des Geräts
+- Dunkelmodus, einstellbare Schriftgröße und Fragenzahl
+- Bildfragen zu Seezeichen, Signalflaggen und Lichtern
+- Lernfortschritt, Wiederholung falscher Fragen und Merkliste
+- Einstellungen und Fortschritt werden auf dem Gerät gespeichert
 
-- **Lernen:** zufällige Reihenfolge, unmittelbare Rückmeldung und kurze Erklärungen.
-- **Prüfung:** einstellbare Auswahl von 10, 20, 30 oder 50 Fragen; Auswertung am Schluss.
-- **Themenauswahl:** Lichter, Flaggen, Navigation, Wetter, Sicherheit, Regeln und Seemannschaft.
-- **Fehler wiederholen**, **Merkliste**, **Bildfragen** und Fortschritt nach Themen.
-- **Schriftgröße:** Normal oder Groß.
-- Die persönlichen Einstellungen und der Lernfortschritt werden lokal auf dem Gerät gespeichert.
-- Die App funktioniert offline, sobald sie einmal online geladen wurde und ihr Service Worker installiert ist.
+## Start
+GitHub Pages stellt die App bereit. Öffne die veröffentlichte Pages-Adresse und füge sie über das Browsermenü zum Home-Bildschirm hinzu. Nach dem ersten Laden kann die App offline verwendet werden.
 
-## Dateien
-
-- `index.html`, `styles.css`, `app.js`: Oberfläche und Lernabläufe.
-- `data/questions.json`: 153 eingepflegte Fragen einschließlich Buchfragen, Zusatzfragen und vier neuen Signalflaggen-Bildfragen; 141 unterschiedliche Fragen sind aktiv, Wiederholungen werden beim Spielen herausgefiltert.
-- `icons/`: NautikTrainer-Icon.
-- `manifest.webmanifest` und `sw.js`: PWA-Installation und Offline-Cache.
-
-Die App ist über GitHub Pages erreichbar. Der Startdialog der Einstellungen bleibt geschlossen, bis er geöffnet wird. Die Fehlerkorrektur erhält eine versionierte CSS-Datei, damit installierte Apps den behobenen Dialogstil aus dem Cache laden.
+Die App verwendet keine Marke oder Inhalte eines Kursanbieters. Die ursprünglichen deutschsprachigen Fragen werden in data/questions.json gespeichert; Übersetzungen liegen getrennt in data/question-translations.json.
