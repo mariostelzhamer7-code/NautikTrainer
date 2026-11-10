@@ -8,6 +8,40 @@ const iosHint = document.querySelector("#iosHint");
 let bank = [];
 let game = null;
 let deferredInstallPrompt = null;
+const STORAGE = { settings: "nautiktrainer.settings.v1", stats: "nautiktrainer.stats.v1", mistakes: "nautiktrainer.mistakes.v1", favorites: "nautiktrainer.favorites.v1" };
+function readStored(key, fallback) { try { const value = localStorage.getItem(key); return value ? JSON.parse(value) : fallback; } catch { return fallback; } }
+let settings = Object.assign({ topic: "Alle Themen", examLength: 30, textSize: "normal" }, readStored(STORAGE.settings, {}));
+let stats = readStored(STORAGE.stats, {});
+let mistakes = new Set(readStored(STORAGE.mistakes, []));
+let favorites = new Set(readStored(STORAGE.favorites, []));
+function saveSettings() { localStorage.setItem(STORAGE.settings, JSON.stringify(settings)); }
+function saveStats() { localStorage.setItem(STORAGE.stats, JSON.stringify(stats)); }
+function saveMistakes() { localStorage.setItem(STORAGE.mistakes, JSON.stringify(Array.from(mistakes))); }
+function saveFavorites() { localStorage.setItem(STORAGE.favorites, JSON.stringify(Array.from(favorites))); }
+function topicOf(q) {
+  if (q.image && q.image.indexOf("signal-flag-") === 0) return "Flaggen";
+  var text = (q.prompt + " " + q.options.join(" ")).toLocaleLowerCase("de");
+  if (/flagge|signalflag|flaggen|alfa|oscar|bravo|charlie|hotel|quebec/.test(text)) return "Flaggen";
+  if (/licht|laterne|topplicht|hecklicht|seitenlicht|rundumlicht/.test(text)) return "Lichter";
+  if (/wetter|wind|welle|wolke|luftdruck|gewitter|front|nebel|beaufort/.test(text)) return "Wetter";
+  if (/notfall|rett|brand|mann über bord|notruf|erste hilfe|sicherheit|schlepp|anker/.test(text)) return "Sicherheit";
+  if (/recht|regel|ausweich|vorfahrt|kollisions/.test(text)) return "Regeln";
+  if (/karte|navigation|peil|kompass|kurs|fahrwasser|tonne|seezeichen|kardinal|bake|seemeile/.test(text)) return "Navigation";
+  return "Seemannschaft";
+}
+function filteredPool(pool, topic) {
+  topic = topic || settings.topic;
+  return pool.filter(function(q) { return topic === "Alle Themen" || (topic === "Bildfragen" ? !!q.image : topicOf(q) === topic); });
+}
+function recordAnswer(q, correct) {
+  var topic = topicOf(q);
+  stats[topic] = stats[topic] || { seen: 0, correct: 0 };
+  stats[topic].seen += 1;
+  if (correct) { stats[topic].correct += 1; mistakes.delete(q.id); } else mistakes.add(q.id);
+  saveStats(); saveMistakes();
+}
+function applyTextSize() { document.documentElement.dataset.textSize = settings.textSize; }
+
 
 const LETTERS = ["A", "B", "C", "D"];
 const ICON = '<img class="hero-logo" src="./icons/icon-512.png" alt="NautikTrainer Kompasslogo">';
@@ -57,30 +91,66 @@ function illustration(id) {
     "chart-depth-colors": `<path d="M30 40h122v130H30Z" fill="#f2e4a1"/><path d="M152 40h65v130h-65Z" fill="#1767a8"/><path d="M217 40h65v130h-65Z" fill="#8ec5e8"/><path d="M282 40h48v130h-48Z" fill="#fff" stroke="#cbd5e1"/><path d="M152 40v130m65-130v130m65-130v130" stroke="#fff" stroke-width="3"/><path d="M40 178h280" stroke="${navy}" stroke-width="3"/>`,
     "north-directions": `<circle cx="180" cy="108" r="76" fill="#fff" stroke="#ccd9dc" stroke-width="2"/><path d="M180 108V33" stroke="${teal}" stroke-width="7" stroke-linecap="round"/><path d="m169 48 11-17 11 17" fill="${teal}"/><path d="M180 108 240 62" stroke="#dc6c56" stroke-width="7" stroke-linecap="round"/><path d="m222 62 18-1-7 17" fill="#dc6c56"/><path d="M180 108 122 59" stroke="#3d78ae" stroke-width="7" stroke-linecap="round"/><path d="m137 60-18-1 7 17" fill="#3d78ae"/><circle cx="180" cy="108" r="6" fill="${navy}"/><text x="180" y="24" text-anchor="middle" fill="${navy}" font-size="15" font-weight="700">RwN</text><text x="257" y="60" fill="${navy}" font-size="15" font-weight="700">MwN</text><text x="80" y="57" fill="${navy}" font-size="15" font-weight="700">KwN</text>`,
     "warm-front-cloud-sequence": `<path d="M34 160H326" stroke="#78909b" stroke-width="3"/><path d="m315 152 12 8-12 8" fill="none" stroke="#78909b" stroke-width="3"/><g fill="#dce8ef" stroke="#718491" stroke-width="2"><path d="M47 88q11-20 29-10 13-25 33-5 25-3 25 17 0 11-13 13H51q-12-3-4-15Z"/><path d="M126 89q12-23 32-10 14-29 36-7 25-5 30 16 2 14-14 15h-77q-16-4-7-14Z"/><path d="M213 88q11-22 30-10 14-27 36-6 24-3 27 17 1 13-15 14h-71q-16-3-7-15Z"/></g><path d="M229 126v18m20-18v18m20-18v18" stroke="#458dc4" stroke-width="4" stroke-linecap="round"/><path d="M56 120q35-28 68-14m15 16q34-29 66-14m14 14q35-29 68-13" fill="none" stroke="#a8bac6" stroke-width="3"/>`
+
+    ,"signal-flag-bravo": '<path d="M82 28v156" stroke="#617786" stroke-width="6"/><path d="M88 38h190l-26 52 26 52H88Z" fill="#cf3c42" stroke="#123250" stroke-width="3"/>'
+    ,"signal-flag-charlie": '<path d="M82 28v156" stroke="#617786" stroke-width="6"/><rect x="88" y="38" width="190" height="110" fill="#fff" stroke="#123250" stroke-width="3"/><path d="M88 38h190v18H88Zm0 36h190v18H88Zm0 36h190v20H88Z" fill="#1268a0"/>'
+    ,"signal-flag-hotel": '<path d="M82 28v156" stroke="#617786" stroke-width="6"/><rect x="88" y="38" width="95" height="110" fill="#fff" stroke="#123250" stroke-width="3"/><rect x="183" y="38" width="95" height="110" fill="#cf3c42" stroke="#123250" stroke-width="3"/>'
+    ,"signal-flag-quebec": '<path d="M82 28v156" stroke="#617786" stroke-width="6"/><rect x="88" y="38" width="190" height="110" fill="#f5d452" stroke="#123250" stroke-width="3"/>'
   };
   return art[id] ? svgFrame(art[id]) : "";
 }
 function showHome() {
   game = null;
-  app.innerHTML = `
-    <section class="hero">
-      ${ICON}
-      <p class="eyebrow">Dein persönlicher Nautiktrainer</p>
-      <h1>Bereit zum Ablegen?</h1>
-      <p class="hero-copy">Übe in deinem Tempo oder starte eine Prüfung mit 30 zufällig gewählten Fragen.</p>
-      <div class="mode-grid">
-        <button class="mode-card" id="learnMode" type="button"><span class="mode-icon" aria-hidden="true">✦</span><h2>Lernen</h2><p>Zufällige Reihenfolge, sofortige Rückmeldung nach jeder Antwort.</p></button>
-        <button class="mode-card exam" id="examMode" type="button"><span class="mode-icon" aria-hidden="true">✓</span><h2>Prüfung</h2><p>30 zufällige Fragen. Deine Auswertung siehst du erst am Schluss.</p></button>
-      </div>
-      <p class="bank-note">${uniqueQuestionPool(bank).length} unterschiedliche Fragen · vier Antwortmöglichkeiten · auch offline verfügbar</p>
-    </section>`;
-  document.querySelector("#learnMode").addEventListener("click", () => startGame("learn"));
-  document.querySelector("#examMode").addEventListener("click", () => startGame("exam"));
+  var pool = filteredPool(uniqueQuestionPool(bank));
+  var topics = ["Lichter","Flaggen","Navigation","Wetter","Sicherheit","Regeln","Seemannschaft"];
+  var topicStats = topics.filter(function(t){return stats[t] && stats[t].seen;}).map(function(t){
+    return '<span class="topic-progress"><b>'+t+'</b><span>'+stats[t].correct+'/'+stats[t].seen+' richtig</span></span>';
+  }).join("");
+  var options = ["Alle Themen","Flaggen","Lichter","Navigation","Wetter","Sicherheit","Regeln","Seemannschaft","Bildfragen"].map(function(t){
+    return '<option value="'+t+'" '+(settings.topic===t?"selected":"")+'>'+t+'</option>';
+  }).join("");
+  app.innerHTML = '<section class="hero">'+ICON+
+    '<p class="eyebrow">Dein persönlicher Nautiktrainer</p><h1>Bereit zum Ablegen?</h1>'+
+    '<p class="hero-copy">Übe in deinem Tempo oder starte eine Prüfung.</p>'+
+    '<div class="home-controls"><label for="topicFilter">Thema</label><select id="topicFilter">'+options+'</select><button id="settingsButton" class="secondary-button" type="button">Einstellungen</button></div>'+
+    '<div class="mode-grid">'+
+    '<button class="mode-card" id="learnMode" type="button"><span class="mode-icon" aria-hidden="true">✦</span><h2>Lernen</h2><p>Zufällige Reihenfolge, sofortige Rückmeldung und Erklärung.</p></button>'+
+    '<button class="mode-card exam" id="examMode" type="button"><span class="mode-icon" aria-hidden="true">✓</span><h2>Prüfung</h2><p>'+settings.examLength+' zufällige Fragen. Ergebnis am Schluss.</p></button></div>'+
+    '<div class="quick-actions"><button id="reviewErrors" class="secondary-button" '+(mistakes.size?"":"disabled")+'>Falsche Fragen wiederholen ('+mistakes.size+')</button>'+
+    '<button id="reviewFavorites" class="secondary-button" '+(favorites.size?"":"disabled")+'>Merkliste üben ('+favorites.size+')</button>'+
+    '<button id="imagePractice" class="secondary-button">Bildfragen üben</button></div>'+
+    (topicStats?'<section class="progress-summary"><h2>Dein Lernfortschritt</h2><div>'+topicStats+'</div></section>':'<p class="progress-empty">Dein Fortschritt erscheint hier, sobald du Fragen beantwortet hast.</p>')+
+    '<p class="bank-note">'+pool.length+' Fragen in der Auswahl · vier Antwortmöglichkeiten · offline verfügbar</p>'+
+    '</section><dialog id="settingsDialog" class="dialog settings-dialog"><form method="dialog"><button class="dialog-close" aria-label="Schließen">×</button></form>'+
+    '<h2>Einstellungen</h2><label>Fragen pro Prüfung<select id="examLength"><option value="10">10 Fragen</option><option value="20">20 Fragen</option><option value="30">30 Fragen</option><option value="50">50 Fragen</option></select></label>'+
+    '<label>Schriftgröße<select id="textSize"><option value="normal">Normal</option><option value="large">Groß</option></select></label>'+
+    '<button id="saveSettings" class="primary-button" type="button">Speichern</button></dialog>';
+  applyTextSize();
+  document.querySelector("#topicFilter").addEventListener("change",function(e){settings.topic=e.target.value;saveSettings();showHome();});
+  document.querySelector("#learnMode").addEventListener("click",function(){startGame("learn");});
+  document.querySelector("#examMode").addEventListener("click",function(){startGame("exam");});
+  document.querySelector("#reviewErrors").addEventListener("click",function(){startGame("learn","mistakes");});
+  document.querySelector("#reviewFavorites").addEventListener("click",function(){startGame("learn","favorites");});
+  document.querySelector("#imagePractice").addEventListener("click",function(){startGame("learn","images");});
+  var dialog=document.querySelector("#settingsDialog");
+  document.querySelector("#settingsButton").addEventListener("click",function(){
+    document.querySelector("#examLength").value=String(settings.examLength);
+    document.querySelector("#textSize").value=settings.textSize;dialog.showModal();
+  });
+  document.querySelector("#saveSettings").addEventListener("click",function(){
+    settings.examLength=Number(document.querySelector("#examLength").value);
+    settings.textSize=document.querySelector("#textSize").value;saveSettings();dialog.close();showHome();
+  });
 }
-function startGame(mode) {
-  const pool = uniqueQuestionPool(bank);
-  const questions = mode === "exam" ? shuffle(pool).slice(0, 30) : shuffle(pool);
-  game = { mode, questions, index: 0, score: 0, currentOptions: null, answered: false };
+function startGame(mode, special) {
+  var pool=uniqueQuestionPool(bank);
+  if(special==="mistakes") pool=pool.filter(function(q){return mistakes.has(q.id);});
+  else if(special==="favorites") pool=pool.filter(function(q){return favorites.has(q.id);});
+  else if(special==="images") pool=pool.filter(function(q){return !!q.image;});
+  else pool=filteredPool(pool);
+  if(!pool.length){window.alert("Für diese Auswahl gibt es noch keine Fragen.");return;}
+  var questions=mode==="exam"?shuffle(pool).slice(0,Math.min(settings.examLength,pool.length)):shuffle(pool);
+  game={mode:mode,special:special,questions:questions,index:0,score:0,currentOptions:null,answered:false,wrong:[]};
   showQuestion();
 }
 function showQuestion() {
