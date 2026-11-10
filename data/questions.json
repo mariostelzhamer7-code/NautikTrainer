@@ -2086,7 +2086,7 @@
     "image": null
   },
   {
-    "id": "extra2-015",
+    "id": "extra2-031",
     "group": "Zusatzfragen 2",
     "prompt": "Welche Bedeutung hat die abgebildete Signalflagge B (Bravo)?",
     "options": [
@@ -2101,7 +2101,7 @@
     "explanation": "Die rote Signalflagge B (Bravo) weist auf gefährliche Güter hin."
   },
   {
-    "id": "extra2-016",
+    "id": "extra2-032",
     "group": "Zusatzfragen 2",
     "prompt": "Welche Meldung steht für die abgebildete Signalflagge C (Charlie)?",
     "options": [
@@ -2116,7 +2116,7 @@
     "explanation": "Die Signalflagge C (Charlie) bedeutet „Ja“."
   },
   {
-    "id": "extra2-017",
+    "id": "extra2-033",
     "group": "Zusatzfragen 2",
     "prompt": "Was bedeutet die abgebildete Signalflagge H (Hotel)?",
     "options": [
@@ -2131,7 +2131,7 @@
     "explanation": "Die Signalflagge H (Hotel) bedeutet: „Ich habe einen Lotsen an Bord“."
   },
   {
-    "id": "extra2-018",
+    "id": "extra2-034",
     "group": "Zusatzfragen 2",
     "prompt": "Welche Meldung signalisiert die abgebildete gelbe Flagge Q (Quebec)?",
     "options": [
