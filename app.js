@@ -203,7 +203,7 @@ function showQuestion() {
   if (!game || game.index >= game.questions.length) return game.mode === "exam" ? showExamResult() : showLearnResult();
   const q = game.questions[game.index];
   const localized = localizedQuestion(q);
-  game.currentOptions = makeOptions({options:localized.options});
+  game.currentOptions = makeOptions({options:localized.options,correct:q.correct});
   game.answered = false;
   const total = game.questions.length;
   const number = game.index + 1;
