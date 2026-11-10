@@ -161,10 +161,10 @@ function showQuestion() {
   const total = game.questions.length;
   const number = game.index + 1;
   const modeName = game.mode === "learn" ? "Lernen" : "Prüfung";
-  const meta = q.group === "Buchfragen" ? "Buchfrage" : q.group === "Zusatzfragen 1" ? "Zusatzfrage" : "Neue Frage";
+  const meta = topicOf(q) + (q.image ? " · Bildfrage" : "");
   const image = q.image ? `<figure class="visual">${illustration(q.image)}</figure>` : "";
   app.innerHTML = `<section class="question-wrap">
-    <div class="quiz-head"><div><p class="quiz-mode">${modeName}</p><button class="exit-button" id="exitQuiz" type="button">← Übersicht</button></div><span class="quiz-count">Frage ${number} von ${total}</span></div>
+    <div class="quiz-head"><div><p class="quiz-mode">${modeName}</p><button class="exit-button" id="exitQuiz" type="button">← Übersicht</button></div><span class="quiz-count">Frage ${number} von ${total}</span><button id="favoriteQuestion" class="favorite-button" type="button" aria-label="${favorites.has(q.id)?"Aus Merkliste entfernen":"In Merkliste speichern"}">${favorites.has(q.id)?"★":"☆"}</button></div>
     <div class="progress" role="progressbar" aria-label="Fortschritt" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${number}"><span style="width:${number / total * 100}%"></span></div>
     <article class="question-card">
       <p class="question-meta">${meta}</p>
@@ -187,6 +187,11 @@ function showQuestion() {
     answers.append(button);
   });
   document.querySelector("#exitQuiz").addEventListener("click", showHome);
+  document.querySelector("#favoriteQuestion").addEventListener("click", function(e){
+    if(favorites.has(q.id))favorites.delete(q.id);else favorites.add(q.id);saveFavorites();
+    var saved=favorites.has(q.id);e.currentTarget.textContent=saved?"★":"☆";
+    e.currentTarget.setAttribute("aria-label",saved?"Aus Merkliste entfernen":"In Merkliste speichern");
+  });
   document.querySelector("#nextButton").addEventListener("click", () => { game.index += 1; showQuestion(); });
 }
 function chooseAnswer(index) {
@@ -201,11 +206,14 @@ function chooseAnswer(index) {
       else if (i === index && !chosen.correct) button.classList.add("incorrect");
     }
   });
-  if (chosen.correct) game.score += 1;
+  recordAnswer(game.questions[game.index],chosen.correct);
+  if (chosen.correct) game.score += 1; else game.wrong.push(game.questions[game.index].id);
   const feedback = document.querySelector("#feedback");
   if (game.mode === "learn") {
     feedback.className = `feedback ${chosen.correct ? "good" : "bad"}`;
-    feedback.textContent = chosen.correct ? "Richtig! Gut gemacht." : `Noch nicht ganz. Richtig ist: ${game.currentOptions.find(x => x.correct).text}`;
+    const q = game.questions[game.index];
+    const explanation = q.explanation || ({Flaggen:"Farben und Muster kennzeichnen eine festgelegte Meldung.",Lichter:"Bei Lichterbildern zählen Farbe, Position und Sichtbereich.",Navigation:"Vergleiche das Zeichen oder die Kartenangabe mit der beschriebenen Situation.",Wetter:"Beziehe Wind, Sicht und Wetterentwicklung gemeinsam in die Beurteilung ein.",Sicherheit:"Erkenne die Situation und wähle die passende Maßnahme."}[topicOf(q)] || "Achte auf die nautischen Fachbegriffe und präge dir die richtige Antwort ein.");
+    feedback.textContent = (chosen.correct ? "Richtig! " : `Noch nicht ganz. Richtig ist: ${game.currentOptions.find(x => x.correct).text}. `) + `Erklärung: ${explanation}`;
   } else {
     feedback.className = "feedback subtle";
     feedback.textContent = "Antwort gespeichert. Weiter zur nächsten Frage.";
@@ -215,13 +223,15 @@ function chooseAnswer(index) {
 function showExamResult() {
   const total = game.questions.length;
   const percent = Math.round((game.score / total) * 100);
-  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">Prüfung abgeschlossen</p><h1>Dein Ergebnis</h1><div class="score-ring" style="--score:${percent * 3.6}deg"><span class="score-number">${percent}%</span></div><p class="result-text">${game.score} von ${total} Fragen richtig.</p><div class="result-actions"><button id="newExam" class="primary-button" type="button">Neue Prüfung</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
+  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">Prüfung abgeschlossen</p><h1>Dein Ergebnis</h1><div class="score-ring" style="--score:${percent * 3.6}deg"><span class="score-number">${percent}%</span></div><p class="result-text">${game.score} von ${total} Fragen richtig · ${game.wrong.length} falsch.</p><div class="result-actions"><button id="newExam" class="primary-button" type="button">Neue Prüfung</button><button id="wrongReview" class="secondary-button" type="button" ${game.wrong.length?"":"disabled"}>Falsche wiederholen</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
   document.querySelector("#newExam").addEventListener("click", () => startGame("exam"));
+  document.querySelector("#wrongReview").addEventListener("click", () => startGame("learn","mistakes"));
   document.querySelector("#resultHome").addEventListener("click", showHome);
 }
 function showLearnResult() {
-  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">Lernrunde abgeschlossen</p><h1>Gut geübt!</h1><p class="result-text">Du bist durch alle Fragen gegangen. Starte eine neue Runde, wenn du weiterüben möchtest.</p><div class="result-actions"><button id="newLearn" class="primary-button" type="button">Neue Lernrunde</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
+  app.innerHTML = `<section class="result"><img class="result-logo" src="./icons/icon-192.png" alt=""><p class="eyebrow">Lernrunde abgeschlossen</p><h1>Gut geübt!</h1><p class="result-text">${game.score} von ${game.questions.length} Fragen richtig. ${game.wrong.length} falsche Antworten kannst du gleich wiederholen.</p><div class="result-actions"><button id="newLearn" class="primary-button" type="button">Neue Lernrunde</button><button id="wrongReview" class="secondary-button" type="button" ${game.wrong.length?"":"disabled"}>Falsche wiederholen</button><button id="resultHome" class="secondary-button" type="button">Zur Übersicht</button></div></section>`;
   document.querySelector("#newLearn").addEventListener("click", () => startGame("learn"));
+  document.querySelector("#wrongReview").addEventListener("click", () => startGame("learn","mistakes"));
   document.querySelector("#resultHome").addEventListener("click", showHome);
 }
 function openInstallHelp() {
