@@ -1,6 +1,6 @@
-const CACHE = "nautiktrainer-v1-2-1";
+const CACHE = "nautiktrainer-v1-2-2";
 const FILES = [
-  "./", "./index.html", "./styles.css?v=1.2.1", "./app.js", "./data/questions.json", "./data/question-translations.json",
+  "./", "./index.html", "./styles.css?v=1.2.1", "./app.js?v=1.2.1", "./data/questions.json", "./data/question-translations.json",
   "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png",
   "./icons/apple-touch-icon.png"
 ];
