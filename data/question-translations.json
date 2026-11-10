@@ -1,0 +1,3062 @@
+{
+  "book-001": {
+    "en": {
+      "prompt": "Wind force is measured in?",
+      "options": [
+        "Knots",
+        "Nautical miles",
+        "Beaufort",
+        "Metres per second"
+      ]
+    },
+    "hr": {
+      "prompt": "Čime se mjeri jačina vjetra?",
+      "options": [
+        "Čvorovima",
+        "Nautičkim miljama",
+        "Beaufortovom ljestvicom",
+        "Metarima u sekundi"
+      ]
+    }
+  },
+  "book-002": {
+    "en": {
+      "prompt": "On Croatian nautical charts, what does the abbreviation “k” refer to?",
+      "options": [
+        "A rocky seabed",
+        "A shoal",
+        "Mud",
+        "A sandy seabed"
+      ]
+    },
+    "hr": {
+      "prompt": "Na hrvatskim pomorskim kartama, na što se odnosi kratica „k“?",
+      "options": [
+        "Kamenito dno",
+        "Plićinu",
+        "Mulj",
+        "Pješčano dno"
+      ]
+    }
+  },
+  "book-003": {
+    "en": {
+      "prompt": "Should you berth against the wind and current?",
+      "options": [
+        "Yes, but only with the engine completely stopped.",
+        "No, always berth with the wind and current.",
+        "Yes. The movement of the stern can hold the boat against the wind/current and keep it manoeuvrable.",
+        "Only in a crosswind."
+      ]
+    },
+    "hr": {
+      "prompt": "Trebate li pristajati uz vjetar i struju?",
+      "options": [
+        "Da, ali samo kada je motor potpuno zaustavljen.",
+        "Ne, uvijek pristajte niz vjetar i struju.",
+        "Da. Kretanjem krme plovilo se može zadržati protiv smjera vjetra i struje te ostati upravljivo.",
+        "Samo pri bočnom vjetru."
+      ]
+    }
+  },
+  "book-004": {
+    "en": {
+      "prompt": "How can you slow down a motor yacht if its engine has failed?",
+      "options": [
+        "With the stern light",
+        "With the anchor",
+        "With the mainsail",
+        "With the boat hook"
+      ]
+    },
+    "hr": {
+      "prompt": "Kako možete usporiti motornu jahtu ako joj se motor pokvari?",
+      "options": [
+        "Krmenim svjetlom",
+        "Sidrom",
+        "Glavnim jedrom",
+        "Kukom za čamac"
+      ]
+    }
+  },
+  "book-005": {
+    "en": {
+      "prompt": "On Croatian nautical charts, what does the abbreviation “Plic” refer to?",
+      "options": [
+        "Sandy seabed",
+        "A shoal",
+        "An island",
+        "A harbour"
+      ]
+    },
+    "hr": {
+      "prompt": "Na što se odnosi oznaka „Plic“ na hrvatskim pomorskim kartama?",
+      "options": [
+        "Pješčano dno",
+        "Plićinu",
+        "Otok",
+        "Luku"
+      ]
+    }
+  },
+  "book-006": {
+    "en": {
+      "prompt": "How should sailboats travel under power against heavy waves?",
+      "options": [
+        "Travel directly with the waves.",
+        "Head diagonally into the wave crest, similar to tacking under sail.",
+        "Switch off the engine and anchor.",
+        "Drift broadside to the waves."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako jedrilica pod motorom plovi protiv velikih valova?",
+      "options": [
+        "Plovi izravno niz valove.",
+        "Plovi ukoso prema grebenu vala, slično jedrenju cik-cak uz vjetar.",
+        "Zaustavi motor i baci sidro.",
+        "Pusti da je valovi nose bočno."
+      ]
+    }
+  },
+  "book-007": {
+    "en": {
+      "prompt": "What is the bilge?",
+      "options": [
+        "The space above the deck",
+        "The lowest interior part of a boat’s hull",
+        "The area behind the rudder",
+        "The forward part of the keel"
+      ]
+    },
+    "hr": {
+      "prompt": "Što je kaljuža?",
+      "options": [
+        "Prostor iznad palube",
+        "Najniži unutarnji dio trupa plovila",
+        "Prostor iza kormila",
+        "Prednji dio kobilice"
+      ]
+    }
+  },
+  "book-008": {
+    "en": {
+      "prompt": "Which types of anchors are commonly used on yachts?",
+      "options": [
+        "Stock, Hall, plate and stern anchors",
+        "Bruce, sea, Hall and pile anchors",
+        "Stock, plough, Bruce, folding/claw and Danforth anchors",
+        "Umbrella, bow, sea and folding anchors"
+      ]
+    },
+    "hr": {
+      "prompt": "Koje se vrste sidara uobičajeno koriste na jahtama?",
+      "options": [
+        "Sidro s motkom, Hallovo, pločasto i krmeno sidro",
+        "Bruceovo, plutajuće, Hallovo i pilotsko sidro",
+        "Sidro s motkom, plužno, Bruceovo, sklopivo i Danforthovo sidro",
+        "Kišobranasto, pramčano, plutajuće i sklopivo sidro"
+      ]
+    }
+  },
+  "book-009": {
+    "en": {
+      "prompt": "How long should the towline be in rough seas?",
+      "options": [
+        "Exactly one boat length",
+        "Always 10 metres",
+        "Several times the wavelength",
+        "Half a wavelength"
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko treba biti duga tegaljka pri jačem moru?",
+      "options": [
+        "Točno jednu duljinu plovila",
+        "Uvijek 10 metara",
+        "Višestruko dulja od valne duljine",
+        "Pola valne duljine"
+      ]
+    }
+  },
+  "book-010": {
+    "en": {
+      "prompt": "Which knot joins two lines of different thickness or material?",
+      "options": [
+        "Reef knot",
+        "Clove hitch",
+        "Double sheet bend",
+        "Bowline"
+      ]
+    },
+    "hr": {
+      "prompt": "Kojim se čvorom povezuju dva konopa različite debljine ili materijala?",
+      "options": [
+        "Pločnim čvorom",
+        "Osmicom oko bitve",
+        "Dvostrukim škopcem",
+        "Pašnjakom"
+      ]
+    }
+  },
+  "book-011": {
+    "en": {
+      "prompt": "What is the abbreviation for a knot?",
+      "options": [
+        "cbl",
+        "M",
+        "cv",
+        "sm"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja je kratica za čvor?",
+      "options": [
+        "cbl",
+        "M",
+        "cv",
+        "sm"
+      ]
+    }
+  },
+  "book-012": {
+    "en": {
+      "prompt": "What is good holding ground for an anchor?",
+      "options": [
+        "Coarse gravel only.",
+        "Sand, clay or loam.",
+        "Seagrass, seaweed or coral.",
+        "Rock, concrete or metal."
+      ]
+    },
+    "hr": {
+      "prompt": "Kakvo je dno dobro za sidrenje?",
+      "options": [
+        "Samo krupni šljunak.",
+        "Pijesak, glina ili ilovača.",
+        "Morska trava, alge ili koralji.",
+        "Stijena, beton ili metal."
+      ]
+    }
+  },
+  "book-013": {
+    "en": {
+      "prompt": "What chain length should you choose when anchoring in normal conditions?",
+      "options": [
+        "10 times the water depth",
+        "2 times the water depth",
+        "Equal to the water depth",
+        "3–5 times the water depth when using chain"
+      ]
+    },
+    "hr": {
+      "prompt": "Koliku duljinu lanca treba odabrati za sidrenje u uobičajenim uvjetima?",
+      "options": [
+        "10 puta veću od dubine mora",
+        "2 puta veću od dubine mora",
+        "Jednaku dubini mora",
+        "3–5 puta veću od dubine mora ako se koristi lanac"
+      ]
+    }
+  },
+  "book-014": {
+    "en": {
+      "prompt": "One cable length is equal to?",
+      "options": [
+        "925 m",
+        "185.2 m",
+        "18.52 m",
+        "1,852 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko iznosi jedan kabel?",
+      "options": [
+        "925 m",
+        "185,2 m",
+        "18,52 m",
+        "1.852 m"
+      ]
+    }
+  },
+  "book-015": {
+    "en": {
+      "prompt": "What is an anchor light, and where is it displayed?",
+      "options": [
+        "A white all-round light; displayed wherever it can best be seen.",
+        "A red sidelight; at the stern.",
+        "A green all-round light; at the foot of the mast.",
+        "A white stern light; at the bow."
+      ]
+    },
+    "hr": {
+      "prompt": "Što je sidreno svjetlo i gdje se postavlja?",
+      "options": [
+        "Bijelo svjetlo vidljivo sa svih strana; postavlja se ondje gdje se najbolje vidi.",
+        "Crveno bočno svjetlo na krmi.",
+        "Zeleno svjetlo vidljivo sa svih strana pri dnu jarbola.",
+        "Bijelo krmeno svjetlo na pramcu."
+      ]
+    }
+  },
+  "book-016": {
+    "en": {
+      "prompt": "What measures should you take to prevent crew members from going overboard in heavy seas?",
+      "options": [
+        "Anyone not essential should stay below deck. Steer a course that minimises the boat’s motion. Wear safety harnesses on deck.",
+        "Increase speed in heavy seas.",
+        "All crew members should stay at the bow.",
+        "The crew should hold on individually at the stern."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje mjere poduzimate kako članovi posade ne bi pali u more pri jakom moru?",
+      "options": [
+        "Članovi posade koji nisu nužni ostaju ispod palube. Plovite kursom koji smanjuje gibanje plovila. Na palubi se vežite sigurnosnim užetom.",
+        "Pri jakom moru povećajte brzinu.",
+        "Svi članovi posade ostaju na pramcu.",
+        "Svaki član posade treba se držati za krmu."
+      ]
+    }
+  },
+  "book-017": {
+    "en": {
+      "prompt": "What does a black arrow marked 3cv mean?",
+      "options": [
+        "Wind force 3 Beaufort",
+        "A 3-degree course change",
+        "A current of 3 knots",
+        "A water depth of 3 metres"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači crna strelica s oznakom 3 cv?",
+      "options": [
+        "Vjetar jačine 3 bofora",
+        "Promjena kursa za 3 stupnja",
+        "Struja brzine 3 čvora",
+        "Dubina mora od 3 metra"
+      ]
+    }
+  },
+  "book-018": {
+    "en": {
+      "prompt": "What should you check before departure, before starting the engine?",
+      "options": [
+        "Oil, cooling system and sea valves, fuel, water and provisions; that the crew is present; just before starting, neutral gear and people near the boat.",
+        "Only the fuel level and navigation lights.",
+        "Sail tension, anchor ball and log.",
+        "Only the battery and anchor line."
+      ]
+    },
+    "hr": {
+      "prompt": "Što provjeravate prije polaska i pokretanja motora?",
+      "options": [
+        "Ulje, hlađenje i ventile mora, gorivo, vodu i zalihe; jesu li svi članovi posade prisutni; neposredno prije pokretanja provjerite neutralni položaj i osobe u blizini plovila.",
+        "Samo razinu goriva i navigacijska svjetla.",
+        "Zategnutost jedara, sidrenu kuglu i brzinomjer.",
+        "Samo akumulator i sidreni konop."
+      ]
+    }
+  },
+  "book-019": {
+    "en": {
+      "prompt": "What does a cross (+) on a nautical chart mean?",
+      "options": [
+        "A marina",
+        "A shoal",
+        "A safe channel",
+        "A current"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači znak križa (+) na pomorskoj karti?",
+      "options": [
+        "Marina",
+        "Plićina",
+        "Siguran plovni put",
+        "Morska struja"
+      ]
+    }
+  },
+  "book-020": {
+    "en": {
+      "prompt": "Why must nautical charts be corrected?",
+      "options": [
+        "To enlarge the scale.",
+        "To enter additions and changes.",
+        "To remove coordinates.",
+        "To eliminate magnetic variation."
+      ]
+    },
+    "hr": {
+      "prompt": "Zašto treba ispravljati pomorske karte?",
+      "options": [
+        "Kako bi se povećalo mjerilo.",
+        "Kako bi se unijele dopune i izmjene.",
+        "Kako bi se uklonile koordinate.",
+        "Kako bi nestala magnetska deklinacija."
+      ]
+    }
+  },
+  "book-021": {
+    "en": {
+      "prompt": "Which flags from the International Code of Signals should always be carried on board?",
+      "options": [
+        "Oscar, Romeo, Sierra",
+        "November, Charlie, Quebec",
+        "Hotel, India, Mike",
+        "Alpha, Bravo, Delta"
+      ]
+    },
+    "hr": {
+      "prompt": "Koje zastave Međunarodnog signalnog kodeksa uvijek treba imati na plovilu?",
+      "options": [
+        "Oscar, Romeo, Sierra",
+        "November, Charlie, Quebec",
+        "Hotel, India, Mike",
+        "Alpha, Bravo, Delta"
+      ]
+    }
+  },
+  "book-022": {
+    "en": {
+      "prompt": "What does the abbreviation “O” mean on a Croatian nautical chart?",
+      "options": [
+        "Island",
+        "Shoal",
+        "Harbour",
+        "Bay"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kratica „O“ na hrvatskoj pomorskoj karti?",
+      "options": [
+        "Otok",
+        "Plićina",
+        "Luka",
+        "Uvala"
+      ]
+    }
+  },
+  "book-023": {
+    "en": {
+      "prompt": "Where do you read distance on a Croatian nautical chart?",
+      "options": [
+        "At the top edge of the chart",
+        "On the compass rose",
+        "At the bottom edge of the chart",
+        "Only on the left or right edge"
+      ]
+    },
+    "hr": {
+      "prompt": "Gdje se na hrvatskoj pomorskoj karti očitava udaljenost?",
+      "options": [
+        "Na gornjem rubu karte",
+        "Na ruži vjetrova",
+        "Na donjem rubu karte",
+        "Samo na lijevom ili desnom rubu"
+      ]
+    }
+  },
+  "book-024": {
+    "en": {
+      "prompt": "When should navigation lights be switched on?",
+      "options": [
+        "Only when it rains.",
+        "Only when at anchor.",
+        "Between sunset and sunrise and in restricted visibility.",
+        "Only outside a harbour."
+      ]
+    },
+    "hr": {
+      "prompt": "Kada treba uključiti navigacijska svjetla?",
+      "options": [
+        "Samo za kiše.",
+        "Samo na sidru.",
+        "Od zalaska do izlaska sunca i pri smanjenoj vidljivosti.",
+        "Samo izvan luke."
+      ]
+    }
+  },
+  "book-025": {
+    "en": {
+      "prompt": "What minimum distance must planing motorboats keep from the coast?",
+      "options": [
+        "At least 100 m.",
+        "At least 50 m.",
+        "At least 500 m.",
+        "At least 300 m."
+      ]
+    },
+    "hr": {
+      "prompt": "Koliku udaljenost od obale moraju održavati motorna plovila u glisiranju?",
+      "options": [
+        "Najmanje 100 m.",
+        "Najmanje 50 m.",
+        "Najmanje 500 m.",
+        "Najmanje 300 m."
+      ]
+    }
+  },
+  "book-026": {
+    "en": {
+      "prompt": "What safety briefing should be given to a new crew before (or immediately after) a trip begins?",
+      "options": [
+        "Lifejackets, safety harnesses, distress signals, safety equipment, engine use, lights, fire extinguisher and emergency calls.",
+        "Only meal times and sleeping arrangements.",
+        "Harbour fees and sailing areas.",
+        "Only how to use the GPS and log."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje upute treba dati novom članu posade prije (ili neposredno nakon) početka plovidbe?",
+      "options": [
+        "Prsluci za spašavanje, sigurnosna užad, signali pogibelji, sigurnosna oprema, uporaba motora, svjetla, vatrogasni aparat i pozivi u nuždi.",
+        "Samo vrijeme obroka i mjesta za spavanje.",
+        "Cijene luka i područja za jedrenje.",
+        "Samo uporaba GPS-a i brzinomjera."
+      ]
+    }
+  },
+  "book-027": {
+    "en": {
+      "prompt": "What does the abbreviation “p” mean on a Croatian nautical chart?",
+      "options": [
+        "Seabed type: sand — Croatian pijesak",
+        "Seabed type: stones — Croatian kamenje",
+        "Seabed type: mud — Croatian mulj",
+        "Seabed type: seagrass — Croatian trava"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kratica „p“ na hrvatskoj pomorskoj karti?",
+      "options": [
+        "Vrsta dna: pijesak",
+        "Vrsta dna: kamenje",
+        "Vrsta dna: mulj",
+        "Vrsta dna: morska trava"
+      ]
+    }
+  },
+  "book-028": {
+    "en": {
+      "prompt": "What does it mean when a boat at anchor displays the “Alpha” flag?",
+      "options": [
+        "“I am not under command.”",
+        "“I require a pilot.”",
+        "“I require medical assistance.”",
+        "“I have divers down.”"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kada plovilo na sidru istakne zastavu „Alpha“?",
+      "options": [
+        "„Nesposoban sam za manevriranje.“",
+        "„Potreban mi je peljar.“",
+        "„Potrebna mi je liječnička pomoć.“",
+        "„Ronioci su u moru.“"
+      ]
+    }
+  },
+  "book-029": {
+    "en": {
+      "prompt": "What should you constantly monitor when travelling under power?",
+      "options": [
+        "Temperature, oil pressure, charging and seawater circulation.",
+        "Sails, sheets, halyards and shrouds.",
+        "Anchor, fenders, galley and bilge.",
+        "Logbook, chart scale and compass rose."
+      ]
+    },
+    "hr": {
+      "prompt": "Što stalno nadzirete tijekom plovidbe na motor?",
+      "options": [
+        "Temperaturu, tlak ulja, punjenje akumulatora i cirkulaciju morske vode.",
+        "Jedra, škote, podigače i pripone.",
+        "Sidro, bokobrane, kuhinju i kaljužu.",
+        "Dnevnik plovidbe, mjerilo karte i ružu vjetrova."
+      ]
+    }
+  },
+  "book-030": {
+    "en": {
+      "prompt": "What does the abbreviation “m” mean on a Croatian nautical chart?",
+      "options": [
+        "Seabed type: gravel — Croatian sitan",
+        "Seabed type: mud — Croatian mulj",
+        "Seabed type: stones — Croatian kamenje",
+        "Seabed type: sand — Croatian pijesak"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kratica „m“ na hrvatskoj pomorskoj karti?",
+      "options": [
+        "Vrsta dna: sitan šljunak",
+        "Vrsta dna: mulj",
+        "Vrsta dna: kamenje",
+        "Vrsta dna: pijesak"
+      ]
+    }
+  },
+  "book-031": {
+    "en": {
+      "prompt": "How can you determine how up to date a nautical chart is?",
+      "options": [
+        "The numbers of corrections and amendments are listed at the lower-left edge of the chart.",
+        "By the size of the compass rose.",
+        "By the colour of the water.",
+        "By the chart scale."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako možete utvrditi koliko je pomorska karta ažurna?",
+      "options": [
+        "Brojevi naknadno unesenih dopuna i izmjena navedeni su na donjem lijevom rubu karte.",
+        "Prema veličini ruže vjetrova.",
+        "Prema boji mora.",
+        "Prema mjerilu karte."
+      ]
+    }
+  },
+  "book-032": {
+    "en": {
+      "prompt": "What does the abbreviation “k” mean on a Croatian nautical chart?",
+      "options": [
+        "Seabed type: mud — Croatian mulj",
+        "Seabed type: seagrass — Croatian trava",
+        "Seabed type: stones — Croatian kamenje",
+        "Seabed type: sand — Croatian pijesak"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kratica „k“ na hrvatskoj pomorskoj karti?",
+      "options": [
+        "Vrsta dna: mulj",
+        "Vrsta dna: morska trava",
+        "Vrsta dna: kamenje",
+        "Vrsta dna: pijesak"
+      ]
+    }
+  },
+  "book-033": {
+    "en": {
+      "prompt": "How is a nautical mile defined and calculated?",
+      "options": [
+        "A nautical mile is equal to one cable length.",
+        "A nautical mile is the length of one minute of latitude.",
+        "A nautical mile is equal to one degree of latitude.",
+        "A nautical mile is an arc length of one degree."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako se definira i izračunava nautička milja?",
+      "options": [
+        "Nautička milja jednaka je duljini jednog kabela.",
+        "Nautička milja jednaka je duljini jedne lučne minute geografske širine.",
+        "Nautička milja jednaka je jednom stupnju geografske širine.",
+        "Nautička milja jednaka je duljini luka od jednog stupnja."
+      ]
+    }
+  },
+  "book-034": {
+    "en": {
+      "prompt": "What does the abbreviation “s” mean on a Croatian nautical chart?",
+      "options": [
+        "Seabed type: stones — Croatian kamenje",
+        "Seabed type: mud — Croatian mulj",
+        "Seabed type: fine gravel — Croatian sitan",
+        "Seabed type: sand — Croatian pijesak"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kratica „s“ na hrvatskoj pomorskoj karti?",
+      "options": [
+        "Vrsta dna: kamenje",
+        "Vrsta dna: mulj",
+        "Vrsta dna: sitan šljunak",
+        "Vrsta dna: pijesak"
+      ]
+    }
+  },
+  "book-035": {
+    "en": {
+      "prompt": "What distance must yachts and motorboats keep from an unmarked bathing area?",
+      "options": [
+        "At least 50 m.",
+        "At least 100 m.",
+        "At least 150 m.",
+        "At least 300 m."
+      ]
+    },
+    "hr": {
+      "prompt": "Koliku udaljenost jahte i motorna plovila moraju održavati od neograđenog kupališta?",
+      "options": [
+        "Najmanje 50 m.",
+        "Najmanje 100 m.",
+        "Najmanje 150 m.",
+        "Najmanje 300 m."
+      ]
+    }
+  },
+  "book-036": {
+    "en": {
+      "prompt": "What distance must yachts and motorboats keep from a marked bathing area?",
+      "options": [
+        "At least 100 m.",
+        "At least 150 m.",
+        "At least 50 m.",
+        "At least 20 m."
+      ]
+    },
+    "hr": {
+      "prompt": "Koliku udaljenost jahte i motorna plovila moraju održavati od označenog kupališta?",
+      "options": [
+        "Najmanje 100 m.",
+        "Najmanje 150 m.",
+        "Najmanje 50 m.",
+        "Najmanje 20 m."
+      ]
+    }
+  },
+  "book-037": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “K”?",
+      "options": [
+        "Kilo",
+        "Kappa",
+        "Comet",
+        "King"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „K“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Kilo",
+        "Kappa",
+        "Komet",
+        "King"
+      ]
+    }
+  },
+  "book-038": {
+    "en": {
+      "prompt": "How is a cable length (cbl) calculated?",
+      "options": [
+        "One cable is 1/10 of a nautical mile: 185 m.",
+        "One cable is 1/100 of a nautical mile: 18.5 m.",
+        "One cable is half a nautical mile: 926 m.",
+        "One cable is a whole nautical mile: 1,852 m."
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko iznosi jedan kabel (cbl)?",
+      "options": [
+        "Jedan kabel iznosi 1/10 nautičke milje, odnosno 185 m.",
+        "Jedan kabel iznosi 1/100 nautičke milje, odnosno 18,5 m.",
+        "Jedan kabel iznosi pola nautičke milje, odnosno 926 m.",
+        "Jedan kabel iznosi cijelu nautičku milju, odnosno 1.852 m."
+      ]
+    }
+  },
+  "book-039": {
+    "en": {
+      "prompt": "At night you see: red over red, with a white light diagonally below. What do you suspect, and how should you act?",
+      "options": [
+        "A pilot vessel; pass close by.",
+        "A vessel at anchor; maintain course.",
+        "A trawler; pass astern.",
+        "A vessel aground; keep well clear."
+      ]
+    },
+    "hr": {
+      "prompt": "Noću vidite dva crvena svjetla jedno iznad drugoga, a ispod njih ukoso bijelo svjetlo. Što pretpostavljate i kako postupate?",
+      "options": [
+        "Peljarsko plovilo; prođite blizu.",
+        "Plovilo na sidru; zadržite kurs.",
+        "Koćarica; prođite iza nje.",
+        "Nasukano plovilo; držite se podalje."
+      ]
+    }
+  },
+  "book-040": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “R”?",
+      "options": [
+        "Radio",
+        "Roger",
+        "Romeo",
+        "Rumba"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „R“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Radio",
+        "Roger",
+        "Romeo",
+        "Rumba"
+      ]
+    }
+  },
+  "book-041": {
+    "en": {
+      "prompt": "How is a vessel’s position stated?",
+      "options": [
+        "Either by latitude and longitude, or by bearing and distance from a landmark (cross-bearing).",
+        "Only by speed through the water.",
+        "Only by the nearest harbour.",
+        "Only by water depth."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako se navodi položaj plovila?",
+      "options": [
+        "Geografskom širinom i dužinom ili smjerom i udaljenošću od orijentira (presjekom azimuta).",
+        "Samo brzinom plovidbe.",
+        "Samo prema najbližoj luci.",
+        "Isključivo dubinom mora."
+      ]
+    }
+  },
+  "book-042": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “C”?",
+      "options": [
+        "Cobra",
+        "Canada",
+        "Caesar",
+        "Charlie"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „C“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Cobra",
+        "Canada",
+        "Cezar",
+        "Charlie"
+      ]
+    }
+  },
+  "book-043": {
+    "en": {
+      "prompt": "What does “B C DBl 10s 56m 11/9 M” mean on a Croatian chart?",
+      "options": [
+        "East cardinal mark, flashing light every 10 seconds",
+        "Fixed green light, period 5 seconds, height 11 metres",
+        "Interrupted red light, range 56 nautical miles",
+        "Sector light (long) flashing white/red, 10-second period, light elevation 56 m, nominal range 11/9 nautical miles in the sectors"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači oznaka „B C DBl 10s 56m 11/9 M“ na hrvatskoj karti?",
+      "options": [
+        "Istočna kardinalna oznaka, bljesak svakih 10 sekundi",
+        "Stalno zeleno svjetlo, period 5 sekundi, visina 11 metara",
+        "Prekinuto crveno svjetlo, domet 56 nautičkih milja",
+        "Sektorsko svjetlo (dugi bljesak) bijelo/crveno, period 10 s, visina svjetla 56 m, nominalni domet 11/9 nautičkih milja po sektorima"
+      ]
+    }
+  },
+  "book-044": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “A”?",
+      "options": [
+        "Atlas",
+        "Anton",
+        "Alfa",
+        "Able"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „A“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Atlas",
+        "Anton",
+        "Alfa",
+        "Able"
+      ]
+    }
+  },
+  "book-045": {
+    "en": {
+      "prompt": "What are sector lights, and what do they indicate?",
+      "options": [
+        "Lights that show different colours in different directions. They usually mark hazardous areas.",
+        "A white all-round light for a vessel at anchor.",
+        "A light visible only inside a harbour.",
+        "A flashing light that indicates speed."
+      ]
+    },
+    "hr": {
+      "prompt": "Što su sektorska svjetla i što označavaju?",
+      "options": [
+        "Svjetla koja u različitim smjerovima pokazuju različite boje. Njima se najčešće označavaju opasna područja.",
+        "Bijelo svjetlo vidljivo sa svih strana za plovilo na sidru.",
+        "Svjetlo vidljivo samo u luci.",
+        "Bljeskajuće svjetlo koje pokazuje brzinu plovidbe."
+      ]
+    }
+  },
+  "book-046": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “F”?",
+      "options": [
+        "Falcon",
+        "Foxtrot",
+        "Florida",
+        "Felix"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „F“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Falcon",
+        "Foxtrot",
+        "Florida",
+        "Felix"
+      ]
+    }
+  },
+  "book-047": {
+    "en": {
+      "prompt": "What are the rules for avoiding collision between power-driven vessels?",
+      "options": [
+        "On crossing courses, the vessel on the port side always gives way.",
+        "On reciprocal courses, both alter course to starboard. On crossing courses, the vessel coming from starboard has right of way.",
+        "On reciprocal courses, only the smaller vessel gives way.",
+        "Both vessels always maintain course and speed."
+      ]
+    },
+    "hr": {
+      "prompt": "Prema kojim se pravilima mimoilaze motorna plovila?",
+      "options": [
+        "Na kursovima koji se križaju uvijek se sklanja plovilo koje dolazi s lijeve strane.",
+        "Na suprotnim kursovima oba plovila skreću udesno. Na kursovima koji se križaju prednost ima plovilo koje dolazi s desne strane.",
+        "Na suprotnim kursovima sklanja se samo manje plovilo.",
+        "Oba plovila uvijek zadržavaju kurs i brzinu."
+      ]
+    }
+  },
+  "book-048": {
+    "en": {
+      "prompt": "Name the two most important winds in the Adriatic and their directions.",
+      "options": [
+        "Jugo from the northwest; bora from the south",
+        "Mistral from south to west; tramontana from the east",
+        "Nevera from the north; levante from the southwest",
+        "Bora from north to east; sirocco (jugo) from south to southeast"
+      ]
+    },
+    "hr": {
+      "prompt": "Navedite dva najvažnija vjetra na Jadranu i njihove smjerove.",
+      "options": [
+        "Jugo sa sjeverozapada; bura s juga",
+        "Maestral s juga do zapada; tramontana s istoka",
+        "Nevera sa sjevera; levante s jugozapada",
+        "Bura sa sjevera do istoka; široko (jugo) s juga do jugoistoka"
+      ]
+    }
+  },
+  "book-049": {
+    "en": {
+      "prompt": "How is a trawler marked by day and by night?",
+      "options": [
+        "Two white all-round lights and a red cone by day.",
+        "White over red, with a black diamond by day.",
+        "Green over white (instead of an all-round masthead light), a second white masthead light if over 50 m, sidelights and a sternlight when making way. By day: an hourglass or fish basket (under 20 m).",
+        "Red over white, with a black ball by day."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako je koćarica označena danju i noću?",
+      "options": [
+        "S dva bijela svjetla vidljiva sa svih strana, a danju crvenim stošcem.",
+        "Bijelim iznad crvenog svjetla, a danju crnim rombom.",
+        "Zelenim iznad bijelog svjetla (umjesto jarbolnog svjetla vidljivog sa svih strana), drugim bijelim jarbolnim svjetlom ako je dulja od 50 m, bočnim svjetlima i krmenim svjetlom dok plovi kroz vodu. Danju: pješčanim satom ili košarom za ribu (ako je kraća od 20 m).",
+        "Crvenim iznad bijelog svjetla, a danju crnom kuglom."
+      ]
+    }
+  },
+  "book-050": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “H”?",
+      "options": [
+        "Hotel",
+        "Helium",
+        "Hawaii",
+        "Hector"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „H“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Hotel",
+        "Helium",
+        "Hawaii",
+        "Hector"
+      ]
+    }
+  },
+  "book-051": {
+    "en": {
+      "prompt": "How should vessels behave in narrow channels?",
+      "options": [
+        "Increase speed when visibility is restricted.",
+        "Keep as close as practicable to the starboard side; small vessels must not impede larger vessels; crossing vessels give way; avoid anchoring. In restricted visibility, sound a signal.",
+        "Small vessels have priority and may cross the channel.",
+        "Keep to the middle and anchor whenever possible."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako se plovila trebaju ponašati u uskim plovnim kanalima?",
+      "options": [
+        "Pri smanjenoj vidljivosti treba povećati brzinu.",
+        "Ploviti što bliže desnoj strani; mala plovila ne smiju ometati velika; plovila koja presijecaju kanal moraju se skloniti; sidrenje treba izbjegavati. Pri smanjenoj vidljivosti treba dati zvučni signal.",
+        "Mala plovila imaju prednost i smiju presijecati kanal.",
+        "Ploviti sredinom i uvijek biti spreman baciti sidro."
+      ]
+    }
+  },
+  "book-052": {
+    "en": {
+      "prompt": "What is the phonetic alphabet word for the letter “M”?",
+      "options": [
+        "Malta",
+        "Metro",
+        "Mike",
+        "Mambo"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja se riječ koristi za slovo „M“ u međunarodnoj abecedi za sricanje?",
+      "options": [
+        "Malta",
+        "Metro",
+        "Mike",
+        "Mambo"
+      ]
+    }
+  },
+  "book-053": {
+    "en": {
+      "prompt": "What magnetic influences can interfere with a magnetic compass?",
+      "options": [
+        "Temperature and air pressure",
+        "Latitude and longitude",
+        "Wind, waves and current",
+        "Variation and deviation"
+      ]
+    },
+    "hr": {
+      "prompt": "Koji magnetski utjecaji mogu ometati magnetski kompas?",
+      "options": [
+        "Temperatura i tlak zraka",
+        "Geografska širina i dužina",
+        "Vjetar, valovi i struja",
+        "Deklinacija i devijacija"
+      ]
+    }
+  },
+  "book-054": {
+    "en": {
+      "prompt": "Which vessel displays “white over red”?",
+      "options": [
+        "A vessel at anchor.",
+        "A trawler.",
+        "A vessel not under command.",
+        "A pilot vessel."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje plovilo pokazuje bijelo svjetlo iznad crvenoga?",
+      "options": [
+        "Plovilo na sidru.",
+        "Koćarica.",
+        "Plovilo nesposobno za manevriranje.",
+        "Peljarsko plovilo."
+      ]
+    }
+  },
+  "book-055": {
+    "en": {
+      "prompt": "In which season does the bora occur?",
+      "options": [
+        "Only in spring.",
+        "Only in summer.",
+        "In every season. However, in winter it is more frequent, longer-lasting and stronger.",
+        "Only in winter."
+      ]
+    },
+    "hr": {
+      "prompt": "U koje se godišnje doba javlja bura?",
+      "options": [
+        "Samo u proljeće.",
+        "Isključivo ljeti.",
+        "U svako godišnje doba, ali je zimi češća, dulje traje i jača je.",
+        "Samo zimi."
+      ]
+    }
+  },
+  "book-056": {
+    "en": {
+      "prompt": "What does “windward” mean?",
+      "options": [
+        "The side facing the wind.",
+        "The side sheltered from the wind.",
+        "The port side of a boat.",
+        "The aft part of a boat."
+      ]
+    },
+    "hr": {
+      "prompt": "Što označava privjetrina?",
+      "options": [
+        "Stranu okrenutu prema vjetru.",
+        "Stranu zaklonjenu od vjetra.",
+        "Lijevu stranu plovila.",
+        "Krmeni dio plovila."
+      ]
+    }
+  },
+  "book-057": {
+    "en": {
+      "prompt": "Where are there speed limits at sea?",
+      "options": [
+        "In harbours and near the coast.",
+        "Only in international waters.",
+        "Only on the open sea.",
+        "Only at night."
+      ]
+    },
+    "hr": {
+      "prompt": "Gdje na moru postoje ograničenja brzine?",
+      "options": [
+        "U lukama i blizu obale.",
+        "Isključivo u međunarodnim vodama.",
+        "Samo na otvorenom moru.",
+        "Samo noću."
+      ]
+    }
+  },
+  "book-058": {
+    "en": {
+      "prompt": "What signals should you display on your yacht at anchor, by day and by night?",
+      "options": [
+        "A yellow buoy by day and a flashing light at night.",
+        "A black cone by day and a red sternlight at night.",
+        "A red flag by day and two green lights at night.",
+        "An anchor ball by day; at night, a white all-round light (“anchor light”) where it can best be seen."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje signale treba pokazivati na jahti na sidru danju i noću?",
+      "options": [
+        "Danju žutu plutaču, a noću bljeskajuće svjetlo.",
+        "Danju crni stožac, a noću crveno krmeno svjetlo.",
+        "Danju crvenu zastavu, a noću dva zelena svjetla.",
+        "Danju sidrenu kuglu; noću bijelo svjetlo vidljivo sa svih strana („sidreno svjetlo“) postavljeno ondje gdje se najbolje vidi."
+      ]
+    }
+  },
+  "book-059": {
+    "en": {
+      "prompt": "At night you see: red over red, with another red light to the side below. What do you suspect, and how should you act?",
+      "options": [
+        "A trawler; pass astern.",
+        "A pilot vessel coming from port; maintain course.",
+        "A vessel at anchor; pass close.",
+        "A vessel not under command approaching from starboard; give way to starboard."
+      ]
+    },
+    "hr": {
+      "prompt": "Noću vidite dva crvena svjetla jedno iznad drugoga i još jedno crveno svjetlo bočno ispod njih. Što pretpostavljate i kako postupate?",
+      "options": [
+        "Koćarica; prođite iza nje.",
+        "Peljarsko plovilo koje dolazi slijeva; zadržite kurs.",
+        "Plovilo na sidru; prođite blizu.",
+        "Plovilo nesposobno za manevriranje koje dolazi zdesna; sklonite se udesno."
+      ]
+    }
+  },
+  "book-060": {
+    "en": {
+      "prompt": "Which wind directions are typical of the bora?",
+      "options": [
+        "Southwest to west.",
+        "West to northwest.",
+        "South to southeast.",
+        "North to east."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji su prevladavajući smjerovi bure?",
+      "options": [
+        "Jugozapad do zapad.",
+        "Zapad do sjeverozapad.",
+        "Jug do jugoistok.",
+        "Sjever do istok."
+      ]
+    }
+  },
+  "book-061": {
+    "en": {
+      "prompt": "What should you do to prevent a petrol explosion?",
+      "options": [
+        "Leave the fuel cap open and start immediately.",
+        "Inspect the engine compartment with an open flame while the engine is running.",
+        "Fill the engine compartment with water.",
+        "Before starting, thoroughly ventilate the engine compartment with an explosion-proof blower."
+      ]
+    },
+    "hr": {
+      "prompt": "Što treba učiniti kako bi se spriječila eksplozija benzinskih para?",
+      "options": [
+        "Ostaviti čep spremnika otvoren i odmah pokrenuti motor.",
+        "Dok motor radi, provjeriti prostor motora otvorenim plamenom.",
+        "Napuniti prostor motora vodom.",
+        "Prije pokretanja temeljito prozračiti prostor motora protueksplozijskim ventilatorom."
+      ]
+    }
+  },
+  "book-062": {
+    "en": {
+      "prompt": "What does “B C Z Bl (3) 5s 45m 11/9/8 M” mean on a Croatian chart?",
+      "options": [
+        "Alternating yellow/blue light, period 5 minutes",
+        "West cardinal mark with white all-round light",
+        "Fixed red light, period 3 seconds, range 45 nautical miles",
+        "Sector light, flashing white/red/green in groups of three, 5-second period, light elevation 45 m, nominal range 11/9/8 nautical miles in the sectors"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači oznaka „B C Z Bl (3) 5s 45m 11/9/8 M“ na hrvatskoj karti?",
+      "options": [
+        "Izmjenično žuto/plavo svjetlo, period 5 minuta",
+        "Zapadna kardinalna oznaka s bijelim svjetlom vidljivim sa svih strana",
+        "Stalno crveno svjetlo, period 3 sekunde, domet 45 nautičkih milja",
+        "Sektorsko svjetlo, grupni bljesak (3) bijelo/crveno/zeleno, period 5 s, visina svjetla 45 m, nominalni domet 11/9/8 nautičkih milja po sektorima"
+      ]
+    }
+  },
+  "book-063": {
+    "en": {
+      "prompt": "What is a “Pan-Pan” call?",
+      "options": [
+        "A distress call when the vessel and crew face immediate danger to life.",
+        "An urgency call, similar to a distress call, for a situation that is not yet distress as defined (there is no direct threat to life).",
+        "A routine call between vessels.",
+        "A safety message for other vessels."
+      ]
+    },
+    "hr": {
+      "prompt": "Što je poziv „Pan-Pan“?",
+      "options": [
+        "Poziv u pomoć kada su plovilo i posada u neposrednoj životnoj opasnosti.",
+        "Poziv hitnosti, sličan pozivu u pomoć, kada situacija još ne predstavlja pogibelj prema definiciji (život nije izravno ugrožen).",
+        "Redoviti poziv između plovila.",
+        "Sigurnosna obavijest drugim plovilima."
+      ]
+    }
+  },
+  "book-064": {
+    "en": {
+      "prompt": "What is a “Securite” call?",
+      "options": [
+        "A safety message reporting information important to navigation or vessel safety.",
+        "A way to end a radio conversation.",
+        "A distress call in immediate danger at sea.",
+        "An urgency call about an injured person."
+      ]
+    },
+    "hr": {
+      "prompt": "Što je poziv „Securite“?",
+      "options": [
+        "Sigurnosna obavijest o činjenici važnoj za plovidbu ili sigurnost plovila.",
+        "Završetak radijske komunikacije.",
+        "Poziv u pomoć pri neposrednoj pogibelji na moru.",
+        "Poziv hitnosti zbog ozlijeđene osobe."
+      ]
+    }
+  },
+  "book-065": {
+    "en": {
+      "prompt": "What are the advantages of a petrol engine?",
+      "options": [
+        "Suitable only for sailboats and especially heavy.",
+        "Smaller, quieter, lighter, cheaper to buy, more responsive and smoother-running.",
+        "Maintenance-free, silent and uses no fuel.",
+        "Larger, heavier, slower and more expensive."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje su prednosti benzinskog motora?",
+      "options": [
+        "Prikladan je samo za jedrilice i posebno je težak.",
+        "Manji je, tiši, lakši, jeftiniji pri kupnji, brže prima gas i mirnije radi.",
+        "Ne zahtijeva održavanje, nečujan je i ne troši gorivo.",
+        "Veći je, teži, sporiji i skuplji."
+      ]
+    }
+  },
+  "book-066": {
+    "en": {
+      "prompt": "One cable length is equal to?",
+      "options": [
+        "18.52 m",
+        "925 m",
+        "1,852 m",
+        "185.2 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko iznosi jedan kabel?",
+      "options": [
+        "18,52 m",
+        "925 m",
+        "1.852 m",
+        "185,2 m"
+      ]
+    }
+  },
+  "book-067": {
+    "en": {
+      "prompt": "Which VHF channel is continuously monitored by coastal radio stations in Croatia?",
+      "options": [
+        "Channel 13.",
+        "Channel 16.",
+        "Channel 06.",
+        "Channel 72."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji VHF kanal obalne radiopostaje u Hrvatskoj stalno slušaju?",
+      "options": [
+        "Kanal 13.",
+        "Kanal 16.",
+        "Kanal 06.",
+        "Kanal 72."
+      ]
+    }
+  },
+  "book-068": {
+    "en": {
+      "prompt": "Which cooling systems are used for boat engines?",
+      "options": [
+        "Single-circuit cooling with fresh water; two-circuit cooling with air only.",
+        "Single-circuit: the engine block is cooled directly by seawater. Two-circuit: coolant cools the engine block, then seawater cools the coolant in a heat exchanger.",
+        "Both systems use fuel only for cooling.",
+        "Air cooling and oil cooling by the airstream only."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji se sustavi hlađenja koriste za brodske motore?",
+      "options": [
+        "Jednokružni sustav slatkom vodom; dvokružni sustav samo zrakom.",
+        "Jednokružni sustav: blok motora izravno hladi morska voda. Dvokružni sustav: rashladna tekućina hladi blok motora, a zatim je morska voda hladi u izmjenjivaču topline.",
+        "Oba sustava za hlađenje koriste isključivo gorivo.",
+        "Zračno i uljno hlađenje isključivo strujanjem zraka tijekom plovidbe."
+      ]
+    }
+  },
+  "book-069": {
+    "en": {
+      "prompt": "Orange smoke is rising from a yacht. What do you suspect?",
+      "options": [
+        "A signal that a pilot is on board.",
+        "A distress signal; immediate assistance is required.",
+        "A routine weather signal.",
+        "An invitation to anchor."
+      ]
+    },
+    "hr": {
+      "prompt": "S jahte se diže narančasti dim. Što pretpostavljate?",
+      "options": [
+        "Signal da je na plovilu peljar.",
+        "Signal pogibelji; potrebna je neodgodiva pomoć.",
+        "Uobičajeni meteorološki signal.",
+        "Poziv na sidrenje."
+      ]
+    }
+  },
+  "book-070": {
+    "en": {
+      "prompt": "A person is waving their outstretched arms up and down. What do you suspect?",
+      "options": [
+        "A greeting when entering harbour.",
+        "An instruction to slow down.",
+        "A distress signal (“tired fly”); immediate assistance is required.",
+        "A sign that the pilot is changing."
+      ]
+    },
+    "hr": {
+      "prompt": "Osoba maše ispruženim rukama gore-dolje. Što pretpostavljate?",
+      "options": [
+        "Pozdravni znak pri uplovljavanju u luku.",
+        "Uputa da usporite.",
+        "Signal pogibelji („umorna muha“); potrebna je neodgodiva pomoć.",
+        "Znak za smjenu peljara."
+      ]
+    }
+  },
+  "book-071": {
+    "en": {
+      "prompt": "What can a white light indicate?",
+      "options": [
+        "Only a port sidelight",
+        "A pilot light only",
+        "1) Sternlight; 2) masthead light; 3) a vessel under 7 m; 4) anchor light",
+        "Only a trawler light"
+      ]
+    },
+    "hr": {
+      "prompt": "Što može označavati bijelo svjetlo?",
+      "options": [
+        "Samo lijevo bočno svjetlo",
+        "Isključivo peljarsko svjetlo",
+        "1) Krmeno svjetlo; 2) jarbolno svjetlo; 3) plovilo kraće od 7 m; 4) sidreno svjetlo",
+        "Samo svjetlo koćarice"
+      ]
+    }
+  },
+  "book-072": {
+    "en": {
+      "prompt": "You hear the prolonged blast of a foghorn. What do you suspect?",
+      "options": [
+        "A distress signal; immediate assistance is required.",
+        "A sign that a pilot is on board.",
+        "A routine manoeuvring signal to turn.",
+        "A signal to leave the harbour."
+      ]
+    },
+    "hr": {
+      "prompt": "Čujete produljeni zvučni signal maglenog roga. Što pretpostavljate?",
+      "options": [
+        "Signal pogibelji; potrebna je neodgodiva pomoć.",
+        "Znak da je na plovilu peljar.",
+        "Uobičajeni manevarski signal za okret.",
+        "Signal za izlazak iz luke."
+      ]
+    }
+  },
+  "book-073": {
+    "en": {
+      "prompt": "Match the three important winds in Croatia with their directions.",
+      "options": [
+        "Sirocco: S; mistral: N/NW; bora: NE",
+        "Sirocco: NE; mistral: SW; bora: N",
+        "Sirocco: N; mistral: S; bora: W",
+        "Sirocco: W; mistral: E; bora: S"
+      ]
+    },
+    "hr": {
+      "prompt": "Povežite tri važna vjetra u Hrvatskoj s njihovim smjerovima.",
+      "options": [
+        "Jugo: J; maestral: S/SZ; bura: SI",
+        "Jugo: SI; maestral: JZ; bura: S",
+        "Jugo: S; maestral: J; bura: Z",
+        "Jugo: Z; maestral: I; bura: J"
+      ]
+    }
+  },
+  "book-074": {
+    "en": {
+      "prompt": "A vessel displays red over red. What is it?",
+      "options": [
+        "A vessel not under command.",
+        "A pilot vessel.",
+        "A vessel at anchor.",
+        "A trawler."
+      ]
+    },
+    "hr": {
+      "prompt": "Plovilo pokazuje dva crvena svjetla jedno iznad drugoga. O kakvom je plovilu riječ?",
+      "options": [
+        "Plovilo nesposobno za manevriranje.",
+        "Peljarsko plovilo.",
+        "Plovilo na sidru.",
+        "Koćarica."
+      ]
+    }
+  },
+  "book-075": {
+    "en": {
+      "prompt": "Which weather pattern often follows the sirocco in Croatia?",
+      "options": [
+        "First bora, then mistral.",
+        "A prolonged calm.",
+        "First rain, then bora.",
+        "First tramontana, then jugo."
+      ]
+    },
+    "hr": {
+      "prompt": "Koja vremenska situacija u Hrvatskoj vrlo često slijedi nakon juga?",
+      "options": [
+        "Najprije bura, zatim maestral.",
+        "Dugotrajno bezvjetrije.",
+        "Najprije kiša, zatim bura.",
+        "Najprije tramontana, zatim jugo."
+      ]
+    }
+  },
+  "book-076": {
+    "en": {
+      "prompt": "Why may distress signals be used only in distress?",
+      "options": [
+        "Because distress signals are visible only at night.",
+        "Because only the coast guard may use them.",
+        "Because they can damage the radio.",
+        "A distress signal obliges everyone who becomes aware of it to render assistance. The use of distress signals is expressly prohibited except in distress."
+      ]
+    },
+    "hr": {
+      "prompt": "Zašto se signali pogibelji smiju koristiti samo u pogibelji?",
+      "options": [
+        "Zato što su vidljivi samo noću.",
+        "Zato što ih smije koristiti isključivo obalna straža.",
+        "Zato što mogu oštetiti radiouređaj.",
+        "Signal pogibelji obvezuje svakoga tko za njega sazna da pruži pomoć. Uporaba signala pogibelji izričito je zabranjena osim u slučaju pogibelji."
+      ]
+    }
+  },
+  "book-077": {
+    "en": {
+      "prompt": "How do you fight a carburettor fire?",
+      "options": [
+        "Cover the carburettor with a cloth and drop anchor.",
+        "Shut off the fuel tap, do not stop the engine; let it run and increase the revs.",
+        "Open the fuel cap and keep trying to start the engine.",
+        "Stop the engine immediately and extinguish with water."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako se gasi požar rasplinjača?",
+      "options": [
+        "Prekriti rasplinjač krpom i baciti sidro.",
+        "Zatvoriti dovod goriva, ne zaustavljati motor nego ga ostaviti da radi; povećati broj okretaja.",
+        "Otvoriti čep spremnika i nastaviti pokretati motor.",
+        "Odmah zaustaviti motor i ugasiti požar vodom."
+      ]
+    }
+  },
+  "book-078": {
+    "en": {
+      "prompt": "Which extinguishing agent should not be used for an electrical fire?",
+      "options": [
+        "Use seawater.",
+        "Use water and foam together.",
+        "Never use water.",
+        "Always use foam."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje sredstvo za gašenje ne treba koristiti pri požaru električne instalacije?",
+      "options": [
+        "Koristiti morsku vodu.",
+        "Istodobno koristiti vodu i pjenu.",
+        "Nikada ne koristiti vodu.",
+        "Uvijek koristiti pjenu."
+      ]
+    }
+  },
+  "book-079": {
+    "en": {
+      "prompt": "Which wind directions are typical of the sirocco?",
+      "options": [
+        "West to northwest",
+        "South to southeast",
+        "Northwest to north",
+        "North to east"
+      ]
+    },
+    "hr": {
+      "prompt": "Koji su prevladavajući smjerovi juga?",
+      "options": [
+        "Zapad do sjeverozapad",
+        "Jug do jugoistok",
+        "Sjeverozapad do sjever",
+        "Sjever do istok"
+      ]
+    }
+  },
+  "book-080": {
+    "en": {
+      "prompt": "What happens if you start an engine with a single-circuit cooling system while the sea valve is closed?",
+      "options": [
+        "The engine switches to two-circuit cooling.",
+        "No cooling water is delivered and the impeller runs dry.",
+        "The engine cools faster.",
+        "Seawater is automatically replaced by fresh water."
+      ]
+    },
+    "hr": {
+      "prompt": "Što se događa ako pokrenete motor s jednokružnim hlađenjem dok je ventil mora zatvoren?",
+      "options": [
+        "Motor prelazi na dvokružno hlađenje.",
+        "Rashladna voda ne protječe, a rotor pumpe radi na suho.",
+        "Motor se brže hladi.",
+        "Morska voda automatski se zamjenjuje slatkom vodom."
+      ]
+    }
+  },
+  "book-081": {
+    "en": {
+      "prompt": "What does the term “deviation” mean?",
+      "options": [
+        "The difference between latitude and longitude.",
+        "A change in water depth.",
+        "A course deviation caused by current.",
+        "Deflection of the compass needle by magnetic fields generated by the vessel (electrical equipment)."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači pojam „devijacija“?",
+      "options": [
+        "Razlika između geografske širine i dužine.",
+        "Promjena dubine mora.",
+        "Odstupanje kursa zbog morske struje.",
+        "Odstupanje magnetske igle kompasa zbog magnetskih polja na samom plovilu (električna oprema)."
+      ]
+    }
+  },
+  "book-082": {
+    "en": {
+      "prompt": "What is a log, and what is it used for?",
+      "options": [
+        "An instrument for measuring speed through the water",
+        "An instrument for measuring water depth",
+        "An instrument for measuring air pressure",
+        "An instrument for determining magnetic variation"
+      ]
+    },
+    "hr": {
+      "prompt": "Što je brzinomjer (log) i čemu služi?",
+      "options": [
+        "Uređaj za mjerenje brzine plovila kroz vodu",
+        "Uređaj za mjerenje dubine mora",
+        "Uređaj za mjerenje tlaka zraka",
+        "Uređaj za određivanje magnetske deklinacije"
+      ]
+    }
+  },
+  "book-083": {
+    "en": {
+      "prompt": "What is a sounding lead used for?",
+      "options": [
+        "Measuring speed through the water.",
+        "Determining the wind.",
+        "Measuring water depth.",
+        "Determining the compass course."
+      ]
+    },
+    "hr": {
+      "prompt": "Čemu služi dubinomjer?",
+      "options": [
+        "Mjerenju brzine plovila kroz vodu.",
+        "Određivanju smjera vjetra.",
+        "Mjerenju dubine mora.",
+        "Određivanju kursa kompasa."
+      ]
+    }
+  },
+  "book-084": {
+    "en": {
+      "prompt": "What do three all-round lights in a vertical line, red-white-red, mean?",
+      "options": [
+        "A vessel not under command",
+        "A pilot vessel",
+        "A vessel at anchor",
+        "A vessel restricted in its ability to manoeuvre"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znače tri svjetla vidljiva sa svih strana, crveno-bijelo-crveno, postavljena okomito?",
+      "options": [
+        "Plovilo nesposobno za manevriranje",
+        "Peljarsko plovilo",
+        "Plovilo na sidru",
+        "Plovilo ograničene sposobnosti manevriranja"
+      ]
+    }
+  },
+  "book-085": {
+    "en": {
+      "prompt": "What lights does a pilot vessel show at night?",
+      "options": [
+        "When underway (including making way through the water): sidelights and sternlight, plus all-round white over red; these replace the masthead light.",
+        "Only one white all-round light.",
+        "Two red all-round lights and no sidelights.",
+        "Green over white and a yellow sternlight."
+      ]
+    },
+    "hr": {
+      "prompt": "Koja svjetla peljarsko plovilo pokazuje noću?",
+      "options": [
+        "Dok plovi (uključujući plovidbu kroz vodu): bočna i krmeno svjetlo te bijelo iznad crvenoga, vidljivo sa svih strana; ta svjetla zamjenjuju jarbolno svjetlo.",
+        "Samo jedno bijelo svjetlo vidljivo sa svih strana.",
+        "Dva crvena svjetla vidljiva sa svih strana, bez bočnih svjetala.",
+        "Zeleno iznad bijeloga i žuto krmeno svjetlo."
+      ]
+    }
+  },
+  "book-086": {
+    "en": {
+      "prompt": "What additional lights and day shapes does a vessel not under command show?",
+      "options": [
+        "At night, white over red; by day, one black cone.",
+        "At night, green over white; by day, one black diamond.",
+        "At night, only a white sternlight; by day, two red flags.",
+        "At night, two all-round red lights; when underway, also sidelights and sternlight, no masthead light. By day, two black balls in a vertical line."
+      ]
+    },
+    "hr": {
+      "prompt": "Koja dodatna svjetla i dnevne oznake pokazuje plovilo nesposobno za manevriranje?",
+      "options": [
+        "Noću bijelo iznad crvenoga; danju jedan crni stožac.",
+        "Noću zeleno iznad bijeloga; danju jedan crni romb.",
+        "Noću samo bijelo krmeno svjetlo; danju dvije crvene zastave.",
+        "Noću dva crvena svjetla vidljiva sa svih strana; tijekom plovidbe dodatno bočna i krmeno svjetlo, bez jarbolnog svjetla. Danju dvije crne kugle okomito jedna iznad druge."
+      ]
+    }
+  },
+  "book-087": {
+    "en": {
+      "prompt": "Does the sirocco build up quickly or slowly?",
+      "options": [
+        "It does not build up; it remains steady.",
+        "It always starts suddenly at sunset.",
+        "Quickly, within a few minutes.",
+        "Slowly. It reaches its greatest strength only after 2–3 days."
+      ]
+    },
+    "hr": {
+      "prompt": "Jača li jugo brzo ili polako?",
+      "options": [
+        "Ne jača, već ostaje jednako snažno.",
+        "Uvijek počinje naglo pri zalasku sunca.",
+        "Brzo, u roku od nekoliko minuta.",
+        "Polako. Najveću snagu postiže tek nakon 2–3 dana."
+      ]
+    }
+  },
+  "book-088": {
+    "en": {
+      "prompt": "What is the bora?",
+      "options": [
+        "A dry, cold downslope wind from north to east. It is usually accompanied by a cloud formation over the Velebit range known as a bora roll. The bora is gusty and often reaches gale force, especially in winter.",
+        "A local westerly storm without gusts.",
+        "A steady fair-weather wind from the northwest.",
+        "A warm, humid southerly wind."
+      ]
+    },
+    "hr": {
+      "prompt": "Što je bura?",
+      "options": [
+        "Suh i hladan silazni vjetar iz smjera sjevera do istoka. Obično je prati oblačna masa iznad Velebita, tzv. burin valjak. Bura je na mahove i često, osobito zimi, doseže olujnu jačinu.",
+        "Lokalna oluja sa zapada bez udara vjetra.",
+        "Stalan lijep vjetar sa sjeverozapada.",
+        "Topao i vlažan južni vjetar."
+      ]
+    }
+  },
+  "book-089": {
+    "en": {
+      "prompt": "What lights does a vessel aground show?",
+      "options": [
+        "Only a white sternlight.",
+        "Red over white.",
+        "One green and one white all-round light.",
+        "Two all-round red lights in a vertical line and one white all-round light (anchor light)."
+      ]
+    },
+    "hr": {
+      "prompt": "Koja svjetla pokazuje nasukano plovilo?",
+      "options": [
+        "Samo bijelo krmeno svjetlo.",
+        "Crveno iznad bijeloga.",
+        "Jedno zeleno i jedno bijelo svjetlo vidljivo sa svih strana.",
+        "Dva crvena svjetla vidljiva sa svih strana, okomito jedno iznad drugoga, i jedno bijelo sidreno svjetlo."
+      ]
+    }
+  },
+  "extra-001": {
+    "en": {
+      "prompt": "Which coordinate indicates how far north or south a place lies from the Equator?",
+      "options": [
+        "Geographic longitude",
+        "Geographic latitude",
+        "Compass course",
+        "Magnetic variation"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja koordinata pokazuje koliko se mjesto nalazi sjeverno ili južno od ekvatora?",
+      "options": [
+        "Geografska dužina",
+        "Geografska širina",
+        "Kompasni kurs",
+        "Magnetska deklinacija"
+      ]
+    }
+  },
+  "extra-002": {
+    "en": {
+      "prompt": "Approximately how long is one nautical mile?",
+      "options": [
+        "1.2 kilometres",
+        "1.5 kilometres",
+        "1.8 kilometres",
+        "2.4 kilometres"
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko približno iznosi jedna nautička milja?",
+      "options": [
+        "1,2 kilometra",
+        "1,5 kilometara",
+        "1,8 kilometara",
+        "2,4 kilometra"
+      ]
+    }
+  },
+  "extra-003": {
+    "en": {
+      "prompt": "A boat travels at 10 knots for two hours. How far does it travel?",
+      "options": [
+        "20 nautical miles",
+        "10 nautical miles",
+        "12 nautical miles",
+        "5 nautical miles"
+      ]
+    },
+    "hr": {
+      "prompt": "Brod plovi brzinom od 10 čvorova tijekom dva sata. Koliki put prijeđe?",
+      "options": [
+        "20 nautičkih milja",
+        "10 nautičkih milja",
+        "12 nautičkih milja",
+        "5 nautičkih milja"
+      ]
+    }
+  },
+  "extra-004": {
+    "en": {
+      "prompt": "What does the log measure?",
+      "options": [
+        "Water depth",
+        "Wind force",
+        "Speed through the water",
+        "The boat’s position"
+      ]
+    },
+    "hr": {
+      "prompt": "Što mjeri brzinomjer?",
+      "options": [
+        "Dubinu vode",
+        "Jačinu vjetra",
+        "Brzinu kroz vodu",
+        "Položaj broda"
+      ]
+    }
+  },
+  "extra-005": {
+    "en": {
+      "prompt": "A green buoy with a triangular topmark is shown. Which side of the channel does it mark when entering from the sea?",
+      "options": [
+        "Port side",
+        "Starboard side",
+        "Middle of the channel",
+        "A shoal"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je zelena plutača s trokutastim vršnim znakom. Koju stranu plovnog puta označava pri uplovljavanju s mora?",
+      "options": [
+        "Lijevu stranu",
+        "Desnu stranu",
+        "Sredinu plovnog puta",
+        "Plićinu"
+      ]
+    }
+  },
+  "extra-006": {
+    "en": {
+      "prompt": "A north cardinal buoy with two black cones pointing upward is shown. On which side of the mark is the safe water?",
+      "options": [
+        "South",
+        "East",
+        "North",
+        "West"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je sjeverna kardinalna oznaka s dva crna stošca okrenuta vrhovima prema gore. S koje je strane oznake sigurna voda?",
+      "options": [
+        "Južno",
+        "Istočno",
+        "Sjeverno",
+        "Zapadno"
+      ]
+    }
+  },
+  "extra-007": {
+    "en": {
+      "prompt": "A black-red-black buoy with two black balls on top is shown. What does it mark?",
+      "options": [
+        "A special area",
+        "A safe passage",
+        "The middle of a channel",
+        "An isolated danger"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je crno-crno-crvena plutača s dvije crne kugle na vrhu. Što označava?",
+      "options": [
+        "Posebno područje",
+        "Siguran prolaz",
+        "Sredinu plovnog puta",
+        "Usamljenu opasnost"
+      ]
+    }
+  },
+  "extra-008": {
+    "en": {
+      "prompt": "A vertically red-and-white striped buoy with a red ball on top is shown. What does it mean?",
+      "options": [
+        "It marks safe water",
+        "It marks an isolated danger",
+        "It marks the starboard side",
+        "It marks a pipeline"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je okomito crveno-bijelo prugasta plutača s crvenom kuglom na vrhu. Što znači?",
+      "options": [
+        "Označava sigurnu vodu",
+        "Označava usamljenu opasnost",
+        "Označava desnu stranu",
+        "Označava cjevovod"
+      ]
+    }
+  },
+  "extra-009": {
+    "en": {
+      "prompt": "A yellow buoy with a yellow X topmark is shown. What type of mark is it?",
+      "options": [
+        "Cardinal mark",
+        "Special mark",
+        "Safe-water mark",
+        "Isolated-danger mark"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je žuta plutača sa žutim znakom X na vrhu. Koja je to vrsta oznake?",
+      "options": [
+        "Kardinalna oznaka",
+        "Posebna oznaka",
+        "Oznaka sigurne vode",
+        "Oznaka usamljene opasnosti"
+      ]
+    }
+  },
+  "extra-010": {
+    "en": {
+      "prompt": "What does the chart abbreviation “Plic” mean?",
+      "options": [
+        "Harbour",
+        "Sandy bottom",
+        "Shoal",
+        "Wreck"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači kartografska kratica „Plic“?",
+      "options": [
+        "Luka",
+        "Pješčano dno",
+        "Plićina",
+        "Olupina"
+      ]
+    }
+  },
+  "extra-011": {
+    "en": {
+      "prompt": "Which compass error is caused by the boat’s own magnetic field?",
+      "options": [
+        "Magnetic variation",
+        "Latitude error",
+        "Course change",
+        "Deviation"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju pogrešku kompasa uzrokuje vlastito magnetsko polje broda?",
+      "options": [
+        "Magnetska deklinacija",
+        "Pogreška širine",
+        "Promjena kursa",
+        "Devijacija"
+      ]
+    }
+  },
+  "extra-012": {
+    "en": {
+      "prompt": "When must navigation lights be shown?",
+      "options": [
+        "At night and in restricted visibility",
+        "Only when anchored",
+        "Only in rain",
+        "Only outside a harbour"
+      ]
+    },
+    "hr": {
+      "prompt": "Kada se moraju koristiti navigacijska svjetla?",
+      "options": [
+        "Noću i pri smanjenoj vidljivosti",
+        "Samo na sidru",
+        "Samo za kiše",
+        "Samo izvan luke"
+      ]
+    }
+  },
+  "extra-013": {
+    "en": {
+      "prompt": "Two power-driven vessels are meeting head-on and risk collision. What should they generally do?",
+      "options": [
+        "Both turn to port",
+        "The larger boat gives way",
+        "Both turn to starboard",
+        "The faster boat stops"
+      ]
+    },
+    "hr": {
+      "prompt": "Dva broda na motorni pogon plove jedan prema drugome i postoji opasnost od sudara. Što bi u pravilu trebali učiniti?",
+      "options": [
+        "Oba skreću ulijevo",
+        "Veći brod se sklanja",
+        "Oba skreću udesno",
+        "Brži brod se zaustavlja"
+      ]
+    }
+  },
+  "extra-014": {
+    "en": {
+      "prompt": "Two sailing vessels have the wind on different sides. Which one must give way?",
+      "options": [
+        "The one with wind from starboard",
+        "The one with wind from port",
+        "The larger vessel",
+        "The one nearer the coast"
+      ]
+    },
+    "hr": {
+      "prompt": "Dva jedrilica imaju vjetar s različitih strana. Koja se mora skloniti?",
+      "options": [
+        "Ona s vjetrom s desne strane",
+        "Ona s vjetrom s lijeve strane",
+        "Veće plovilo",
+        "Ona bliže obali"
+      ]
+    }
+  },
+  "extra-015": {
+    "en": {
+      "prompt": "Which vessel must give way when overtaking?",
+      "options": [
+        "The vessel being overtaken",
+        "The smaller vessel",
+        "The sailing vessel",
+        "The overtaking vessel"
+      ]
+    },
+    "hr": {
+      "prompt": "Koje se plovilo mora skloniti pri pretjecanju?",
+      "options": [
+        "Pretjecano plovilo",
+        "Manje plovilo",
+        "Jedrilica",
+        "Plovilo koje pretječe"
+      ]
+    }
+  },
+  "extra-016": {
+    "en": {
+      "prompt": "What does one short blast mean as a manoeuvring signal?",
+      "options": [
+        "The vessel is turning to starboard",
+        "The vessel is turning to port",
+        "The vessel is going astern",
+        "The vessel is anchored"
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači jedan kratki zvučni signal kao manevarski signal?",
+      "options": [
+        "Plovilo skreće udesno",
+        "Plovilo skreće ulijevo",
+        "Plovilo plovi krmom",
+        "Plovilo je usidreno"
+      ]
+    }
+  },
+  "extra-017": {
+    "en": {
+      "prompt": "What do at least five short, rapid blasts indicate?",
+      "options": [
+        "I am turning to starboard",
+        "I agree",
+        "I am unsure of your manoeuvre or intentions",
+        "I am going astern"
+      ]
+    },
+    "hr": {
+      "prompt": "Što označava najmanje pet kratkih, brzih zvučnih signala?",
+      "options": [
+        "Skrećem udesno",
+        "Slažem se",
+        "Nisam siguran u tvoj manevar ili namjeru",
+        "Plovim krmom"
+      ]
+    }
+  },
+  "extra-018": {
+    "en": {
+      "prompt": "Which radio call is used in grave and imminent distress at sea?",
+      "options": [
+        "SECURITÉ",
+        "MAYDAY",
+        "PAN PAN",
+        "OVER"
+      ]
+    },
+    "hr": {
+      "prompt": "Koji se radijski poziv koristi u ozbiljnoj i neposrednoj pogibelji na moru?",
+      "options": [
+        "SECURITÉ",
+        "MAYDAY",
+        "PAN PAN",
+        "OVER"
+      ]
+    }
+  },
+  "extra-019": {
+    "en": {
+      "prompt": "A vertically white-and-blue signal flag with a swallowtail is shown. Which flag is it?",
+      "options": [
+        "Bravo",
+        "Oscar",
+        "Quebec",
+        "Alfa"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je okomito plavo-bijela signalna zastava s račvastim krajem. Koja je to zastava?",
+      "options": [
+        "Bravo",
+        "Oscar",
+        "Quebec",
+        "Alfa"
+      ]
+    }
+  },
+  "extra-020": {
+    "en": {
+      "prompt": "A signal flag divided diagonally into red and yellow is shown. What message does it convey?",
+      "options": [
+        "Man overboard",
+        "Diver down",
+        "I require a pilot",
+        "I need medical assistance"
+      ]
+    },
+    "hr": {
+      "prompt": "Prikazana je signalna zastava dijagonalno podijeljena na crveno i žuto. Koju poruku označava?",
+      "options": [
+        "Čovjek u moru",
+        "Ronioc je pod vodom",
+        "Trebam peljara",
+        "Trebam liječničku pomoć"
+      ]
+    }
+  },
+  "extra-021": {
+    "en": {
+      "prompt": "According to the course script, from which direction does the Bora mainly come?",
+      "options": [
+        "South to southeast",
+        "West to northwest",
+        "North to east",
+        "Southwest"
+      ]
+    },
+    "hr": {
+      "prompt": "Iz kojeg smjera prema skripti uglavnom puše bura?",
+      "options": [
+        "Jug do jugoistok",
+        "Zapad do sjeverozapad",
+        "Sjever do istok",
+        "Jugozapad"
+      ]
+    }
+  },
+  "extra-022": {
+    "en": {
+      "prompt": "How is the Scirocco, also called Jugo, described?",
+      "options": [
+        "Dry and cold from the north",
+        "Warm and humid from the south to southeast",
+        "Cool and steady from the west",
+        "Hot and dry from the east"
+      ]
+    },
+    "hr": {
+      "prompt": "Kako se opisuje široko, odnosno jugo?",
+      "options": [
+        "Suh i hladan sa sjevera",
+        "Topao i vlažan s juga do jugoistoka",
+        "Svjež i stalan sa zapada",
+        "Vruć i suh s istoka"
+      ]
+    }
+  },
+  "extra-023": {
+    "en": {
+      "prompt": "What is the function of the heat exchanger in a two-circuit cooling system?",
+      "options": [
+        "It cools the closed coolant circuit using seawater",
+        "It pumps fuel into the injectors",
+        "It charges the starter battery",
+        "It measures engine temperature"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja je funkcija izmjenjivača topline u dvokružnom sustavu hlađenja?",
+      "options": [
+        "Hladi zatvoreni krug rashladne tekućine morskom vodom",
+        "Pumpa gorivo u brizgaljke",
+        "Puni akumulator za pokretanje",
+        "Mjeri temperaturu motora"
+      ]
+    }
+  },
+  "extra-024": {
+    "en": {
+      "prompt": "What should be checked before starting the engine?",
+      "options": [
+        "That the anchor is stowed",
+        "That the navigation lights are on",
+        "That the gear lever is in neutral",
+        "That the log reads zero"
+      ]
+    },
+    "hr": {
+      "prompt": "Što treba provjeriti prije pokretanja motora?",
+      "options": [
+        "Da je sidro podignuto",
+        "Da su navigacijska svjetla uključena",
+        "Da je ručica mjenjača u neutralnom položaju",
+        "Da brzinomjer pokazuje nulu"
+      ]
+    }
+  },
+  "extra-025": {
+    "en": {
+      "prompt": "What arc of the horizon does a masthead light cover?",
+      "options": [
+        "112.5 degrees",
+        "225 degrees",
+        "135 degrees",
+        "360 degrees"
+      ]
+    },
+    "hr": {
+      "prompt": "Koji dio horizonta pokriva jarbolno svjetlo?",
+      "options": [
+        "112,5 stupnjeva",
+        "225 stupnjeva",
+        "135 stupnjeva",
+        "360 stupnjeva"
+      ]
+    }
+  },
+  "extra-026": {
+    "en": {
+      "prompt": "What colour is the port sidelight?",
+      "options": [
+        "Red",
+        "Green",
+        "White",
+        "Yellow"
+      ]
+    },
+    "hr": {
+      "prompt": "Koje je boje lijevo bočno svjetlo?",
+      "options": [
+        "Crvene",
+        "Zelene",
+        "Bijele",
+        "Žute"
+      ]
+    }
+  },
+  "extra-027": {
+    "en": {
+      "prompt": "What arc does an all-round light cover?",
+      "options": [
+        "135 degrees",
+        "225 degrees",
+        "270 degrees",
+        "360 degrees"
+      ]
+    },
+    "hr": {
+      "prompt": "Koji dio horizonta pokriva svjetlo vidljivo sa svih strana?",
+      "options": [
+        "135 stupnjeva",
+        "225 stupnjeva",
+        "270 stupnjeva",
+        "360 stupnjeva"
+      ]
+    }
+  },
+  "extra-028": {
+    "en": {
+      "prompt": "The illustration shows two red all-round lights vertically, plus sidelights and a sternlight. What does the vessel signal?",
+      "options": [
+        "It is at anchor",
+        "It is not under command",
+        "It is a pilot vessel",
+        "It is a sailing vessel"
+      ]
+    },
+    "hr": {
+      "prompt": "Na slici su dva crvena svjetla vidljiva sa svih strana, jedno iznad drugoga, te bočna i krmeno svjetlo. Što signalizira plovilo?",
+      "options": [
+        "Usidreno je",
+        "Nije sposobno za manevriranje",
+        "Peljarno je plovilo",
+        "Jedrilica je"
+      ]
+    }
+  },
+  "extra-029": {
+    "en": {
+      "prompt": "Which vessel matches the shown combination of masthead light, sidelights and sternlight?",
+      "options": [
+        "A power-driven vessel under 50 metres",
+        "A sailing vessel under 20 metres",
+        "A pilot vessel under 50 metres",
+        "A vessel at anchor under 50 metres"
+      ]
+    },
+    "hr": {
+      "prompt": "Koja vrsta plovila odgovara prikazanoj kombinaciji jarbolnog, bočnih i krmenog svjetla?",
+      "options": [
+        "Brod na motorni pogon kraći od 50 metara",
+        "Jedrilica kraća od 20 metara",
+        "Peljarno plovilo kraće od 50 metara",
+        "Usidreno plovilo kraće od 50 metara"
+      ]
+    }
+  },
+  "extra-030": {
+    "en": {
+      "prompt": "Which light combination does the illustration show for a vessel at anchor under 50 metres?",
+      "options": [
+        "One white all-round light",
+        "Two red all-round lights",
+        "Red over white",
+        "Green over white"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju kombinaciju svjetala slika prikazuje za usidreno plovilo kraće od 50 metara?",
+      "options": [
+        "Jedno bijelo svjetlo vidljivo sa svih strana",
+        "Dva crvena svjetla vidljiva sa svih strana",
+        "Crveno iznad bijeloga",
+        "Zeleno iznad bijeloga"
+      ]
+    }
+  },
+  "extra2-001": {
+    "en": {
+      "prompt": "Mercator projection reduces distortion when representing the Earth's surface.",
+      "options": [
+        "The projection reduces distortion when displaying the Earth's surface.",
+        "It displays every latitude to scale.",
+        "It always aligns the map with magnetic north.",
+        "It shows depths without colour bands."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje se svojstvo Mercatorove projekcije navodi u skripti?",
+      "options": [
+        "Projekcija smanjuje izobličenja pri prikazu Zemljine površine.",
+        "Prikazuje sve paralele u mjerilu.",
+        "Uvijek usmjerava kartu prema magnetskom kompasu.",
+        "Prikazuje dubine bez obojenih pojaseva."
+      ]
+    }
+  },
+  "extra2-002": {
+    "en": {
+      "prompt": "According to the course script, what colour sequence does the described newer chart use for land and depths?",
+      "options": [
+        "Land light yellow; to 10 m dark blue; 10–20 m light blue; from 20 m white.",
+        "Land white; to 10 m light blue; 10–20 m dark blue; from 20 m yellow.",
+        "Land green; to 10 m white; 10–20 m yellow; from 20 m dark blue.",
+        "Land dark blue; to 10 m light yellow; 10–20 m white; from 20 m light blue."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji slijed boja prema skripti prikazuje opisana novija pomorska karta za kopno i dubine?",
+      "options": [
+        "Kopno svijetložuto; do 10 m tamnoplavo; 10–20 m svijetloplavo; od 20 m bijelo.",
+        "Kopno bijelo; do 10 m svijetloplavo; 10–20 m tamnoplavo; od 20 m žuto.",
+        "Kopno zeleno; do 10 m bijelo; 10–20 m žuto; od 20 m tamnoplavo.",
+        "Kopno tamnoplavo; do 10 m svijetložuto; 10–20 m bijelo; od 20 m svijetloplavo."
+      ]
+    }
+  },
+  "extra2-003": {
+    "en": {
+      "prompt": "What does a scale of 1:50,000 on a nautical chart mean?",
+      "options": [
+        "One degree on the chart equals 50,000 nautical miles.",
+        "The chart covers an area of 50,000 square metres.",
+        "50,000 centimetres in reality equal one kilometre on the chart.",
+        "One centimetre on the chart equals 50,000 centimetres in reality."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači mjerilo 1:50 000 na pomorskoj karti?",
+      "options": [
+        "Jedan stupanj na karti odgovara 50 000 nautičkih milja.",
+        "Karta prikazuje površinu od 50 000 četvornih metara.",
+        "50 000 centimetara u stvarnosti odgovara jednom kilometru na karti.",
+        "Jedan centimetar na karti odgovara 50 000 centimetara u stvarnosti."
+      ]
+    }
+  },
+  "extra2-004": {
+    "en": {
+      "prompt": "How is geographic longitude usually written on nautical charts?",
+      "options": [
+        "With three-digit degrees and E or W.",
+        "With four-digit degrees and left or right.",
+        "With two-digit degrees and N or S.",
+        "Only with minutes and no direction."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako se geografska dužina obično označava na pomorskim kartama?",
+      "options": [
+        "Trocifrenim stupnjevima i oznakom E ili W.",
+        "Četveroznamenkastim stupnjevima i lijevo ili desno.",
+        "Dvoznamenkastim stupnjevima i oznakom N ili S.",
+        "Samo minutama, bez smjera."
+      ]
+    }
+  },
+  "extra2-005": {
+    "en": {
+      "prompt": "From which line is geographic longitude measured east and west?",
+      "options": [
+        "The Prime Meridian at Greenwich.",
+        "The magnetic North Pole.",
+        "The 90th parallel.",
+        "The Equator."
+      ]
+    },
+    "hr": {
+      "prompt": "Od koje se crte mjeri geografska dužina prema istoku i zapadu?",
+      "options": [
+        "Od početnog meridijana u Greenwichu.",
+        "Od magnetskog Sjevernog pola.",
+        "Od 90. paralele.",
+        "Od ekvatora."
+      ]
+    }
+  },
+  "extra2-006": {
+    "en": {
+      "prompt": "What does RwN mean in navigation?",
+      "options": [
+        "The direction of the strongest wind.",
+        "The north shown by the compass including all influences.",
+        "Magnetic north without deviation.",
+        "Geographic north."
+      ]
+    },
+    "hr": {
+      "prompt": "Što u navigaciji znači RwN?",
+      "options": [
+        "Smjer najjačeg vjetra.",
+        "Sjever koji pokazuje kompas uz sve utjecaje.",
+        "Magnetski sjever bez devijacije.",
+        "Geografski sjever."
+      ]
+    }
+  },
+  "extra2-007": {
+    "en": {
+      "prompt": "What does MwN refer to?",
+      "options": [
+        "Compass north including all external influences.",
+        "The boat’s direction of travel.",
+        "Geographic North Pole on the chart.",
+        "Magnetic north without deviation."
+      ]
+    },
+    "hr": {
+      "prompt": "Na što se odnosi MwN?",
+      "options": [
+        "Kompasni sjever sa svim vanjskim utjecajima.",
+        "Smjer plovidbe broda.",
+        "Geografski Sjeverni pol na karti.",
+        "Magnetski sjever bez devijacije."
+      ]
+    }
+  },
+  "extra2-008": {
+    "en": {
+      "prompt": "What does KwN refer to?",
+      "options": [
+        "Geographic north.",
+        "Compass north including external influences.",
+        "Magnetic north without deviation.",
+        "The north edge of the chart."
+      ]
+    },
+    "hr": {
+      "prompt": "Na što se odnosi KwN?",
+      "options": [
+        "Geografski sjever.",
+        "Kompasni sjever uključujući vanjske utjecaje.",
+        "Magnetski sjever bez devijacije.",
+        "Sjeverni rub karte."
+      ]
+    }
+  },
+  "extra2-009": {
+    "en": {
+      "prompt": "What should you consider when using a magnetic variation value on a nautical chart?",
+      "options": [
+        "Use the value only when changing course.",
+        "Double the value each year.",
+        "Adjust it to the chart year using the annual change.",
+        "Use the old chart value unchanged."
+      ]
+    },
+    "hr": {
+      "prompt": "Što treba uzeti u obzir pri upotrebi vrijednosti magnetske deklinacije na pomorskoj karti?",
+      "options": [
+        "Vrijednost upotrijebiti samo pri promjeni kursa.",
+        "Svake godine udvostručiti vrijednost.",
+        "Preračunati je na godinu karte prema godišnjoj promjeni.",
+        "Preuzeti staru vrijednost karte bez izmjene."
+      ]
+    }
+  },
+  "extra2-010": {
+    "en": {
+      "prompt": "Which types of navigation does the course script list in addition to terrestrial navigation?",
+      "options": [
+        "Harbour, coastal and inland-water navigation.",
+        "Aviation, road and rail navigation.",
+        "Astronomical, radio and satellite navigation.",
+        "Tides, depth and currents."
+      ]
+    },
+    "hr": {
+      "prompt": "Koje vrste navigacije skripta navodi uz terestričku navigaciju?",
+      "options": [
+        "Lučku, obalnu i navigaciju unutarnjim vodama.",
+        "Zračnu, cestovnu i željezničku navigaciju.",
+        "Astronomsku, radijsku i satelitsku navigaciju.",
+        "Plimu, dubinu i struje."
+      ]
+    }
+  },
+  "extra2-011": {
+    "en": {
+      "prompt": "Approximately how long does a short blast last?",
+      "options": [
+        "About 1–2 seconds.",
+        "About 10 seconds.",
+        "About 30 seconds.",
+        "About 4–6 seconds."
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko približno traje kratki zvučni signal?",
+      "options": [
+        "Oko 1–2 sekunde.",
+        "Oko 10 sekundi.",
+        "Oko 30 sekundi.",
+        "Oko 4–6 sekundi."
+      ]
+    }
+  },
+  "extra2-012": {
+    "en": {
+      "prompt": "Approximately how long does a prolonged blast last?",
+      "options": [
+        "About 1–2 seconds.",
+        "About 4–6 seconds.",
+        "About 10–12 seconds.",
+        "About 20 seconds."
+      ]
+    },
+    "hr": {
+      "prompt": "Koliko približno traje dugi zvučni signal?",
+      "options": [
+        "Oko 1–2 sekunde.",
+        "Oko 4–6 sekundi.",
+        "Oko 10–12 sekundi.",
+        "Oko 20 sekundi."
+      ]
+    }
+  },
+  "extra2-013": {
+    "en": {
+      "prompt": "What sound signal does a power-driven vessel making way through the water give in restricted visibility?",
+      "options": [
+        "One prolonged blast at intervals of no more than two minutes.",
+        "Five short blasts at intervals of no more than half a minute.",
+        "Two short blasts at intervals of no more than one minute.",
+        "Three prolonged blasts at intervals of no more than five minutes."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji zvučni signal daje brod na motorni pogon koji plovi kroz vodu pri smanjenoj vidljivosti?",
+      "options": [
+        "Jedan dugi signal u razmacima od najviše dvije minute.",
+        "Pet kratkih signala u razmacima od najviše pola minute.",
+        "Dva kratka signala u razmacima od najviše jedne minute.",
+        "Tri duga signala u razmacima od najviše pet minuta."
+      ]
+    }
+  },
+  "extra2-014": {
+    "en": {
+      "prompt": "What sound signal does a power-driven vessel underway but not making way through the water give in restricted visibility?",
+      "options": [
+        "Three short blasts in succession.",
+        "Two prolonged blasts in succession, about two seconds apart.",
+        "One short blast at intervals of no more than two minutes.",
+        "One prolonged blast every five minutes."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji zvučni signal daje brod na motorni pogon koji je u plovidbi, ali ne plovi kroz vodu, pri smanjenoj vidljivosti?",
+      "options": [
+        "Tri kratka signala zaredom.",
+        "Dva duga signala zaredom, s razmakom od oko dvije sekunde.",
+        "Jedan kratki signal u razmacima od najviše dvije minute.",
+        "Jedan dugi signal svakih pet minuta."
+      ]
+    }
+  },
+  "extra2-015": {
+    "en": {
+      "prompt": "What does “Over” mean in radiotelephony?",
+      "options": [
+        "Message not understood.",
+        "Message complete; a reply is expected.",
+        "Radio channel blocked for distress calls.",
+        "Conversation ended permanently."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači „Over“ u radiotelefoniji?",
+      "options": [
+        "Poruka nije razumljiva.",
+        "Poruka je završena; očekuje se odgovor.",
+        "Radijski kanal zatvoren za pozive pogibelji.",
+        "Razgovor je konačno završen."
+      ]
+    }
+  },
+  "extra2-016": {
+    "en": {
+      "prompt": "What does “Out” mean in radiotelephony?",
+      "options": [
+        "I am waiting for a reply.",
+        "I am switching to channel 16.",
+        "I am repeating the last message.",
+        "I am ending the communication."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači „Out“ u radiotelefoniji?",
+      "options": [
+        "Čekam odgovor.",
+        "Prelazim na kanal 16.",
+        "Ponavljam posljednju poruku.",
+        "Završavam komunikaciju."
+      ]
+    }
+  },
+  "extra2-017": {
+    "en": {
+      "prompt": "Which VHF channel is assigned to DSC digital calls?",
+      "options": [
+        "Channel 70.",
+        "Channel 06.",
+        "Channel 72.",
+        "Channel 16."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji je VHF kanal namijenjen DSC digitalnim pozivima?",
+      "options": [
+        "Kanal 70.",
+        "Kanal 06.",
+        "Kanal 72.",
+        "Kanal 16."
+      ]
+    }
+  },
+  "extra2-018": {
+    "en": {
+      "prompt": "What is the MMSI of a marine radio?",
+      "options": [
+        "The ship’s name in radio traffic.",
+        "A VHF channel number.",
+        "The call sign of the nearest harbour.",
+        "The radio’s DSC identity, not its call sign."
+      ]
+    },
+    "hr": {
+      "prompt": "Što je MMSI pomorske radiostanice?",
+      "options": [
+        "Ime broda u radijskoj komunikaciji.",
+        "Broj VHF kanala.",
+        "Pozivni znak najbliže luke.",
+        "DSC identifikacija radiostanice, a ne pozivni znak."
+      ]
+    }
+  },
+  "extra2-019": {
+    "en": {
+      "prompt": "According to the course script, what happens when the DSC distress button is held for five seconds?",
+      "options": [
+        "A weather report is requested automatically.",
+        "The radio switches to normal scanning.",
+        "A digital distress alert with ship name, time and position is sent.",
+        "The MMSI is deleted and reassigned."
+      ]
+    },
+    "hr": {
+      "prompt": "Što se prema skripti događa kada se tipka DSC poziva pogibelji drži pritisnutom pet sekundi?",
+      "options": [
+        "Automatski se zatraži vremenska prognoza.",
+        "Radiostanica prelazi na uobičajeno pretraživanje.",
+        "Šalje se digitalna uzbuna pogibelji s imenom broda, vremenom i položajem.",
+        "MMSI se briše i dodjeljuje ponovno."
+      ]
+    }
+  },
+  "extra2-020": {
+    "en": {
+      "prompt": "Which details belong in a spoken MAYDAY distress call?",
+      "options": [
+        "Position, weather and next radio channel.",
+        "Speed, fuel quantity and route.",
+        "Ship name, destination and departure time.",
+        "Name/call sign, position, distress, help needed, number of people and survival craft."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji podaci pripadaju u govorni poziv pogibelji MAYDAY?",
+      "options": [
+        "Položaj, vrijeme i sljedeći radijski kanal.",
+        "Brzina, količina goriva i ruta.",
+        "Ime broda, odredišna luka i vrijeme polaska.",
+        "Ime/pozivni znak, položaj, pogibelj, potrebna pomoć, broj osoba i sredstva za spašavanje."
+      ]
+    }
+  },
+  "extra2-021": {
+    "en": {
+      "prompt": "What does MAYDAY RELAY mean?",
+      "options": [
+        "Changing an urgency call into a safety message.",
+        "Relaying a received distress call.",
+        "Sending a weather report on a second channel.",
+        "Repeating a routine call to the marina."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači MAYDAY RELAY?",
+      "options": [
+        "Pretvaranje poziva hitnosti u sigurnosnu poruku.",
+        "Prosljeđivanje primljenog poziva pogibelji.",
+        "Slanje vremenske prognoze na drugom kanalu.",
+        "Ponavljanje redovnog poziva marini."
+      ]
+    }
+  },
+  "extra2-022": {
+    "en": {
+      "prompt": "According to the course script, at what visibility is it called fog?",
+      "options": [
+        "Below ten kilometres.",
+        "Below one kilometre.",
+        "Below five kilometres.",
+        "Only when visibility is below 100 metres."
+      ]
+    },
+    "hr": {
+      "prompt": "Pri kojoj se vidljivosti prema skripti govori o magli?",
+      "options": [
+        "Ispod deset kilometara.",
+        "Ispod jednog kilometra.",
+        "Ispod pet kilometara.",
+        "Samo kada je vidljivost ispod 100 metara."
+      ]
+    }
+  },
+  "extra2-023": {
+    "en": {
+      "prompt": "What can a slowly rising barometric pressure indicate?",
+      "options": [
+        "Increasing fog in every case.",
+        "An immediate hurricane.",
+        "Improving weather.",
+        "A shift to a land breeze."
+      ]
+    },
+    "hr": {
+      "prompt": "Što može najaviti polagani porast tlaka zraka?",
+      "options": [
+        "U svakom slučaju sve gušću maglu.",
+        "Neposredan uragan.",
+        "Poboljšanje vremena.",
+        "Promjenu na kopneni povjetarac."
+      ]
+    }
+  },
+  "extra2-024": {
+    "en": {
+      "prompt": "What weather development does the course script associate with rapidly falling pressure?",
+      "options": [
+        "A rapid pressure fall only indicates a temperature change.",
+        "At about 1 hPa/hour strong winds are possible; at about 3 hPa/hour, a storm.",
+        "The wind drops regardless of the pressure.",
+        "A pressure fall of 1 hPa means fine weather."
+      ]
+    },
+    "hr": {
+      "prompt": "Kakvu vremensku promjenu skripta povezuje s brzim padom tlaka?",
+      "options": [
+        "Brz pad tlaka označava samo promjenu temperature.",
+        "Pri oko 1 hPa/h moguć je jak vjetar, a pri oko 3 hPa/h oluja.",
+        "Vjetar slabi neovisno o tlaku.",
+        "Pad tlaka od 1 hPa znači lijepo vrijeme."
+      ]
+    }
+  },
+  "extra2-025": {
+    "en": {
+      "prompt": "According to the crosswind rule, what happens when the upper wind comes from the left?",
+      "options": [
+        "Surface and upper winds are certainly aligned.",
+        "Air pressure stays unchanged.",
+        "The weather improves.",
+        "The weather deteriorates."
+      ]
+    },
+    "hr": {
+      "prompt": "Što prema pravilu poprečnog vjetra znači ako vjetar na visini dolazi slijeva?",
+      "options": [
+        "Prizemni i visinski vjetar sigurno su istog smjera.",
+        "Tlak zraka ostaje nepromijenjen.",
+        "Vrijeme se poboljšava.",
+        "Vrijeme se pogoršava."
+      ]
+    }
+  },
+  "extra2-026": {
+    "en": {
+      "prompt": "Which cloud sequence does the course script list as a sign of a warm front with prolonged rain?",
+      "options": [
+        "Cumulus → cumulonimbus → fog → cirrus.",
+        "Stratus → cumulus → cirrus → thundercloud.",
+        "Cirrus → cirrostratus → altostratus → nimbostratus.",
+        "Nimbostratus → cumulus → cirrus → altocumulus."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji slijed oblaka skripta navodi kao znak tople fronte s dugotrajnijom kišom?",
+      "options": [
+        "Kumulus → kumulonimbus → magla → cirus.",
+        "Stratus → kumulus → cirus → olujni oblak.",
+        "Cirus → cirostratus → altostratus → nimbostratus.",
+        "Nimbostratus → kumulus → cirus → altokumulus."
+      ]
+    }
+  },
+  "extra2-027": {
+    "en": {
+      "prompt": "How does the course script describe a Nevera?",
+      "options": [
+        "Warm, humid wind that builds slowly.",
+        "Steady fair-weather wind from the northwest.",
+        "A sudden, violent thunderstorm, often from the west.",
+        "A dry downslope wind from north to east."
+      ]
+    },
+    "hr": {
+      "prompt": "Kako skripta opisuje neveru?",
+      "options": [
+        "Topao, vlažan vjetar koji se polako razvija.",
+        "Stalan vjetar lijepog vremena sa sjeverozapada.",
+        "Iznenadna, jaka grmljavinska oluja, često sa zapada.",
+        "Suh silazni vjetar sa sjevera do istoka."
+      ]
+    }
+  },
+  "extra2-028": {
+    "en": {
+      "prompt": "Which description fits the Tramontana?",
+      "options": [
+        "A cold, often gusty wind from the north.",
+        "Warm southerly wind with prolonged rain.",
+        "A local whirlwind from the west.",
+        "A dry downslope wind from the southeast."
+      ]
+    },
+    "hr": {
+      "prompt": "Koji opis odgovara tramontani?",
+      "options": [
+        "Hladan, često na udare jak vjetar sa sjevera.",
+        "Topao južni vjetar s dugotrajnom kišom.",
+        "Lokalni vrtložni vjetar sa zapada.",
+        "Suh silazni vjetar s jugoistoka."
+      ]
+    }
+  },
+  "extra2-029": {
+    "en": {
+      "prompt": "In which order do the four strokes of a four-stroke engine occur?",
+      "options": [
+        "Exhaust, power, compression, intake.",
+        "Power, intake, exhaust, compression.",
+        "Intake, compression, power, exhaust.",
+        "Compression, exhaust, intake, power."
+      ]
+    },
+    "hr": {
+      "prompt": "Kojim redoslijedom slijede četiri takta četverotaktnog motora?",
+      "options": [
+        "Ispuh, rad, kompresija, usis.",
+        "Rad, usis, ispuh, kompresija.",
+        "Usis, kompresija, rad, ispuh.",
+        "Kompresija, ispuh, usis, rad."
+      ]
+    }
+  },
+  "extra2-030": {
+    "en": {
+      "prompt": "What should you check at the exhaust after starting the engine?",
+      "options": [
+        "Whether the propeller is turning backwards.",
+        "Whether cooling water is discharged intermittently.",
+        "Whether fuel is entering the exhaust.",
+        "Whether the exhaust remains dry and hot."
+      ]
+    },
+    "hr": {
+      "prompt": "Što treba provjeriti na ispuhu nakon pokretanja motora?",
+      "options": [
+        "Okreće li se propeler unatrag.",
+        "Izlazi li rashladna voda u pravilnim mlazovima.",
+        "Ulazi li gorivo u ispuh.",
+        "Ostaje li ispuh suh i vruć."
+      ]
+    }
+  },
+  "extra2-031": {
+    "en": {
+      "prompt": "What does the illustrated signal flag B (Bravo) mean?",
+      "options": [
+        "I have a pilot on board.",
+        "I am loading, unloading or carrying dangerous goods.",
+        "My answer is “Yes”.",
+        "My ship is healthy and I request free pratique."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači prikazana signalna zastava B (Bravo)?",
+      "options": [
+        "Na brodu imam peljara.",
+        "Ukrcavam, iskrcavam ili prevozim opasne terete.",
+        "Moj odgovor je „Da“.",
+        "Brod je zdrav i tražim slobodan promet."
+      ]
+    }
+  },
+  "extra2-032": {
+    "en": {
+      "prompt": "What message is represented by the illustrated signal flag C (Charlie)?",
+      "options": [
+        "My answer is “Yes”.",
+        "I have a pilot on board.",
+        "I am loading or carrying dangerous goods.",
+        "I request free pratique."
+      ]
+    },
+    "hr": {
+      "prompt": "Koju poruku označava prikazana signalna zastava C (Charlie)?",
+      "options": [
+        "Moj odgovor je „Da“.",
+        "Na brodu imam peljara.",
+        "Ukrcavam ili prevozim opasne terete.",
+        "Tražim slobodan promet."
+      ]
+    }
+  },
+  "extra2-033": {
+    "en": {
+      "prompt": "What does the illustrated signal flag H (Hotel) mean?",
+      "options": [
+        "I need medical assistance.",
+        "I am loading dangerous goods.",
+        "I have a pilot on board.",
+        "I request free pratique."
+      ]
+    },
+    "hr": {
+      "prompt": "Što znači prikazana signalna zastava H (Hotel)?",
+      "options": [
+        "Trebam liječničku pomoć.",
+        "Ukrcavam opasne terete.",
+        "Na brodu imam peljara.",
+        "Tražim slobodan promet."
+      ]
+    }
+  },
+  "extra2-034": {
+    "en": {
+      "prompt": "What message does the illustrated yellow flag Q (Quebec) signal?",
+      "options": [
+        "I have a pilot on board.",
+        "My answer is “No”.",
+        "I am loading dangerous goods.",
+        "My ship is healthy and I request free pratique."
+      ]
+    },
+    "hr": {
+      "prompt": "Koju poruku označava prikazana žuta zastava Q (Quebec)?",
+      "options": [
+        "Na brodu imam peljara.",
+        "Moj odgovor je „Ne“.",
+        "Ukrcavam opasne terete.",
+        "Brod je zdrav i tražim slobodan promet."
+      ]
+    }
+  }
+}
