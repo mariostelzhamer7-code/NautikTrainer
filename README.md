@@ -15,7 +15,7 @@ Persönliche, installierbare Lernapp für nautische Fragen.
 ## Dateien
 
 - `index.html`, `styles.css`, `app.js`: Oberfläche und Lernabläufe.
-- `data/questions.json`: 153 Fragen einschließlich Buchfragen, Zusatzfragen und vier neuen Signalflaggen-Bildfragen; klare Duplikate werden beim Spielen herausgefiltert.
+- `data/questions.json`: 153 eingepflegte Fragen einschließlich Buchfragen, Zusatzfragen und vier neuen Signalflaggen-Bildfragen; 141 unterschiedliche Fragen sind aktiv, Wiederholungen werden beim Spielen herausgefiltert.
 - `icons/`: NautikTrainer-Icon.
 - `manifest.webmanifest` und `sw.js`: PWA-Installation und Offline-Cache.
 
