@@ -1,17 +1,22 @@
 # NautikTrainer
 
-Persönliche, installierbare Lernapp für nautische Fragen. Der Stand 1.0 enthält zwei Modi:
+Persönliche, installierbare Lernapp für nautische Fragen.
 
-- **Lernen:** alle Fragen in neuer zufälliger Reihenfolge, sofortige Rückmeldung nach jeder Antwort.
-- **Prüfung:** 30 zufällig gewählte Fragen, keine sofortige Richtig/Falsch-Anzeige, Prozent-Auswertung am Schluss.
+## Version 1.1
 
-Antworten werden in jeder Runde neu gemischt. Die App funktioniert offline, sobald sie einmal online geladen wurde und ihr Service Worker installiert ist.
+- **Lernen:** zufällige Reihenfolge, unmittelbare Rückmeldung und kurze Erklärungen.
+- **Prüfung:** einstellbare Auswahl von 10, 20, 30 oder 50 Fragen; Auswertung am Schluss.
+- **Themenauswahl:** Lichter, Flaggen, Navigation, Wetter, Sicherheit, Regeln und Seemannschaft.
+- **Fehler wiederholen**, **Merkliste**, **Bildfragen** und Fortschritt nach Themen.
+- **Schriftgröße:** Normal oder Groß.
+- Die persönlichen Einstellungen und der Lernfortschritt werden lokal auf dem Gerät gespeichert.
+- Die App funktioniert offline, sobald sie einmal online geladen wurde und ihr Service Worker installiert ist.
 
 ## Dateien
 
-- `index.html`, `styles.css`, `app.js`: Oberfläche und Spielablauf.
-- `data/questions.json`: 149 eingepflegte Fragen (89 Buchfragen und 60 Zusatzfragen). Exakte Wiederholungen und klar doppelte Zusatzfragen werden beim Spielen herausgefiltert; aktiv sind 137 unterschiedliche Fragen; genaue und klar erkennbare Wiederholungen bleiben im Quellenbestand, werden aber nicht erneut abgefragt.
-- `icons/`: NautikTrainer-Icon in passenden Größen.
+- `index.html`, `styles.css`, `app.js`: Oberfläche und Lernabläufe.
+- `data/questions.json`: 153 Fragen einschließlich Buchfragen, Zusatzfragen und vier neuen Signalflaggen-Bildfragen; klare Duplikate werden beim Spielen herausgefiltert.
+- `icons/`: NautikTrainer-Icon.
 - `manifest.webmanifest` und `sw.js`: PWA-Installation und Offline-Cache.
 
-GitHub Pages ist noch nicht aktiviert. Eine Veröffentlichung würde eine öffentlich erreichbare Website erzeugen, auch wenn dieses Repository privat bleibt.
+Die App ist über GitHub Pages erreichbar.
