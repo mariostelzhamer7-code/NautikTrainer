@@ -1,9 +1,10 @@
 # NautikTrainer
-**Version 1.2 · created by MS**
+**Version 1.3 · created by MS**
 
 Eine persönliche, offlinefähige Lern- und Prüfungsapp für nautische Fragen. Läuft als installierbare PWA auf iPhone, iPad, Android und Desktop-Browsern.
 
 ## Funktionen
+- Eigene Kategorie „Lichterführung“ mit 60 originalgetreuen, gut erkennbaren Lichtdarstellungen
 - Lernmodus mit zufälliger Reihenfolge, sofortiger Rückmeldung und Erklärung
 - Prüfungsmodus mit einstellbarer Fragenzahl, zufälliger Zusammenstellung und Auswertung am Schluss
 - Ergebnisübersicht mit ausgewählten und richtigen Antworten bei Fehlern
