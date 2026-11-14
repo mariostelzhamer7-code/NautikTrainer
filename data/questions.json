@@ -2144,5 +2144,905 @@
     "source": "Zusatzfragen",
     "image": "signal-flag-quebec",
     "explanation": "Die gelbe Signalflagge Q (Quebec) zeigt an, dass das Schiff gesund ist und freie Verkehrserlaubnis erbittet."
+  },
+  {
+    "id": "lightconfig-001",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Segelfahrzeug über 20 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Ankerlieger über 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-01"
+  },
+  {
+    "id": "lightconfig-002",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Segelfahrzeug über 20 m",
+      "Lotsenfahrzeug unter 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-02"
+  },
+  {
+    "id": "lightconfig-003",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Lotsenfahrzeug unter 50 m",
+      "Ankerlieger über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Segelfahrzeug über 20 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-03"
+  },
+  {
+    "id": "lightconfig-004",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug über 20 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Ankerlieger über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-04"
+  },
+  {
+    "id": "lightconfig-005",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug unter 20 m",
+      "Maschinenfahrzeug unter 50 m",
+      "Trawlender Fischer über 50 m",
+      "Manövrierunfähiges Schiff"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-05"
+  },
+  {
+    "id": "lightconfig-006",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierunfähiges Schiff",
+      "Segelfahrzeug unter 20 m",
+      "Maschinenfahrzeug unter 50 m",
+      "Trawlender Fischer über 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-06"
+  },
+  {
+    "id": "lightconfig-007",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Trawlender Fischer über 50 m",
+      "Manövrierunfähiges Schiff",
+      "Segelfahrzeug unter 20 m",
+      "Maschinenfahrzeug unter 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-07"
+  },
+  {
+    "id": "lightconfig-008",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 50 m",
+      "Trawlender Fischer über 50 m",
+      "Manövrierunfähiges Schiff",
+      "Segelfahrzeug unter 20 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-08"
+  },
+  {
+    "id": "lightconfig-009",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug über 20 m",
+      "Maschinenfahrzeug über 50 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-09"
+  },
+  {
+    "id": "lightconfig-010",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierbehindertes Schiff über 50 m",
+      "Segelfahrzeug über 20 m",
+      "Maschinenfahrzeug über 50 m",
+      "Nichttrawlender Fischer unter 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-10"
+  },
+  {
+    "id": "lightconfig-011",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Nichttrawlender Fischer unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Segelfahrzeug über 20 m",
+      "Maschinenfahrzeug über 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-11"
+  },
+  {
+    "id": "lightconfig-012",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug über 50 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Segelfahrzeug über 20 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-12"
+  },
+  {
+    "id": "lightconfig-013",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 50 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Ankerlieger unter 50 m",
+      "Grundsitzer"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-13"
+  },
+  {
+    "id": "lightconfig-014",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Grundsitzer",
+      "Maschinenfahrzeug unter 50 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Ankerlieger unter 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-14"
+  },
+  {
+    "id": "lightconfig-015",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger unter 50 m",
+      "Grundsitzer",
+      "Maschinenfahrzeug unter 50 m",
+      "Lotsenfahrzeug unter 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-15"
+  },
+  {
+    "id": "lightconfig-016",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Lotsenfahrzeug unter 50 m",
+      "Ankerlieger unter 50 m",
+      "Grundsitzer",
+      "Maschinenfahrzeug unter 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-16"
+  },
+  {
+    "id": "lightconfig-017",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug über 50 m",
+      "Trawlender Fischer über 50 m",
+      "Ankerlieger über 50 m",
+      "Tiefgangbehindertes Schiff über 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-17"
+  },
+  {
+    "id": "lightconfig-018",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug über 50 m",
+      "Trawlender Fischer über 50 m",
+      "Ankerlieger über 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-18"
+  },
+  {
+    "id": "lightconfig-019",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger über 50 m",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug über 50 m",
+      "Trawlender Fischer über 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-19"
+  },
+  {
+    "id": "lightconfig-020",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Trawlender Fischer über 50 m",
+      "Ankerlieger über 50 m",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug über 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-20"
+  },
+  {
+    "id": "lightconfig-021",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Lotsenfahrzeug unter 50 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Manövrierunfähiges Schiff",
+      "Schleppverband über 200 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-21"
+  },
+  {
+    "id": "lightconfig-022",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Schleppverband über 200 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Manövrierunfähiges Schiff"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-22"
+  },
+  {
+    "id": "lightconfig-023",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierunfähiges Schiff",
+      "Schleppverband über 200 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Nichttrawlender Fischer unter 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-23"
+  },
+  {
+    "id": "lightconfig-024",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Nichttrawlender Fischer unter 50 m",
+      "Manövrierunfähiges Schiff",
+      "Schleppverband über 200 m",
+      "Lotsenfahrzeug unter 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-24"
+  },
+  {
+    "id": "lightconfig-025",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Trawlender Fischer über 50 m",
+      "Ankerlieger unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-25"
+  },
+  {
+    "id": "lightconfig-026",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Trawlender Fischer über 50 m",
+      "Ankerlieger unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-26"
+  },
+  {
+    "id": "lightconfig-027",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Trawlender Fischer über 50 m",
+      "Ankerlieger unter 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-27"
+  },
+  {
+    "id": "lightconfig-028",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Trawlender Fischer über 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-28"
+  },
+  {
+    "id": "lightconfig-029",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Nichttrawlender Fischer unter 50 m",
+      "Ankerlieger über 50 m",
+      "Grundsitzer",
+      "Segelfahrzeug unter 20 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-29"
+  },
+  {
+    "id": "lightconfig-030",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug unter 20 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Ankerlieger über 50 m",
+      "Grundsitzer"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-30"
+  },
+  {
+    "id": "lightconfig-031",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Grundsitzer",
+      "Segelfahrzeug unter 20 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Ankerlieger über 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-31"
+  },
+  {
+    "id": "lightconfig-032",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger über 50 m",
+      "Grundsitzer",
+      "Segelfahrzeug unter 20 m",
+      "Nichttrawlender Fischer unter 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-32"
+  },
+  {
+    "id": "lightconfig-033",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger unter 50 m",
+      "Manövrierunfähiges Schiff",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Segelfahrzeug über 20 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-33"
+  },
+  {
+    "id": "lightconfig-034",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug über 20 m",
+      "Ankerlieger unter 50 m",
+      "Manövrierunfähiges Schiff",
+      "Tiefgangbehindertes Schiff über 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-34"
+  },
+  {
+    "id": "lightconfig-035",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Segelfahrzeug über 20 m",
+      "Ankerlieger unter 50 m",
+      "Manövrierunfähiges Schiff"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-35"
+  },
+  {
+    "id": "lightconfig-036",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierunfähiges Schiff",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Segelfahrzeug über 20 m",
+      "Ankerlieger unter 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-36"
+  },
+  {
+    "id": "lightconfig-037",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger über 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Schleppverband über 200 m",
+      "Maschinenfahrzeug unter 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-37"
+  },
+  {
+    "id": "lightconfig-038",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 50 m",
+      "Ankerlieger über 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Schleppverband über 200 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-38"
+  },
+  {
+    "id": "lightconfig-039",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Schleppverband über 200 m",
+      "Maschinenfahrzeug unter 50 m",
+      "Ankerlieger über 50 m",
+      "Manövrierbehindertes Schiff über 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-39"
+  },
+  {
+    "id": "lightconfig-040",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierbehindertes Schiff über 50 m",
+      "Schleppverband über 200 m",
+      "Maschinenfahrzeug unter 50 m",
+      "Ankerlieger über 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-40"
+  },
+  {
+    "id": "lightconfig-041",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierunfähiges Schiff",
+      "Grundsitzer",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Maschinenfahrzeug über 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-41"
+  },
+  {
+    "id": "lightconfig-042",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug über 50 m",
+      "Manövrierunfähiges Schiff",
+      "Grundsitzer",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-42"
+  },
+  {
+    "id": "lightconfig-043",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Maschinenfahrzeug über 50 m",
+      "Manövrierunfähiges Schiff",
+      "Grundsitzer"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-43"
+  },
+  {
+    "id": "lightconfig-044",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Grundsitzer",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Maschinenfahrzeug über 50 m",
+      "Manövrierunfähiges Schiff"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-44"
+  },
+  {
+    "id": "lightconfig-045",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Manövrierbehindertes Schiff über 50 m",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Segelfahrzeug unter 20 m",
+      "Lotsenfahrzeug unter 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-45"
+  },
+  {
+    "id": "lightconfig-046",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Lotsenfahrzeug unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Segelfahrzeug unter 20 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-46"
+  },
+  {
+    "id": "lightconfig-047",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug unter 20 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m",
+      "Tiefgangbehindertes Schiff über 50 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-47"
+  },
+  {
+    "id": "lightconfig-048",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Segelfahrzeug unter 20 m",
+      "Lotsenfahrzeug unter 50 m",
+      "Manövrierbehindertes Schiff über 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-48"
+  },
+  {
+    "id": "lightconfig-049",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Grundsitzer",
+      "Schleppverband über 200 m",
+      "Segelfahrzeug über 20 m",
+      "Trawlender Fischer über 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-49"
+  },
+  {
+    "id": "lightconfig-050",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Trawlender Fischer über 50 m",
+      "Grundsitzer",
+      "Schleppverband über 200 m",
+      "Segelfahrzeug über 20 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-50"
+  },
+  {
+    "id": "lightconfig-051",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug über 20 m",
+      "Trawlender Fischer über 50 m",
+      "Grundsitzer",
+      "Schleppverband über 200 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-51"
+  },
+  {
+    "id": "lightconfig-052",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Schleppverband über 200 m",
+      "Segelfahrzeug über 20 m",
+      "Trawlender Fischer über 50 m",
+      "Grundsitzer"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-52"
+  },
+  {
+    "id": "lightconfig-053",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Maschinenfahrzeug unter 50 m",
+      "Nichttrawlender Fischer unter 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-53"
+  },
+  {
+    "id": "lightconfig-054",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Nichttrawlender Fischer unter 50 m",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Maschinenfahrzeug unter 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-54"
+  },
+  {
+    "id": "lightconfig-055",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 50 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Tiefgangbehindertes Schiff über 50 m",
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-55"
+  },
+  {
+    "id": "lightconfig-056",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug unter 7 m, unter 7 Knoten",
+      "Maschinenfahrzeug unter 50 m",
+      "Nichttrawlender Fischer unter 50 m",
+      "Tiefgangbehindertes Schiff über 50 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-56"
+  },
+  {
+    "id": "lightconfig-057",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Schleppverband über 200 m",
+      "Segelfahrzeug unter 20 m",
+      "Maschinenfahrzeug über 50 m",
+      "Ankerlieger unter 50 m"
+    ],
+    "correct": 0,
+    "source": "Lichterbilder",
+    "image": "light-diagram-57"
+  },
+  {
+    "id": "lightconfig-058",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Ankerlieger unter 50 m",
+      "Schleppverband über 200 m",
+      "Segelfahrzeug unter 20 m",
+      "Maschinenfahrzeug über 50 m"
+    ],
+    "correct": 1,
+    "source": "Lichterbilder",
+    "image": "light-diagram-58"
+  },
+  {
+    "id": "lightconfig-059",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Maschinenfahrzeug über 50 m",
+      "Ankerlieger unter 50 m",
+      "Schleppverband über 200 m",
+      "Segelfahrzeug unter 20 m"
+    ],
+    "correct": 2,
+    "source": "Lichterbilder",
+    "image": "light-diagram-59"
+  },
+  {
+    "id": "lightconfig-060",
+    "group": "Lichterbilder",
+    "topic": "Lichterführung",
+    "prompt": "Welche Fahrzeugart zeigt diese Lichterführung?",
+    "options": [
+      "Segelfahrzeug unter 20 m",
+      "Maschinenfahrzeug über 50 m",
+      "Ankerlieger unter 50 m",
+      "Schleppverband über 200 m"
+    ],
+    "correct": 3,
+    "source": "Lichterbilder",
+    "image": "light-diagram-60"
   }
 ]
