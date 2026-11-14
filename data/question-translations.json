@@ -4258,5 +4258,317 @@
         "Tegljeni sastav duži od 200 m"
       ]
     }
+  },
+  "flaginput-A": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Alfa"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Alfa"
+    }
+  },
+  "flaginput-B": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Bravo"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Bravo"
+    }
+  },
+  "flaginput-C": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Charlie"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Charlie"
+    }
+  },
+  "flaginput-D": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Delta"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Delta"
+    }
+  },
+  "flaginput-E": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Echo"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Echo"
+    }
+  },
+  "flaginput-F": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Foxtrot"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Foxtrot"
+    }
+  },
+  "flaginput-G": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Golf"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Golf"
+    }
+  },
+  "flaginput-H": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Hotel"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Hotel"
+    }
+  },
+  "flaginput-I": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "India"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "India"
+    }
+  },
+  "flaginput-J": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Juliett"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Juliett"
+    }
+  },
+  "flaginput-K": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Kilo"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Kilo"
+    }
+  },
+  "flaginput-L": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Lima"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Lima"
+    }
+  },
+  "flaginput-M": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Mike"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Mike"
+    }
+  },
+  "flaginput-N": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "November"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "November"
+    }
+  },
+  "flaginput-O": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Oscar"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Oscar"
+    }
+  },
+  "flaginput-P": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Papa"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Papa"
+    }
+  },
+  "flaginput-Q": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Quebec"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Quebec"
+    }
+  },
+  "flaginput-R": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Romeo"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Romeo"
+    }
+  },
+  "flaginput-S": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Sierra"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Sierra"
+    }
+  },
+  "flaginput-T": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Tango"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Tango"
+    }
+  },
+  "flaginput-U": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Uniform"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Uniform"
+    }
+  },
+  "flaginput-V": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Victor"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Victor"
+    }
+  },
+  "flaginput-W": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Whiskey"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Whiskey"
+    }
+  },
+  "flaginput-X": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "X-ray"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "X-ray"
+    }
+  },
+  "flaginput-Y": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Yankee"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Yankee"
+    }
+  },
+  "flaginput-Z": {
+    "en": {
+      "prompt": "Type the phonetic name of this signal flag.",
+      "options": [],
+      "answer": "Zulu"
+    },
+    "hr": {
+      "prompt": "Upišite fonetski naziv ove signalne zastave.",
+      "options": [],
+      "answer": "Zulu"
+    }
   }
 }
