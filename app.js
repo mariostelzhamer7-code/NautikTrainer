@@ -143,7 +143,7 @@ function localizeHome() {
   $("#settingsDialog h2").textContent=tr("settings");
   const examOpts=document.querySelectorAll("#examLength option");examOpts.forEach(o=>o.textContent=o.value+(settings.language==="en"?" questions":settings.language==="hr"?" pitanja":" Fragen"));
   const bankNote=document.querySelector(".bank-note");if(bankNote)bankNote.textContent=uniqueQuestionPool(bank).length+" "+(settings.language==="en"?"questions available · four answer choices · works offline":settings.language==="hr"?"pitanja · četiri ponuđena odgovora · radi izvan mreže":"Fragen in der Auswahl · vier Antwortmöglichkeiten · offline verfügbar");
-  const footerText=document.querySelector(".footer span");if(footerText)footerText.textContent=settings.language==="en"?"Version 1.2 · created by MS":settings.language==="hr"?"Verzija 1.3 · izradio MS":"Version 1.3 · created by MS";
+  const footerText=document.querySelector(".footer span");if(footerText)footerText.textContent=settings.language==="en"?"Version 1.2 · created by MS":settings.language==="hr"?"Verzija 1.3.1 · izradio MS":"Version 1.3.1 · created by MS";
   const install=document.querySelector("#installHelp");if(install)install.textContent=settings.language==="en"?"Add to Home Screen":settings.language==="hr"?"Dodaj na početni zaslon":"Zum Home-Bildschirm";
   const sizes=document.querySelectorAll("#textSize option");sizes[0].textContent=settings.language==="en"?"Normal":settings.language==="hr"?"Uobičajena":"Normal";sizes[1].textContent=settings.language==="en"?"Large":"Velika";
 }
