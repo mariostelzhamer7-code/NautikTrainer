@@ -23,8 +23,9 @@ function saveMistakes() { localStorage.setItem(STORAGE.mistakes, JSON.stringify(
 function saveFavorites() { localStorage.setItem(STORAGE.favorites, JSON.stringify(Array.from(favorites))); }
 function topicOf(q) {
   if (q.topic) return q.topic;
-  if (q.image && q.image.indexOf("signal-flag-") === 0) return "Flaggen A–Z";
+  if (q.image && q.image.indexOf("signalflag-") === 0) return "Flaggen A–Z";
   if (q.group === "Signalflaggen A–Z") return "Flaggen A–Z";
+  if (q.image && q.image.indexOf("signal-flag-") === 0) return "Flaggen";
   var text = (q.prompt + " " + q.options.join(" ")).toLocaleLowerCase("de");
   if (/flagge|signalflag|flaggen|alfa|oscar|bravo|charlie|hotel|quebec/.test(text)) return "Flaggen";
   if (/licht|laterne|topplicht|hecklicht|seitenlicht|rundumlicht/.test(text)) return "Lichter";
