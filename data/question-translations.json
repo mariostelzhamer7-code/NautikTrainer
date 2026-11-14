@@ -3058,5 +3058,1205 @@
         "Brod je zdrav i tražim slobodan promet."
       ]
     }
+  },
+  "lightconfig-001": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Sailing vessel over 20 m",
+        "Pilot vessel under 50 m",
+        "Vessel at anchor over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Jedrilica duža od 20 m",
+        "Pilotski brod kraći od 50 m",
+        "Usidreni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-002": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Sailing vessel over 20 m",
+        "Pilot vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Jedrilica duža od 20 m",
+        "Pilotski brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-003": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Pilot vessel under 50 m",
+        "Vessel at anchor over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Sailing vessel over 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Pilotski brod kraći od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Jedrilica duža od 20 m"
+      ]
+    }
+  },
+  "lightconfig-004": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel over 20 m",
+        "Pilot vessel under 50 m",
+        "Vessel at anchor over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica duža od 20 m",
+        "Pilotski brod kraći od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova"
+      ]
+    }
+  },
+  "lightconfig-005": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel under 20 m",
+        "Power-driven vessel under 50 m",
+        "Trawling fishing vessel over 50 m",
+        "Vessel not under command"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica kraća od 20 m",
+        "Motorni brod kraći od 50 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Brod nesposoban za manevriranje"
+      ]
+    }
+  },
+  "lightconfig-006": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel not under command",
+        "Sailing vessel under 20 m",
+        "Power-driven vessel under 50 m",
+        "Trawling fishing vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod nesposoban za manevriranje",
+        "Jedrilica kraća od 20 m",
+        "Motorni brod kraći od 50 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-007": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Trawling fishing vessel over 50 m",
+        "Vessel not under command",
+        "Sailing vessel under 20 m",
+        "Power-driven vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Jedrilica kraća od 20 m",
+        "Motorni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-008": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 50 m",
+        "Trawling fishing vessel over 50 m",
+        "Vessel not under command",
+        "Sailing vessel under 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 50 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Jedrilica kraća od 20 m"
+      ]
+    }
+  },
+  "lightconfig-009": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel over 20 m",
+        "Power-driven vessel over 50 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica duža od 20 m",
+        "Motorni brod duži od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-010": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Sailing vessel over 20 m",
+        "Power-driven vessel over 50 m",
+        "Fishing vessel not trawling under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Jedrilica duža od 20 m",
+        "Motorni brod duži od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-011": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Fishing vessel not trawling under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Sailing vessel over 20 m",
+        "Power-driven vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Jedrilica duža od 20 m",
+        "Motorni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-012": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel over 50 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Sailing vessel over 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod duži od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Jedrilica duža od 20 m"
+      ]
+    }
+  },
+  "lightconfig-013": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 50 m",
+        "Pilot vessel under 50 m",
+        "Vessel at anchor under 50 m",
+        "Vessel aground"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 50 m",
+        "Pilotski brod kraći od 50 m",
+        "Usidreni brod kraći od 50 m",
+        "Nasukani brod"
+      ]
+    }
+  },
+  "lightconfig-014": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel aground",
+        "Power-driven vessel under 50 m",
+        "Pilot vessel under 50 m",
+        "Vessel at anchor under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Nasukani brod",
+        "Motorni brod kraći od 50 m",
+        "Pilotski brod kraći od 50 m",
+        "Usidreni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-015": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor under 50 m",
+        "Vessel aground",
+        "Power-driven vessel under 50 m",
+        "Pilot vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod kraći od 50 m",
+        "Nasukani brod",
+        "Motorni brod kraći od 50 m",
+        "Pilotski brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-016": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Pilot vessel under 50 m",
+        "Vessel at anchor under 50 m",
+        "Vessel aground",
+        "Power-driven vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Pilotski brod kraći od 50 m",
+        "Usidreni brod kraći od 50 m",
+        "Nasukani brod",
+        "Motorni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-017": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel over 50 m",
+        "Trawling fishing vessel over 50 m",
+        "Vessel at anchor over 50 m",
+        "Vessel constrained by her draught over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod duži od 50 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Brod ograničenog gaza, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-018": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel constrained by her draught over 50 m",
+        "Power-driven vessel over 50 m",
+        "Trawling fishing vessel over 50 m",
+        "Vessel at anchor over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničenog gaza, duži od 50 m",
+        "Motorni brod duži od 50 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Usidreni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-019": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor over 50 m",
+        "Vessel constrained by her draught over 50 m",
+        "Power-driven vessel over 50 m",
+        "Trawling fishing vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod duži od 50 m",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Motorni brod duži od 50 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-020": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Trawling fishing vessel over 50 m",
+        "Vessel at anchor over 50 m",
+        "Vessel constrained by her draught over 50 m",
+        "Power-driven vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Motorni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-021": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Pilot vessel under 50 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel not under command",
+        "Vessel towing over 200 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Pilotski brod kraći od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Tegljeni sastav duži od 200 m"
+      ]
+    }
+  },
+  "lightconfig-022": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel towing over 200 m",
+        "Pilot vessel under 50 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel not under command"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Tegljeni sastav duži od 200 m",
+        "Pilotski brod kraći od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod nesposoban za manevriranje"
+      ]
+    }
+  },
+  "lightconfig-023": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel not under command",
+        "Vessel towing over 200 m",
+        "Pilot vessel under 50 m",
+        "Fishing vessel not trawling under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod nesposoban za manevriranje",
+        "Tegljeni sastav duži od 200 m",
+        "Pilotski brod kraći od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-024": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Fishing vessel not trawling under 50 m",
+        "Vessel not under command",
+        "Vessel towing over 200 m",
+        "Pilot vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Tegljeni sastav duži od 200 m",
+        "Pilotski brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-025": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Trawling fishing vessel over 50 m",
+        "Vessel at anchor under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Usidreni brod kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova"
+      ]
+    }
+  },
+  "lightconfig-026": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Trawling fishing vessel over 50 m",
+        "Vessel at anchor under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Usidreni brod kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-027": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Trawling fishing vessel over 50 m",
+        "Vessel at anchor under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Usidreni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-028": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Trawling fishing vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Brod koji obavlja ribolov koćom, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-029": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Fishing vessel not trawling under 50 m",
+        "Vessel at anchor over 50 m",
+        "Vessel aground",
+        "Sailing vessel under 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Nasukani brod",
+        "Jedrilica kraća od 20 m"
+      ]
+    }
+  },
+  "lightconfig-030": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel under 20 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel at anchor over 50 m",
+        "Vessel aground"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica kraća od 20 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Nasukani brod"
+      ]
+    }
+  },
+  "lightconfig-031": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel aground",
+        "Sailing vessel under 20 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel at anchor over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Nasukani brod",
+        "Jedrilica kraća od 20 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Usidreni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-032": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor over 50 m",
+        "Vessel aground",
+        "Sailing vessel under 20 m",
+        "Fishing vessel not trawling under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod duži od 50 m",
+        "Nasukani brod",
+        "Jedrilica kraća od 20 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-033": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor under 50 m",
+        "Vessel not under command",
+        "Vessel constrained by her draught over 50 m",
+        "Sailing vessel over 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod kraći od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Jedrilica duža od 20 m"
+      ]
+    }
+  },
+  "lightconfig-034": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel over 20 m",
+        "Vessel at anchor under 50 m",
+        "Vessel not under command",
+        "Vessel constrained by her draught over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica duža od 20 m",
+        "Usidreni brod kraći od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Brod ograničenog gaza, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-035": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel constrained by her draught over 50 m",
+        "Sailing vessel over 20 m",
+        "Vessel at anchor under 50 m",
+        "Vessel not under command"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničenog gaza, duži od 50 m",
+        "Jedrilica duža od 20 m",
+        "Usidreni brod kraći od 50 m",
+        "Brod nesposoban za manevriranje"
+      ]
+    }
+  },
+  "lightconfig-036": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel not under command",
+        "Vessel constrained by her draught over 50 m",
+        "Sailing vessel over 20 m",
+        "Vessel at anchor under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod nesposoban za manevriranje",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Jedrilica duža od 20 m",
+        "Usidreni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-037": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor over 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Vessel towing over 200 m",
+        "Power-driven vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod duži od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Tegljeni sastav duži od 200 m",
+        "Motorni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-038": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 50 m",
+        "Vessel at anchor over 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Vessel towing over 200 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Tegljeni sastav duži od 200 m"
+      ]
+    }
+  },
+  "lightconfig-039": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel towing over 200 m",
+        "Power-driven vessel under 50 m",
+        "Vessel at anchor over 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Tegljeni sastav duži od 200 m",
+        "Motorni brod kraći od 50 m",
+        "Usidreni brod duži od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-040": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Vessel towing over 200 m",
+        "Power-driven vessel under 50 m",
+        "Vessel at anchor over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Tegljeni sastav duži od 200 m",
+        "Motorni brod kraći od 50 m",
+        "Usidreni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-041": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel not under command",
+        "Vessel aground",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Power-driven vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod nesposoban za manevriranje",
+        "Nasukani brod",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Motorni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-042": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel over 50 m",
+        "Vessel not under command",
+        "Vessel aground",
+        "Power-driven vessel under 7 m and under 7 knots"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod duži od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Nasukani brod",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova"
+      ]
+    }
+  },
+  "lightconfig-043": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Power-driven vessel over 50 m",
+        "Vessel not under command",
+        "Vessel aground"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Motorni brod duži od 50 m",
+        "Brod nesposoban za manevriranje",
+        "Nasukani brod"
+      ]
+    }
+  },
+  "lightconfig-044": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel aground",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Power-driven vessel over 50 m",
+        "Vessel not under command"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Nasukani brod",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Motorni brod duži od 50 m",
+        "Brod nesposoban za manevriranje"
+      ]
+    }
+  },
+  "lightconfig-045": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Vessel constrained by her draught over 50 m",
+        "Sailing vessel under 20 m",
+        "Pilot vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Jedrilica kraća od 20 m",
+        "Pilotski brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-046": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Pilot vessel under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Vessel constrained by her draught over 50 m",
+        "Sailing vessel under 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Pilotski brod kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Jedrilica kraća od 20 m"
+      ]
+    }
+  },
+  "lightconfig-047": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel under 20 m",
+        "Pilot vessel under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m",
+        "Vessel constrained by her draught over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica kraća od 20 m",
+        "Pilotski brod kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m",
+        "Brod ograničenog gaza, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-048": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel constrained by her draught over 50 m",
+        "Sailing vessel under 20 m",
+        "Pilot vessel under 50 m",
+        "Vessel restricted in its ability to manoeuvre over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničenog gaza, duži od 50 m",
+        "Jedrilica kraća od 20 m",
+        "Pilotski brod kraći od 50 m",
+        "Brod ograničene sposobnosti manevriranja, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-049": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel aground",
+        "Vessel towing over 200 m",
+        "Sailing vessel over 20 m",
+        "Trawling fishing vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Nasukani brod",
+        "Tegljeni sastav duži od 200 m",
+        "Jedrilica duža od 20 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-050": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Trawling fishing vessel over 50 m",
+        "Vessel aground",
+        "Vessel towing over 200 m",
+        "Sailing vessel over 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Nasukani brod",
+        "Tegljeni sastav duži od 200 m",
+        "Jedrilica duža od 20 m"
+      ]
+    }
+  },
+  "lightconfig-051": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel over 20 m",
+        "Trawling fishing vessel over 50 m",
+        "Vessel aground",
+        "Vessel towing over 200 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica duža od 20 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Nasukani brod",
+        "Tegljeni sastav duži od 200 m"
+      ]
+    }
+  },
+  "lightconfig-052": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel towing over 200 m",
+        "Sailing vessel over 20 m",
+        "Trawling fishing vessel over 50 m",
+        "Vessel aground"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Tegljeni sastav duži od 200 m",
+        "Jedrilica duža od 20 m",
+        "Brod koji obavlja ribolov koćom, duži od 50 m",
+        "Nasukani brod"
+      ]
+    }
+  },
+  "lightconfig-053": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel constrained by her draught over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Power-driven vessel under 50 m",
+        "Fishing vessel not trawling under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Brod ograničenog gaza, duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Motorni brod kraći od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-054": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Fishing vessel not trawling under 50 m",
+        "Vessel constrained by her draught over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Power-driven vessel under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Motorni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-055": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 50 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel constrained by her draught over 50 m",
+        "Power-driven vessel under 7 m and under 7 knots"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod ograničenog gaza, duži od 50 m",
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova"
+      ]
+    }
+  },
+  "lightconfig-056": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel under 7 m and under 7 knots",
+        "Power-driven vessel under 50 m",
+        "Fishing vessel not trawling under 50 m",
+        "Vessel constrained by her draught over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod kraći od 7 m i brzine manje od 7 čvorova",
+        "Motorni brod kraći od 50 m",
+        "Ribarski brod koji ne koćari, kraći od 50 m",
+        "Brod ograničenog gaza, duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-057": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel towing over 200 m",
+        "Sailing vessel under 20 m",
+        "Power-driven vessel over 50 m",
+        "Vessel at anchor under 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Tegljeni sastav duži od 200 m",
+        "Jedrilica kraća od 20 m",
+        "Motorni brod duži od 50 m",
+        "Usidreni brod kraći od 50 m"
+      ]
+    }
+  },
+  "lightconfig-058": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Vessel at anchor under 50 m",
+        "Vessel towing over 200 m",
+        "Sailing vessel under 20 m",
+        "Power-driven vessel over 50 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Usidreni brod kraći od 50 m",
+        "Tegljeni sastav duži od 200 m",
+        "Jedrilica kraća od 20 m",
+        "Motorni brod duži od 50 m"
+      ]
+    }
+  },
+  "lightconfig-059": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Power-driven vessel over 50 m",
+        "Vessel at anchor under 50 m",
+        "Vessel towing over 200 m",
+        "Sailing vessel under 20 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Motorni brod duži od 50 m",
+        "Usidreni brod kraći od 50 m",
+        "Tegljeni sastav duži od 200 m",
+        "Jedrilica kraća od 20 m"
+      ]
+    }
+  },
+  "lightconfig-060": {
+    "en": {
+      "prompt": "Which type of vessel does this light configuration identify?",
+      "options": [
+        "Sailing vessel under 20 m",
+        "Power-driven vessel over 50 m",
+        "Vessel at anchor under 50 m",
+        "Vessel towing over 200 m"
+      ]
+    },
+    "hr": {
+      "prompt": "Koju vrstu plovila prikazuje ovaj raspored svjetala?",
+      "options": [
+        "Jedrilica kraća od 20 m",
+        "Motorni brod duži od 50 m",
+        "Usidreni brod kraći od 50 m",
+        "Tegljeni sastav duži od 200 m"
+      ]
+    }
   }
 }
