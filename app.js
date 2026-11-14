@@ -7,6 +7,7 @@ const confirmInstall = document.querySelector("#confirmInstall");
 const iosHint = document.querySelector("#iosHint");
 let bank = [];
 let translations = {};
+let lightDiagrams = {};
 let game = null;
 let deferredInstallPrompt = null;
 const STORAGE = { settings: "nautiktrainer.settings.v1", stats: "nautiktrainer.stats.v1", mistakes: "nautiktrainer.mistakes.v1", favorites: "nautiktrainer.favorites.v1" };
@@ -20,6 +21,7 @@ function saveStats() { localStorage.setItem(STORAGE.stats, JSON.stringify(stats)
 function saveMistakes() { localStorage.setItem(STORAGE.mistakes, JSON.stringify(Array.from(mistakes))); }
 function saveFavorites() { localStorage.setItem(STORAGE.favorites, JSON.stringify(Array.from(favorites))); }
 function topicOf(q) {
+  if (q.topic) return q.topic;
   if (q.image && q.image.indexOf("signal-flag-") === 0) return "Flaggen";
   var text = (q.prompt + " " + q.options.join(" ")).toLocaleLowerCase("de");
   if (/flagge|signalflag|flaggen|alfa|oscar|bravo|charlie|hotel|quebec/.test(text)) return "Flaggen";
@@ -43,12 +45,12 @@ function recordAnswer(q, correct) {
 }
 function applyTextSize() { document.documentElement.dataset.textSize = settings.textSize; document.documentElement.dataset.theme = settings.darkMode ? "dark" : "light"; document.documentElement.lang = settings.language === "hr" ? "hr" : settings.language; }
 const LABELS={
-  en:{title:"Ready to set sail?",tagline:"Your personal nautical trainer",hero:"Practise at your pace or start an exam.",topic:"Topic",settings:"Settings",learn:"Learn",exam:"Exam",learningText:"Random order, instant feedback and explanations.",examText:"random questions. Results at the end.",examQuestions:"Questions per exam",fontSize:"Text size",language:"Language",darkMode:"Dark mode",save:"Save",continue:"Continue",question:"Question",back:"← Overview",results:"Show results",finish:"Finish practice",home:"Overview",read:"Read question aloud",correct:"Correct",incorrect:"Not quite. Correct answer:",explanation:"Explanation:",completed:"Exam completed",result:"Your result",false:"incorrect",wrongReview:"Review incorrect answers",yourAnswer:"Your answer",rightAnswer:"Correct answer",newExam:"New exam",newLearn:"New practice round",repeatWrong:"Repeat incorrect questions",imagePractice:"Practise image questions",favorites:"Practise saved questions",progress:"Your progress",all:"All topics",flags:"Flags",lights:"Lights",navigation:"Navigation",weather:"Weather",safety:"Safety",rules:"Rules",seamanship:"Seamanship",image:"Image questions"},
-  hr:{title:"Spremni za isplovljavanje?",tagline:"Vaš osobni nautički trener",hero:"Vježbajte svojim tempom ili započnite ispit.",topic:"Tema",settings:"Postavke",learn:"Učenje",exam:"Ispit",learningText:"Nasumičan redoslijed, trenutačna povratna informacija i objašnjenje.",examText:"nasumičnih pitanja. Rezultat na kraju.",examQuestions:"Broj pitanja na ispitu",fontSize:"Veličina teksta",language:"Jezik",darkMode:"Tamni način",save:"Spremi",continue:"Nastavi",question:"Pitanje",back:"← Pregled",results:"Prikaži rezultate",finish:"Završi vježbu",home:"Pregled",read:"Pročitaj pitanje",correct:"Točno",incorrect:"Nije točno. Točan odgovor:",explanation:"Objašnjenje:",completed:"Ispit je završen",result:"Vaš rezultat",false:"netočno",wrongReview:"Pregled netočnih odgovora",yourAnswer:"Vaš odgovor",rightAnswer:"Točan odgovor",newExam:"Novi ispit",newLearn:"Nova vježba",repeatWrong:"Ponovi netočna pitanja",imagePractice:"Vježbaj pitanja sa slikama",favorites:"Vježbaj spremljena pitanja",progress:"Vaš napredak",all:"Sve teme",flags:"Zastave",lights:"Svjetla",navigation:"Navigacija",weather:"Vrijeme",safety:"Sigurnost",rules:"Pravila",seamanship:"Pomorstvo",image:"Pitanja sa slikama"}
+  en:{title:"Ready to set sail?",tagline:"Your personal nautical trainer",hero:"Practise at your pace or start an exam.",topic:"Topic",settings:"Settings",learn:"Learn",exam:"Exam",learningText:"Random order, instant feedback and explanations.",examText:"random questions. Results at the end.",examQuestions:"Questions per exam",fontSize:"Text size",language:"Language",darkMode:"Dark mode",save:"Save",continue:"Continue",question:"Question",back:"← Overview",results:"Show results",finish:"Finish practice",home:"Overview",read:"Read question aloud",correct:"Correct",incorrect:"Not quite. Correct answer:",explanation:"Explanation:",completed:"Exam completed",result:"Your result",false:"incorrect",wrongReview:"Review incorrect answers",yourAnswer:"Your answer",rightAnswer:"Correct answer",newExam:"New exam",newLearn:"New practice round",repeatWrong:"Repeat incorrect questions",imagePractice:"Practise image questions",favorites:"Practise saved questions",progress:"Your progress",all:"All topics",flags:"Flags",lights:"Lights",navigation:"Navigation",weather:"Weather",safety:"Safety",rules:"Rules",seamanship:"Seamanship",image:"Image questions",lightRecognition:"Light recognition"},
+  hr:{title:"Spremni za isplovljavanje?",tagline:"Vaš osobni nautički trener",hero:"Vježbajte svojim tempom ili započnite ispit.",topic:"Tema",settings:"Postavke",learn:"Učenje",exam:"Ispit",learningText:"Nasumičan redoslijed, trenutačna povratna informacija i objašnjenje.",examText:"nasumičnih pitanja. Rezultat na kraju.",examQuestions:"Broj pitanja na ispitu",fontSize:"Veličina teksta",language:"Jezik",darkMode:"Tamni način",save:"Spremi",continue:"Nastavi",question:"Pitanje",back:"← Pregled",results:"Prikaži rezultate",finish:"Završi vježbu",home:"Pregled",read:"Pročitaj pitanje",correct:"Točno",incorrect:"Nije točno. Točan odgovor:",explanation:"Objašnjenje:",completed:"Ispit je završen",result:"Vaš rezultat",false:"netočno",wrongReview:"Pregled netočnih odgovora",yourAnswer:"Vaš odgovor",rightAnswer:"Točan odgovor",newExam:"Novi ispit",newLearn:"Nova vježba",repeatWrong:"Ponovi netočna pitanja",imagePractice:"Vježbaj pitanja sa slikama",favorites:"Vježbaj spremljena pitanja",progress:"Vaš napredak",all:"Sve teme",flags:"Zastave",lights:"Svjetla",navigation:"Navigacija",weather:"Vrijeme",safety:"Sigurnost",rules:"Pravila",seamanship:"Pomorstvo",image:"Pitanja sa slikama",lightRecognition:"Prepoznavanje svjetala"}
 };
 function tr(key, fallback){return settings.language==="de"?(fallback||key):((LABELS[settings.language]||{})[key]||fallback||key);}
 function localizedQuestion(q){return (translations[q.id]&&translations[q.id][settings.language])||q;}
-function topicTranslation(topic){const key={"Flaggen":"flags","Lichter":"lights","Navigation":"navigation","Wetter":"weather","Sicherheit":"safety","Regeln":"rules","Seemannschaft":"seamanship"}[topic];return settings.language==="de"?topic:(key?tr(key,topic):topic);}
+function topicTranslation(topic){const key={"Flaggen":"flags","Lichter":"lights","Lichterführung":"lightRecognition","Navigation":"navigation","Wetter":"weather","Sicherheit":"safety","Regeln":"rules","Seemannschaft":"seamanship"}[topic];return settings.language==="de"?topic:(key?tr(key,topic):topic);}
 function speakPrompt(text){if(!("speechSynthesis" in window)){alert(settings.language==="hr"?"Čitanje naglas nije podržano.":settings.language==="en"?"Read aloud is not supported.":"Vorlesen wird nicht unterstützt.");return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang={de:"de-DE",en:"en-GB",hr:"hr-HR"}[settings.language]||"de-DE";speechSynthesis.speak(u);}
 
 
@@ -72,7 +74,7 @@ function uniqueQuestionPool(items) {
   const repeatedFacts = new Set(["book-032", "book-066", "extra-004", "extra-010", "extra-011", "extra-012", "extra-019", "extra-021", "extra-022", "extra-023", "extra-028", "extra-030"]);
   return items.filter(item => {
     if (repeatedFacts.has(item.id)) return false;
-    const key = cleanPrompt(item.prompt);
+    const key = item.topic === "Lichterführung" ? item.id : cleanPrompt(item.prompt);
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -85,6 +87,7 @@ function svgFrame(body, viewBox = "0 0 360 210") {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" role="img" aria-label="Nautische Illustration"><rect width="100%" height="100%" rx="18" fill="#f5faf8"/>${body}</svg>`;
 }
 function illustration(id) {
+  if (lightDiagrams[id]) return '<img class="light-diagram" src="data:image/svg+xml,'+encodeURIComponent(lightDiagrams[id])+'" alt="Lichterdarstellung">';
   const navy = "#123250", teal = "#009b91", cream = "#fff9e8", red = "#cf3c42", green = "#16835a", yellow = "#f5d452", blue = "#1268a0";
   const art = {
     "lateral-green-cone": `<path d="M180 30v145" stroke="#6d8190" stroke-width="5"/><path d="M164 65 180 35 196 65Z" fill="${green}"/><path d="M157 67h46l-10 91h-26Z" fill="${green}"/><path d="M130 160h100" stroke="${navy}" stroke-width="5"/><path d="M140 172h80" stroke="#9eb2bb" stroke-width="3"/>`,
@@ -129,7 +132,7 @@ function localizeHome() {
   const progress=document.querySelector(".progress-summary h2"); if(progress)progress.textContent=tr("progress");
   const empty=document.querySelector(".progress-empty"); if(empty)empty.textContent=settings.language==="en"?"Your progress will appear here after you answer questions.":"Vaš napredak prikazat će se nakon što odgovorite na pitanja.";
   const opts=document.querySelectorAll("#topicFilter option");
-  const keys=["all","flags","lights","navigation","weather","safety","rules","seamanship","image"];
+  const keys=["all","flags","lights","lightRecognition","navigation","weather","safety","rules","seamanship","image"];
   opts.forEach((o,i)=>o.textContent=tr(keys[i]));
   const labels=document.querySelectorAll("#settingsDialog label");
   labels[0].childNodes[0].textContent=tr("examQuestions")+" ";
@@ -140,18 +143,18 @@ function localizeHome() {
   $("#settingsDialog h2").textContent=tr("settings");
   const examOpts=document.querySelectorAll("#examLength option");examOpts.forEach(o=>o.textContent=o.value+(settings.language==="en"?" questions":settings.language==="hr"?" pitanja":" Fragen"));
   const bankNote=document.querySelector(".bank-note");if(bankNote)bankNote.textContent=uniqueQuestionPool(bank).length+" "+(settings.language==="en"?"questions available · four answer choices · works offline":settings.language==="hr"?"pitanja · četiri ponuđena odgovora · radi izvan mreže":"Fragen in der Auswahl · vier Antwortmöglichkeiten · offline verfügbar");
-  const footerText=document.querySelector(".footer span");if(footerText)footerText.textContent=settings.language==="en"?"Version 1.2 · created by MS":settings.language==="hr"?"Verzija 1.2 · izradio MS":"Version 1.2 · created by MS";
+  const footerText=document.querySelector(".footer span");if(footerText)footerText.textContent=settings.language==="en"?"Version 1.2 · created by MS":settings.language==="hr"?"Verzija 1.3 · izradio MS":"Version 1.3 · created by MS";
   const install=document.querySelector("#installHelp");if(install)install.textContent=settings.language==="en"?"Add to Home Screen":settings.language==="hr"?"Dodaj na početni zaslon":"Zum Home-Bildschirm";
   const sizes=document.querySelectorAll("#textSize option");sizes[0].textContent=settings.language==="en"?"Normal":settings.language==="hr"?"Uobičajena":"Normal";sizes[1].textContent=settings.language==="en"?"Large":"Velika";
 }
 function showHome() {
   game = null;
   var pool = filteredPool(uniqueQuestionPool(bank));
-  var topics = ["Lichter","Flaggen","Navigation","Wetter","Sicherheit","Regeln","Seemannschaft"];
+  var topics = ["Lichter","Lichterführung","Flaggen","Navigation","Wetter","Sicherheit","Regeln","Seemannschaft"];
   var topicStats = topics.filter(function(t){return stats[t] && stats[t].seen;}).map(function(t){
     return '<span class="topic-progress"><b>'+t+'</b><span>'+stats[t].correct+'/'+stats[t].seen+' richtig</span></span>';
   }).join("");
-  var options = ["Alle Themen","Flaggen","Lichter","Navigation","Wetter","Sicherheit","Regeln","Seemannschaft","Bildfragen"].map(function(t){
+  var options = ["Alle Themen","Flaggen","Lichter","Lichterführung","Navigation","Wetter","Sicherheit","Regeln","Seemannschaft","Bildfragen"].map(function(t){
     return '<option value="'+t+'" '+(settings.topic===t?"selected":"")+'>'+t+'</option>';
   }).join("");
   app.innerHTML = '<section class="hero">'+ICON+
@@ -331,7 +334,7 @@ fetch("./data/questions.json").then(response => {
   return response.json();
 }).then(data => {
   bank = data;
-  fetch("./data/question-translations.json").then(r=>r.ok?r.json():{}).then(localized=>{translations=localized;showHome();}).catch(()=>showHome());
+  Promise.all([fetch("./data/question-translations.json").then(r=>r.ok?r.json():{}),fetch("./data/light-diagrams.json").then(r=>r.ok?r.json():{})]).then(([localized,diagrams])=>{translations=localized;lightDiagrams=diagrams;showHome();}).catch(()=>showHome());
 }).catch(() => {
   app.innerHTML = `<section class="result"><h1>Fragen nicht geladen</h1><p class="result-text">Bitte lade die App erneut, sobald eine Verbindung besteht.</p></section>`;
 });
