@@ -4570,5 +4570,173 @@
       "options": [],
       "answer": "Zulu"
     }
+  },
+  "giveway-001": {
+    "en": {
+      "prompt": "Two sailing vessels approach with risk of collision. A has wind on port; B has it on starboard. Which gives way?",
+      "options": [
+        "Vessel B, with wind on starboard.",
+        "Vessel A, with wind on port.",
+        "The vessel sailing closer to the wind.",
+        "Both alter course at the same time."
+      ],
+      "answer": "Boot A mit Wind von Backbord.",
+      "explanation": "When sailing vessels have wind on different sides, the vessel with wind on port keeps out of the way."
+    },
+    "hr": {
+      "prompt": "Dva jedrenjaka približavaju se uz opasnost od sudara. A ima vjetar s lijeve, a B s desne strane. Tko se uklanja?",
+      "options": [
+        "Brod B s vjetrom s desne strane.",
+        "Brod A s vjetrom s lijeve strane.",
+        "Brod koji plovi bliže vjetru.",
+        "Oba istodobno mijenjaju kurs."
+      ],
+      "answer": "Boot A mit Wind von Backbord.",
+      "explanation": "Kad jedrenjaci imaju vjetar s različitih strana, jedrenjak s vjetrom s lijeve strane mora se ukloniti."
+    }
+  },
+  "giveway-002": {
+    "en": {
+      "prompt": "Two sailing vessels have wind on the same side. A is to windward of B. Which gives way?",
+      "options": [
+        "The leeward vessel B.",
+        "The windward vessel A.",
+        "The vessel with the larger sail.",
+        "Both alter course to port."
+      ],
+      "answer": "Das luvwärtige Boot A.",
+      "explanation": "When both sailing vessels have wind on the same side, the windward vessel keeps clear of the leeward vessel."
+    },
+    "hr": {
+      "prompt": "Dva jedrenjaka imaju vjetar s iste strane. A je uz vjetar od broda B. Tko se uklanja?",
+      "options": [
+        "Zavjetrinski brod B.",
+        "Privjetrinski brod A.",
+        "Brod s većim jedrom.",
+        "Oba skreću ulijevo."
+      ],
+      "answer": "Das luvwärtige Boot A.",
+      "explanation": "Kad jedrenjaci imaju vjetar s iste strane, privjetrinski brod uklanja se zavjetrinskom."
+    }
+  },
+  "giveway-003": {
+    "en": {
+      "prompt": "Two power-driven vessels approach on reciprocal courses. What applies?",
+      "options": [
+        "Both alter course to starboard.",
+        "Both alter course to port.",
+        "The smaller vessel holds course.",
+        "Only the vessel on the other's starboard side gives way."
+      ],
+      "answer": "Beide ändern ihren Kurs nach Steuerbord.",
+      "explanation": "In a head-on situation, both power-driven vessels alter course to starboard and pass port to port."
+    },
+    "hr": {
+      "prompt": "Dva broda na motorni pogon približavaju se suprotnim kursevima. Što vrijedi?",
+      "options": [
+        "Oba mijenjaju kurs udesno.",
+        "Oba mijenjaju kurs ulijevo.",
+        "Manji brod zadržava kurs.",
+        "Samo brod koji vidi drugi s desne strane se uklanja."
+      ],
+      "answer": "Beide ändern ihren Kurs nach Steuerbord.",
+      "explanation": "Pri susretu pramcem oba broda mijenjaju kurs udesno i prolaze lijevom stranom jedan pokraj drugoga."
+    }
+  },
+  "giveway-004": {
+    "en": {
+      "prompt": "Two power-driven vessels are crossing. B is on A's starboard side. Which gives way?",
+      "options": [
+        "Vessel A gives way and should avoid crossing ahead of B if possible.",
+        "Vessel B gives way because it comes from the right.",
+        "Both alter course to port.",
+        "The faster vessel gives way."
+      ],
+      "answer": "Boot A weicht aus und soll möglichst nicht vor B kreuzen.",
+      "explanation": "The vessel that has the other on its starboard side keeps out of the way and, if possible, avoids crossing ahead."
+    },
+    "hr": {
+      "prompt": "Dva broda na motorni pogon križaju kurseve. B je s desne strane broda A. Koji se uklanja?",
+      "options": [
+        "Brod A se uklanja i po mogućnosti ne prolazi ispred B.",
+        "Brod B se uklanja jer dolazi s desne strane.",
+        "Oba skreću ulijevo.",
+        "Brži brod se uklanja."
+      ],
+      "answer": "Boot A weicht aus und soll möglichst nicht vor B kreuzen.",
+      "explanation": "Brod koji drugi vidi sa svoje desne strane mora se ukloniti i, ako je moguće, izbjeći prolazak ispred njega."
+    }
+  },
+  "giveway-005": {
+    "en": {
+      "prompt": "A approaches B from astern and overtakes it. Which is the give-way vessel?",
+      "options": [
+        "B, because it is ahead.",
+        "Both vessels equally.",
+        "The overtaking vessel A; it keeps clear until finally past and clear.",
+        "The vessel that changes course first."
+      ],
+      "answer": "Das überholende Boot A; es bleibt ausweichpflichtig, bis es ganz vorbei und klar ist.",
+      "explanation": "An overtaking vessel remains responsible until finally past and clear."
+    },
+    "hr": {
+      "prompt": "Brod A prilazi brodu B s krme i pretječe ga. Koji se uklanja?",
+      "options": [
+        "Brod B jer plovi ispred.",
+        "Oba broda jednako.",
+        "Brod A koji pretječe; ostaje odgovoran dok potpuno ne prođe i oslobodi se.",
+        "Brod koji prvi promijeni kurs."
+      ],
+      "answer": "Das überholende Boot A; es bleibt ausweichpflichtig, bis es ganz vorbei und klar ist.",
+      "explanation": "Brod koji pretječe ostaje odgovoran dok potpuno ne prođe i oslobodi se."
+    }
+  },
+  "giveway-006": {
+    "en": {
+      "prompt": "How should a give-way vessel act?",
+      "options": [
+        "Take early, substantial action that is clear to the other vessel and keep well clear.",
+        "Keep course and speed until the other vessel moves.",
+        "Make several small course alterations one after another.",
+        "Give way only after the other vessel sounds a signal."
+      ],
+      "answer": "Möglichst frühzeitig und deutlich ausweichen und gut freihalten.",
+      "explanation": "A give-way vessel should act early and decisively so the other vessel can see the action."
+    },
+    "hr": {
+      "prompt": "Kako treba postupiti brod koji se mora ukloniti?",
+      "options": [
+        "Pravodobno i odlučno djelovati, jasno pokazati radnju i dobro se ukloniti.",
+        "Zadržati kurs i brzinu dok drugi brod ne skrene.",
+        "Napraviti više malih promjena kursa jednu za drugom.",
+        "Ukloniti se tek nakon zvučnog signala."
+      ],
+      "answer": "Möglichst frühzeitig und deutlich ausweichen und gut freihalten.",
+      "explanation": "Brod koji se uklanja treba djelovati rano i odlučno, tako da drugi brod jasno vidi radnju."
+    }
+  },
+  "giveway-007": {
+    "en": {
+      "prompt": "B is the stand-on vessel. A is not taking appropriate action, and a collision cannot be avoided by A alone. What must B do?",
+      "options": [
+        "Rigidly maintain course and speed.",
+        "Stop the engine and wait.",
+        "Take the action that best helps avoid collision.",
+        "Turn to port regardless of the situation."
+      ],
+      "answer": "Die Maßnahme ergreifen, die am besten hilft, den Zusammenstoß zu vermeiden.",
+      "explanation": "The stand-on vessel must act when a collision cannot be avoided by the give-way vessel alone."
+    },
+    "hr": {
+      "prompt": "Brod B mora zadržati kurs. A ne poduzima odgovarajuću radnju i sudar se ne može izbjeći samo djelovanjem A. Što B mora učiniti?",
+      "options": [
+        "Kruto zadržati kurs i brzinu.",
+        "Zaustaviti motor i čekati.",
+        "Poduzeti radnju koja najbolje pomaže izbjeći sudar.",
+        "Skrenuti ulijevo bez obzira na situaciju."
+      ],
+      "answer": "Die Maßnahme ergreifen, die am besten hilft, den Zusammenstoß zu vermeiden.",
+      "explanation": "Brod koji zadržava kurs mora djelovati kada se sudar više ne može izbjeći samo radnjom broda koji se uklanja."
+    }
   }
 }
