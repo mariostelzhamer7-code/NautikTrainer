@@ -3419,5 +3419,117 @@
     "letter": "Z",
     "source": "International Code of Signals",
     "image": "signalflag-Z"
+  },
+  {
+    "id": "giveway-001",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Zwei Segelboote nähern sich mit Kollisionsgefahr. Boot A hat Wind von Backbord, Boot B von Steuerbord. Wer weicht aus?",
+    "options": [
+      "Boot B mit Wind von Steuerbord.",
+      "Boot A mit Wind von Backbord.",
+      "Das Boot, das näher am Wind fährt.",
+      "Beide weichen gleichzeitig aus."
+    ],
+    "correct": 1,
+    "explanation": "Wenn Segelboote Wind von unterschiedlichen Seiten haben, weicht das Boot mit Wind von Backbord aus.",
+    "image": "giveway-different-wind",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
+  },
+  {
+    "id": "giveway-002",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Zwei Segelboote haben den Wind auf derselben Seite. Boot A liegt luvwärts von Boot B. Wer muss ausweichen?",
+    "options": [
+      "Das leewärtige Boot B.",
+      "Das luvwärtige Boot A.",
+      "Das Boot mit dem größeren Segel.",
+      "Beide weichen nach Backbord aus."
+    ],
+    "correct": 1,
+    "explanation": "Bei Wind von derselben Seite weicht das luvwärtige Boot dem leewärtigen Boot aus.",
+    "image": "giveway-same-wind",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
+  },
+  {
+    "id": "giveway-003",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Zwei Motorboote fahren auf Gegenkurs aufeinander zu. Was gilt?",
+    "options": [
+      "Beide ändern ihren Kurs nach Steuerbord.",
+      "Beide ändern ihren Kurs nach Backbord.",
+      "Das kleinere Boot hält seinen Kurs.",
+      "Nur das Boot an Steuerbord weicht aus."
+    ],
+    "correct": 0,
+    "explanation": "Bei Gegenkurs ändern beide Motorboote den Kurs nach Steuerbord und passieren Backbord an Backbord.",
+    "image": "giveway-head-on",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
+  },
+  {
+    "id": "giveway-004",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Zwei Motorboote kreuzen. Boot B befindet sich aus Sicht von Boot A an dessen Steuerbordseite. Welches muss ausweichen?",
+    "options": [
+      "Boot A weicht aus und soll möglichst nicht vor B kreuzen.",
+      "Boot B weicht aus, weil es von rechts kommt.",
+      "Beide weichen nach Backbord aus.",
+      "Das schnellere Boot weicht aus."
+    ],
+    "correct": 0,
+    "explanation": "Das Boot, das das andere an seiner Steuerbordseite hat, weicht aus und vermeidet wenn möglich das Kreuzen voraus.",
+    "image": "giveway-crossing",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
+  },
+  {
+    "id": "giveway-005",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Boot A nähert sich Boot B von achtern und überholt es. Wer ist ausweichpflichtig?",
+    "options": [
+      "Boot B, weil es vorausfährt.",
+      "Beide Boote gleichermaßen.",
+      "Das überholende Boot A; es bleibt ausweichpflichtig, bis es ganz vorbei und klar ist.",
+      "Das Boot, das zuerst den Kurs ändert."
+    ],
+    "correct": 2,
+    "explanation": "Das überholende Boot muss so lange freihalten, bis es endgültig vorbei und frei ist.",
+    "image": "giveway-overtaking",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
+  },
+  {
+    "id": "giveway-006",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Wie soll ein ausweichpflichtiges Boot handeln?",
+    "options": [
+      "Möglichst frühzeitig und deutlich ausweichen und gut freihalten.",
+      "Kurs und Geschwindigkeit halten, bis das andere Boot reagiert.",
+      "Mehrere kleine Kursänderungen nacheinander machen.",
+      "Erst nach einem Signal des anderen Bootes ausweichen."
+    ],
+    "correct": 0,
+    "explanation": "Das ausweichpflichtige Boot handelt frühzeitig und so deutlich, dass die Maßnahme gut erkennbar ist.",
+    "image": "giveway-early-action",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
+  },
+  {
+    "id": "giveway-007",
+    "group": "Ausweichsituationen",
+    "topic": "Ausweichsituationen",
+    "prompt": "Boot B ist kurshaltepflichtig. Boot A weicht nicht angemessen aus und eine Kollision ist durch A allein nicht mehr vermeidbar. Was muss B tun?",
+    "options": [
+      "Weiter starr Kurs und Geschwindigkeit halten.",
+      "Den Motor abstellen und auf eine Reaktion warten.",
+      "Die Maßnahme ergreifen, die am besten hilft, den Zusammenstoß zu vermeiden.",
+      "Unabhängig von der Lage nach Backbord drehen."
+    ],
+    "correct": 2,
+    "explanation": "Das kurshaltepflichtige Boot muss mitwirken, wenn eine Kollision durch das Ausweichmanöver des anderen allein nicht mehr vermieden werden kann.",
+    "image": "giveway-last-moment",
+    "source": "Lernfrage nach bereitgestellter Buchseite"
   }
 ]
